@@ -16,5 +16,4 @@ class BaseController extends Controller
             'controller_name' => 'BaseController',
         ]);
     }
-    
 }
