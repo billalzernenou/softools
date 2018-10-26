@@ -1,6 +1,6 @@
 /* Body */
 html, body {
-background: url("https://upload.wikimedia.org/wikipedia/commons/9/94/A_Website_Background.png"); no-repeat;} 
+background: url("https://upload.wikimedia.org/wikipedia/commons/9/94/A_Website_Background.png"); no-repeat;}
 /* Header */
 #head {no-repeat; background-size: cover; min-height:520px; text-align: center; padding-top:1px; color:white; font-family:"Open sans", Helvetica, Arial; font-weight:300; }
 #head.secondary { height:100px; min-height: 100px; padding-top:0px; }
@@ -95,3 +95,15 @@ img.pull-left { margin-right: 10px; }
 	.widget-simplenav a{ margin:0 5px; }
 	/* img-rounded */
 	.img-rounde:hover { background-color: rgba(0,0,0, 0.4); }
+	/* swiper */
+	.swiper-container {
+		width: 100%;
+		padding-top: 50px;
+		padding-bottom: 0px;
+	}
+	.swiper-slide {
+		background-position: center;
+		background-size: cover;
+		width: 300px;
+	
+	}
