@@ -95,6 +95,18 @@ img.pull-left { margin-right: 10px; }
 	.widget-simplenav a{ margin:0 5px; }
 	/* img-rounded */
 	.img-rounde:hover { background-color: rgba(0,0,0, 0.4); }
+	/* swiper */
+	.swiper-container {
+		width: 100%;
+		padding-top: 50px;
+		padding-bottom: 0px;
+	}
+	.swiper-slide {
+		background-position: center;
+		background-size: cover;
+		width: 300px;
+	
+	}
 
 
 
