@@ -1,8 +1,9 @@
 /* Body */
 html, body {
-background: #f2f2f2; }
+background: #f2f2f2;
+}
 /* Header */
-#head {no-repeat; background-size: cover; min-height:520px; text-align: center; padding-top:1px; color:white; font-family:"Open sans", Helvetica, Arial; font-weight:300; }
+#head {no-repeat; background-size: cover; min-height:520px; text-align: center; padding-top:1px; color:white; font-weight:300; }
 #head.secondary { height:100px; min-height: 100px; padding-top:0px; }
 	#head .lead { font-family:"Open sans", Helvetica, Arial; font-size:44px; margin-bottom:6px; color:white; line-height:1.15em; }
 	#head .tagline { color:rgba(255,255,255,0.75); margin-bottom:25px; }
@@ -105,7 +106,7 @@ img.pull-left { margin-right: 10px; }
 		background-position: center;
 		background-size: cover;
 		width: 300px;
-	
+
 	}
 
 
@@ -125,11 +126,9 @@ a:hover {
 a:focus,
 a:hover {
     opacity: .7;
-    text-decoration: none;
+
 }
-a {
-    text-decoration: underline;
-}
+
 a, .btn, button {
     transition: 0.2s;
     -moz-transition: 0.2s;
@@ -172,14 +171,14 @@ h1 {
     margin-bottom: 15px;
 }
 h2 a, h2 a:hover,  h2 a:focus {
-    text-decoration: none;
+
 }
 h2 {
     font-size: 35px;
 }
 .label, .btn, .form-control {
-    border-radius: 2px;
-    text-decoration: none;
+    border-radius: 3px;
+
 }
 .lead {
     font-weight: 600;
@@ -953,3 +952,64 @@ span.numscroller {
 #footer .list-inline {
     margin-top: 15px;
 }
+/* stick slider partners  */
+h2{
+  text-align:center;
+  padding: 20px;
+}
+/* Slider */
+
+/* carousel */
+.media-carousel
+{
+  margin-bottom: 0;
+  padding: 0 40px 30px 40px;
+  margin-top: 30px;
+}
+/* Previous button  */
+.media-carousel .carousel-control.left
+{
+  left: -12px;
+  background-image: none;
+  background: none repeat scroll 0 0 #222222;
+  border: 4px solid #FFFFFF;
+  border-radius: 23px 23px 23px 23px;
+  height: 40px;
+  width : 40px;
+  margin-top: 30px
+}
+/* Next button  */
+.media-carousel .carousel-control.right
+{
+  right: -12px !important;
+  background-image: none;
+  background: none repeat scroll 0 0 #222222;
+  border: 4px solid #FFFFFF;
+  border-radius: 23px 23px 23px 23px;
+  height: 40px;
+  width : 40px;
+  margin-top: 30px
+}
+/* Changes the position of the indicators */
+.media-carousel .carousel-indicators
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the colour of the indicators */
+.media-carousel .carousel-indicators li
+{
+  background: #c0c0c0;
+}
+.media-carousel .carousel-indicators .active
+{
+  background: #333333;
+}
+.media-carousel img
+{
+  width: 250px;
+  height: 100px
+}
+/* End slider partners  */

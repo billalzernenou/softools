@@ -39,7 +39,7 @@
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav pull-right">
-					<li class="active"><a href="#">Pourquoi Nous ?</a></li>
+					<li class="active"><a href="#">Home</a></li>
 					<li><a href="about.html">Solutions</a></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
@@ -51,7 +51,7 @@
           <li><a href="contact.html">App</a></li>
           <li><a href="contact.html">Réponses</a></li>
 					<li><a href="contact.html">Contact</a></li>
-					<li><a class="btn" href="signin.html">SIGN IN / DEMO</a></li>
+					<li><a class="btn" href="signin.html">SIGN IN | DEMO</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div>
@@ -269,7 +269,103 @@
 				    </div>
 	      </div>
 	    </div>
-<!-- footer -->
+<!-- partners  -->
+<div class="container">
+  <div class="row">
+    <h2>Our Partners</h2>
+  </div>
+  <div class='row'>
+    <div class='col-md-12'>
+      <div class="carousel slide media-carousel" id="media">
+        <div class="carousel-inner">
+          <div class="item  active">
+            <div class="row">
+              <div class="col-md-3">
+                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+              </div>
+              <div class="col-md-3">
+                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+              </div>
+              <div class="col-md-3">
+                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+              </div>
+							<div class="col-md-3">
+                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+						<div class="row">
+							<div class="col-md-3">
+								<a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+							</div>
+							<div class="col-md-3">
+								<a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+							</div>
+							<div class="col-md-3">
+								<a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+							</div>
+							<div class="col-md-3">
+								<a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+							</div>
+						</div>
+          </div>
+          <div class="item">
+						<div class="row">
+							<div class="col-md-3">
+								<a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+							</div>
+							<div class="col-md-3">
+								<a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+							</div>
+							<div class="col-md-3">
+								<a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+							</div>
+							<div class="col-md-3">
+								<a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+							</div>
+						</div>
+          </div>
+        </div>
+        <a data-slide="prev" href="#media" class="left carousel-control">‹</a>
+				<a data-slide="prev" href="#media" class="left carousel-control">‹</a>
+			<a data-slide="next" href="#media" class="right carousel-control">›</a>
+		</div>
+	</div>
+</div>
+</div>
+<!-- avis client -->
+<div class="container bootstrap snippet">
+    <div class="row">
+        <h2 class="text-center text-primary">What our clients said about us?</h2>
+        <hr>
+    	<div class="col-md-10 col-md-offset-1">
+			<div class="row testimonials">
+				<div class="col-sm-4">
+					<blockquote>
+						<p class="clients-words">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<span class="clients-name text-primary">— Armand corey</span>
+						<img class="img-circle img-thumbnail" src="https://www.monportraitpro.fr/wp-content/uploads/2016/09/Mon-portrait-pro-portrait-professionnel-corporate-4.jpg">
+					</blockquote>
+				</div>
+				<div class="col-sm-4">
+					<blockquote>
+						<p class="clients-words">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+						<span class="clients-name text-primary">— Factory nn (@facnnteam)</span>
+						<img class="img-circle img-thumbnail" src="https://www.monportraitpro.fr/wp-content/uploads/2016/09/Mon-portrait-pro-portrait-professionnel-corporate-4.jpg">
+					</blockquote>
+				</div>
+				<div class="col-sm-4">
+					<blockquote>
+						<p  class="clients-words">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<span class="clients-name text-primary">— Big daniel mont</span>
+						<img class="img-circle img-thumbnail" src="https://www.monportraitpro.fr/wp-content/uploads/2016/09/monportraitpro-2.jpg">
+					</blockquote>
+				</div>
+			</div><!--/.row-->
+		</div><!--/.col-->
+	</div><!--/.row-->
+</div>
 <!-- footer -->
 <section id="footer" class="wow fadeIn">
     <div class="overlay-dark"></div>
@@ -359,9 +455,14 @@ $(function() {
         }
     });
 });
-document.createElement("section");
-		</script>
-  {% endblock %}
+$(document).ready(function() {
+  $('#media').carousel({
+    pause: true,
+    interval: false,
+  });
+});
 
+</script>
+{% endblock  %}
 </body>
 </html>
