@@ -29,7 +29,10 @@ background: #f2f2f2;
 
 
 }
-
+.lmp
+{
+ background: rgba(0,0,0,0.4);
+}
 
 /* Autohide navbar */
 .slideUp { top:-100px; }
@@ -87,7 +90,7 @@ img.pull-left { margin-right: 10px; }
 	.follow-me-icons { font-size:30px; }
 		.follow-me-icons i { float:left; margin:0 10px 0 0; }
 
-.footer2 { background: #191919; padding: 15px 0; color: #777; font-size: 12px; }
+.footer2 { background: orange; padding: 15px 0; color: #777; font-size: 12px; }
 	.footer2 a { color: #aaa; }
 		.footer2 a:hover { color: #fff; }
 		.footer2 p { margin: 0; }
@@ -1182,7 +1185,7 @@ border-radius: 100%;
 font-size: 15px;
 line-height: 20px;
 color: #fff;
-background: #51658d;
+background: rgba(255,155,34,1);
 padding: 30px 0;
 font-family: 'Open Sans', sans-serif;
 }

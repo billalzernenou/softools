@@ -37,15 +37,15 @@
 	-webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px;
 	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
 }
-.navbar-nav .dropdown-menu > li > a { color:rgba(255, 140, 0, .8); }
+.navbar-nav .dropdown-menu > li > a { color:rgba(255,155,34,1); }
 	.navbar-nav .dropdown-menu > li > a:hover,
 	.navbar-nav .dropdown-menu > li > a:focus,
-	.navbar-nav .dropdown-menu > .active > a:hover{ background: rgba(255, 140, 0, .8); color:white; }
+	.navbar-nav .dropdown-menu > .active > a:hover{ background: rgba(255,155,34,1); color:white; }
 
 .navbar-nav .dropdown-menu > .active > a,
 .navbar-nav .dropdown-menu > .active > a:focus { background: none; color:#fff; }
 
-.navbar-inverse .navbar-nav>li>a.btn { border:1px solid #eb8d35; color:rgb(253, 133, 49); margin-left:1px; margin-top:5px; background: white;
+.navbar-inverse .navbar-nav>li>a.btn { border:1px solid #eb8d35; rgba(255,155,34,1); margin-left:1px; margin-top:5px; background: white;
 	padding-top: 7px; padding-right: 11px; padding-bottom: 7px; padding-left: 11px; border-radius: 4px;outline: none;
     z-index: 99; transition: all .2s ease-in; text-decoration:none; font-family: inherit; font-size: 13px;}
 		.btn { border:1px solid #eb8d35; color:rgb(253, 133, 49); margin-left:1px; margin-top:5px; background: white;
@@ -54,7 +54,7 @@
 		.btn:hover,
 	  .btn:focus,
 	  .btn:hover,
-		.btn:focus {  border:1px solid rgb(253, 133, 49);color: white; background: #eb8d35; }
+		.btn:focus {  border:1px solid rgb(253, 133, 49);color: white; background: rgba(255,155,34,1); }
 
 
 
