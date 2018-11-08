@@ -1,6 +1,6 @@
 /* Body */
 html, body {
-background: #f2f2f2;
+
 }
 /* Header */
 #head {no-repeat; background-size: cover; min-height:520px; text-align: center; padding-top:1px; color:white; font-weight:300; }
@@ -29,9 +29,10 @@ background: #f2f2f2;
 
 
 }
-.lmp
+.go
 {
- background: rgba(0,0,0,0.4);
+
+-webkit-filter: brightness(20%);
 }
 
 /* Autohide navbar */
