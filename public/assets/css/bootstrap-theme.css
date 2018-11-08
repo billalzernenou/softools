@@ -48,6 +48,15 @@
 .navbar-inverse .navbar-nav>li>a.btn { border:1px solid #eb8d35; color:rgb(253, 133, 49); margin-left:1px; margin-top:5px; background: white;
 	padding-top: 7px; padding-right: 11px; padding-bottom: 7px; padding-left: 11px; border-radius: 4px;outline: none;
     z-index: 99; transition: all .2s ease-in; text-decoration:none; font-family: inherit; font-size: 13px;}
+		.btn { border:1px solid #eb8d35; color:rgb(253, 133, 49); margin-left:1px; margin-top:5px; background: white;
+			padding-top: 7px; padding-right: 11px; padding-bottom: 7px; padding-left: 11px; border-radius: 4px;outline: none;
+				z-index: 99; transition: all .2s ease-in; text-decoration:none; font-family: inherit; font-size: 13px;}
+		.btn:hover,
+	  .btn:focus,
+	  .btn:hover,
+		.btn:focus {  border:1px solid rgb(253, 133, 49);color: white; background: #eb8d35; }
+
+
 
 .navbar-inverse .navbar-nav>li>a.btn:hover,
 .navbar-inverse .navbar-nav>li>a.btn:focus,
