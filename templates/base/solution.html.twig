@@ -1,0 +1,344 @@
+{# extends 'base.html.twig' #}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+
+<title>Softools</title>
+{% block stylesheets %}
+<link rel="shortcut icon" href="assets/images/gt_favicon.png">
+
+<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.css">
+<!-- Custom styles for our site -->
+<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/mjyuu.css">
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="assets/js/html5shiv.js"></script>
+<script src="assets/js/respond.min.js"></script>
+<![endif]-->
+{% endblock %}
+
+</head>
+
+<body class="home">
+	<!-- Fixed navbar -->
+	<div class="navbar navbar-inverse navbar-fixed-top headroom" >
+		<div class="container">
+			<div class="navbar-header">
+				<!-- Button for smallest screens -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Progressus HTML5 template"></a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav pull-right">
+					<li class="active"><a href="{{path('solution')}}">Solutions</a></li>
+					<li><a href="about.html">Notre Savoir-Faire</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Pourquoi Nous ?<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="sidebar-left.html">Réalisation</a></li>
+							<li class="active"><a href="sidebar-right.html">Right Sidebar</a></li>
+						</ul>
+					</li>
+          <li><a href="contact.html">Témoignages</a></li>
+          <li><a href="contact.html">Référeces</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a class="btn" href="signin.html">SIGN IN | DEMO</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</div>
+	<!-- /.navbar -->
+
+	<!-- Header -->
+
+<!-- carousel -->
+<h1>Bootstrap 4 carousel with description</h1>
+<div class="container">
+
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators mb-0 pb-0">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner no-padding my-5">
+    <div class="carousel-item active">
+      <div class="col-xs-4 col-sm-4 col-md-4">
+        <a href="#" onclick=abc(this) class="slider_info">
+          <img class="img-fluid card-img-top" src="http://via.placeholder.com/300x300?text=1">
+          <div class="card-img-overlay t_img">
+            <span class="float-left text-uppercase">article</span>
+            <span class="float-right text-uppercase">2345 views</span>
+          </div>
+        </a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt quam obcaecati maiores atque labore fugiat tenetur tempore veritatis temporibus!</p>
+
+      </div>
+      <div class="col-xs-4 col-sm-4 col-md-4">
+        <a href="#" onclick=abc(this) class="slider_info">
+          <img class="img-fluid card-img-top rounded-bottom" src="http://via.placeholder.com/300x300?text=2">
+          <div class="card-img-overlay t_img">
+            <span class="float-left text-uppercase">article</span>
+            <span class="float-right text-uppercase">2345 views</span>
+          </div>
+        </a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt quam obcaecati maiores atque labore fugiat tenetur tempore veritatis temporibus!</p>
+
+      </div>
+      <div class="col-xs-4 col-sm-4 col-md-4">
+        <a href="#" onclick=abc(this) class="slider_info">
+          <img class="img-fluid card-img-top rounded-bottom" src="http://via.placeholder.com/300x300?text=3">
+          <div class="card-img-overlay t_img">
+            <span class="float-left text-uppercase">article</span>
+            <span class="float-right text-uppercase">2345 views</span>
+          </div>
+        </a>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt quam obcaecati maiores atque labore fugiat tenetur tempore veritatis temporibus!
+        </p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="col-xs-4 col-sm-4 col-md-4">
+        <a href="#" onclick=abc(this) class="slider_info">
+          <img class="img-fluid card-img-top" src="http://via.placeholder.com/300x300">
+          <div class="card-img-overlay t_img">
+            <span class="float-left text-uppercase">article</span>
+            <span class="float-right text-uppercase">2345 views</span>
+          </div>
+        </a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt quam obcaecati maiores atque labore fugiat tenetur tempore veritatis temporibus!</p>
+
+      </div>
+      <div class="col-xs-4 col-sm-4 col-md-4">
+        <a href="#" onclick=abc(this) class="slider_info">
+          <img class="img-fluid card-img-top" src="http://via.placeholder.com/300x300">
+          <div class="card-img-overlay t_img">
+            <span class="float-left text-uppercase">article</span>
+            <span class="float-right text-uppercase">2345 views</span>
+          </div>
+        </a>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt quam obcaecati maiores atque labore fugiat tenetur tempore veritatis temporibus!
+        </p>
+
+      </div>
+      <div class="col-xs-4 col-sm-4 col-md-4">
+        <a href="#" onclick=abc(this) class="slider_info">
+          <img class="img-fluid card-img-top" src="http://via.placeholder.com/300x300">
+          <div class="card-img-overlay t_img">
+            <span class="float-left text-uppercase">article</span>
+            <span class="float-right text-uppercase">2345 views</span>
+          </div>
+        </a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt quam obcaecati maiores atque labore fugiat tenetur tempore veritatis temporibus!</p>
+
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="col-xs-4 col-sm-4 col-md-4">
+        <a href="#" onclick=abc(this) class="slider_info">
+          <img class="img-fluid card-img-top" src="http://via.placeholder.com/300x300">
+          <div class="card-img-overlay t_img">
+            <span class="float-left text-uppercase">article</span>
+            <span class="float-right text-uppercase">2345 views</span>
+          </div>
+        </a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt quam obcaecati maiores atque labore fugiat tenetur tempore veritatis temporibus!</p>
+
+      </div>
+      <div class="col-xs-4 col-sm-4 col-md-4">
+        <a href="#" onclick=abc(this) class="slider_info">
+          <img class="img-fluid card-img-top" src="http://via.placeholder.com/300x300">
+          <div class="card-img-overlay t_img">
+            <span class="float-left text-uppercase">article</span>
+            <span class="float-right text-uppercase">2345 views</span>
+          </div>
+        </a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt quam obcaecati maiores atque labore fugiat tenetur tempore veritatis temporibus!</p>
+
+      </div>
+      <div class="col-xs-4 col-sm-4 col-md-4">
+        <a href="#" onclick=abc(this) class="slider_info">
+          <img class="img-fluid card-img-top" src="http://via.placeholder.com/300x300">
+          <div class="card-img-overlay t_img">
+            <span class="float-left text-uppercase">article</span>
+            <span class="float-right text-uppercase">2345 views</span>
+          </div>
+        </a>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt quam obcaecati maiores atque labore fugiat tenetur tempore veritatis temporibus!
+        </p>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+     <span class="carousel-control-prev-icon sp"></span>
+                </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon sp"></span>
+                </a>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer -->
+<footer class="webintern-footer">
+<div class="webintern-footer-inner">
+<div class="container">
+<div class="row">
+<div class="col-sm-6 col-md-3 ">
+<a class="webintern-footer-logo" href="#">
+<img class="img-responsive" src="https://www.freelogodesign.org/img/logo-ex-4.png" style="width:100px;" alt="">
+</a>
+<div class="simple-text dark padding-sm">
+<h4 class="webintern_footer_title h5"><small>Softools</small></h4>
+<p>Softools est une plate-forme Web avancée sur laquelle les clients créent des applications entièrement digitales sans besoin de coder et sans besoin d'infrastructure. Celles-ci fonctionnent dans n'importe quel environnement (PC, tablette ou smartphone ).</p>
+</div>
+<div class="empty-space xs-25 sm-25"></div>
+</div>
+<div class="col-sm-6 col-md-2 footer-2">
+<!-- webintern_footer_title -->
+<h4 class="webintern_footer_title h5"><small>Quick Links</small></h4>
+<ul class="webintern-footer-list">
+<li><a href="#">Home</a></li>
+<li><a href="#">About Us</a></li>
+<li><a href="#"> Services </a></li>
+<li><a href="#"> Projects </a></li>
+<li><a href="#"> Portfolio </a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+<div class="empty-space xs-25 sm-25"></div>
+</div>
+<div class="col-sm-6 col-md-3 footer-3">
+<!-- webintern_footer_title -->
+<h4 class="webintern_footer_title h5"><small> Solutions </small></h4>
+<ul class="webintern-footer-list">
+<li><a href="#">Reporting </a></li>
+<li><a href="#">Entreprise</a></li>
+<li><a href="#">Reporting2</a></li>
+<li><a href="#">Reporting3</a></li>
+<li><a href="#">Reporting4</a></li>
+<li><a href="#">reporting 5</a></li>
+</ul>
+<div class="empty-space xs-25"></div>
+</div>
+<div class="col-xs-6 col-md-3 col-sm-6">
+	<div class="marg-sm-b30"></div>
+	<!-- webintern_footer_title -->
+	<h4 class="webintern_footer_title h5"><small>contact </small></h4>
+	<div class="empty-space marg-lg-b20"></div>
+	<!--
+	<div class="simple-text last dark ">
+	<p>Get latest updates and offers.</p>
+	</div>
+	-->
+	<form method="post">
+
+								<div class="form-group">
+										<input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+								</div>
+								<div class="form-group">
+										<input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+								</div>
+								<div class="form-group">
+										<input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
+								</div>
+
+
+								<div class="form-group">
+										<textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 80px;"></textarea>
+								</div>
+								<div class="form-group">
+										<input type="submit" name="btnSubmit" class="btn" value="Send Message" />
+								</div>
+
+		</form>
+
+	<div class="empty-space marg-lg-b30"></div>
+	<!-- TT-SOCAIL -->
+	<ul class="tt-socail">
+	<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+	<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+	<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+	<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+	</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="tt-copy">
+<div class="container">
+<div class="row">
+<div class="col-sm-6">
+<div class="tt-copy-left">Copyright © Softools 2018. All rights reserved. </div>
+</div>
+<div class="col-sm-6">
+<div class="tt-copy-right">
+Created by: SOFTOOLS
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+	<!-- call to action parallax-->
+
+
+
+
+
+  {% block javascripts %}
+  <!-- Optional JavaScript -->
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+{% endblock  %}
+</body>
+</html>
