@@ -16,4 +16,14 @@ class BaseController extends Controller
             'controller_name' => 'BaseController',
         ]);
     }
+
+    /**
+     * @Route("/solution", name="solution")
+     */
+    public function solution()
+    {
+        return $this->render('base/solution.html.twig', [
+            'controller_name' => 'BaseController',
+        ]);
+    }
 }
