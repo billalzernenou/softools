@@ -172,13 +172,15 @@ section {
 .navbar .collapse ul li a {
 
 	padding-left: 40px;
+
 }
-.navbar .collapse ul li ul li a:hover,
-.navbar .collapse ul li ul li a:focus,
-.navbar .collapse ul li a ul li a:active
+.navbar .collapse ul li ul  :hover,
+.navbar .collapse ul li ul  :focus,
+.navbar .collapse ul li a ul :active
 {
 
-color: orange;
+color: white;
+background: orange
 }
 
 /******************************Drop-down menu work on hover**********************************/
