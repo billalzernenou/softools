@@ -1,52 +1,10 @@
-.hide-bullets {
-    list-style:none;
-    margin-left: -40px;
-    margin-top:20px;
-}
-
-.thumbnail {
-    padding: 0;
-}
-
-.carousel-inner>.item>img, .carousel-inner>.item>a>img {
-    width: 100%;
-}
-
-.col-sm-3 a {
-    border: 1px solid transparent;
-    border-radius: 0;
-    transition: all 3s ease;
-}
-
-.col-sm-3 a:hover {
-    border: 1px solid #ff4647;
-    border-radius: 100% 60% / 30% 10%;
-    background: linear-gradient(rgba(56,123,131,0.7),rgba(56,123,131,0.7));
-}
 
 
 /*heder page solution */
-.gal-item{
-	overflow: hidden;
-	padding: 8px;
-}
-.gal-item .box{
-
-	overflow: hidden;
-}
-.box img{
-	height: 100%;
-	width: auto;
-	object-fit:cover;
-}
 
 
 /* deuxième idée */
-.hide-bullets {
-list-style:none;
-margin-left: -40px;
-margin-top:20px;
-}
+
 
 /* troisième idée */
 .demo {
