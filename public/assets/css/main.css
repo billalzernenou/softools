@@ -30,6 +30,14 @@ html, body {
  .tagline { color:rgba(255,255,255,0.75); margin-bottom:25px; }
  .lead { font-family:"Open sans", Helvetica, Arial; font-size:60px; margin-bottom:6px; color:white; line-height:1.15em; }
  .tagline  { color:#fff; }
+
+ /*logo.png */
+
+.logo_png
+{
+	width: 50px;
+}
+
 .go
 {
 	height: 100%;
