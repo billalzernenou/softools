@@ -20,6 +20,7 @@
 <!-- Custom styles for our site -->
 <link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
 <link rel="stylesheet" href="assets/css/main.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.smartmenus/1.0.0-beta1/addons/bootstrap/jquery.smartmenus.bootstrap.min.css" rel="stylesheet">
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -42,40 +43,85 @@
 	      <div class="collapse navbar-collapse" id="navbarCollapse1">
 	        <ul class="navbar-nav ml-auto">
 						<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions</a>
-								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								 Platforme
+							 </a>
+							 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								 <table class="table">
+								   <tbody>
+								     <tr>
+												 <td>
+													<a class="dropdown-item" href="#">Présentation</a>
+													<a class="dropdown-item" href="#">ZéroCode</a>
+												 <a class="dropdown-item" href="#">Personalisable</a>
+													<a class="dropdown-item" href="#">Progressive Web App(PWA)</a>
+													<a class="dropdown-item" href="#"> Interfaçable</a>
+												<a class="dropdown-item" href="#"> Environnement sécurisé</a>
+												 <a class="dropdown-item" href="#">Tarifs</a>
+												</td>
+											 </td>
+											 <td>
+												  <img class="float"-left src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/t/58a0641fbf629aca1a4223d8/1515758307980/?format=500w">
+												 <a class="dropdown-item" href="#">ANOTHER ACTION</a>
 
-								<li><a href="#">OPERATIONAL EXCELLENCE</a></li>
-								<li><a href="#">OPERATIONAL EXCELLENCE</a></li>
-								<li><a href="#">SOMETHING ELSE HERE</a></li>
-								<li><a href="#">OPERATIONAL EXCELLENCE</a></li>
-								<li><a href="#">OPERATIONAL EXCELLENCE</a></li>
-								<li><a href="#">SOMETHING ELSE HERE</a></li>
+											 </td>
 
-								<li class="dropdown">
-										<a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown2</a>
-										<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-										<li><a href="#">Action</a></li>
-										<li><a href="#">Another action</a></li>
-										<li><a href="#">Something else here</a></li>
-										<li class="dropdown">
-												<a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown3</a>
-												<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-														<li><a href="#">Action</a></li>
-														<li><a href="#">Another action</a></li>
-														<li><a href="#">Something else here</a></li>
-												</ul>
-										</li>
-										</ul>
-								</li>
-								</ul>
-						</li>
+								     </tr>
+
+								   </tbody>
+								 </table>
+							 </div>
+						 </li>
+						<li class="nav-item dropdown">
+							 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								 Solutions
+							 </a>
+							 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								 <table class="table">
+								   <thead>
+								     <tr>
+								       <th scope="col">MÉTIER</th>
+								       <th scope="col">TECHNOLOGIE</th>
+								     </tr>
+								   </thead>
+								   <tbody>
+								     <tr>
+												 <td>
+													<a class="dropdown-item" href="#">Finance</a>
+													<a class="dropdown-item" href="#"> DRH</a>
+												 <a class="dropdown-item" href="#"> Achat</a>
+													<a class="dropdown-item" href="#"> Monufacturing</a>
+													<a class="dropdown-item" href="#"> Ventes+CRM</a>
+												<a class="dropdown-item" href="#"> Another action</a>
+												 <a class="dropdown-item" href="#"> IT</a>
+												</td>
+											 </td>
+											 <td>
+												<a class="dropdown-item" href="#">Finance</a>
+												<a class="dropdown-item" href="#"> DRH</a>
+											 <a class="dropdown-item" href="#"> Achat</a>
+												<a class="dropdown-item" href="#"> Monufacturing</a>
+												<a class="dropdown-item" href="#"> Ventes+CRM</a>
+											<a class="dropdown-item" href="#"> Another action</a>
+											 <a class="dropdown-item" href="#"> IT</a>
+											</td>
+											 <td>
+												  <img class="float"-left src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/t/58a0641fbf629aca1a4223d8/1515758307980/?format=500w">
+												 <a class="dropdown-item" href="#">ANOTHER ACTION</a>
+
+											 </td>
+
+								     </tr>
+
+								   </tbody>
+								 </table>
+							 </div>
+						 </li>
 	         <li class="nav-item active"> <a class="nav-link" href="{{ path('solution') }}">Solutions<span class="sr-only">(current)</span></a> </li>
-	        <li class="nav-item"> <a class="nav-link" href="#benefits">Nos Réalisations</a> </li>
-	        <li class="nav-item"> <a class="nav-link" href="#about">Pricing</a> </li>
+	        <li class="nav-item"> <a class="nav-link" href="#about">Réalisation</a> </li>
 	        <li class="nav-item"> <a class="nav-link" href="#blog">Events</a> </li>
-	        <li class="nav-item"> <a class="nav-link" href="#gallery">Apps</a> </li>
-	        <li class="nav-item"> <a class="nav-link" href="#contact">Contact</a> </li>
+	        <li class="nav-item"> <a class="nav-link" href="#gallery">App Gallery</a> </li>
+					<li class="nav-item"> <a class="nav-link" href="#contact">Contact</a> </li>
 	        </ul>
 	      </div>
 	            </div>
@@ -617,6 +663,7 @@ Created by: SOFTOOLS
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="assets/js/scrollPosStyler.js"></script>
+
 <script>
 
 </script>
