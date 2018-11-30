@@ -453,7 +453,7 @@ margin: 0 10px;
 .masthead-nav > li > a:focus,
 .masthead-brand > li > a:hover,
 .masthead-brand > li > a:focus {
-    background-color: transparent;
+
     color:#fff;
 }
 .masthead a {
