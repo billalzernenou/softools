@@ -26,4 +26,13 @@ class BaseController extends Controller
             'controller_name' => 'BaseController',
         ]);
     }
+    /**
+     * @Route("/presentation", name="presentation")
+     */
+    public function presentation()
+    {
+        return $this->render('base/presentation.html.twig', [
+            'controller_name' => 'BaseController',
+        ]);
+    }
 }
