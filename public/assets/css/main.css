@@ -1,4 +1,5 @@
 /* Body */
+ @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
 html, body {
 
 }
@@ -32,6 +33,11 @@ html, body {
  .tagline  { color:#fff; }
 
  /*logo.png */
+
+
+
+
+
 
 .logo_png
 {
@@ -371,6 +377,8 @@ a.border-button-black, .border-button-black {
     list-style: none;
 }
 .sidebar-nav li a {
+		font-family: AvenirNext;
+		letter-spacing: 1px;
     padding-left: 25px;
     line-height: 50px;
     text-transform: uppercase;

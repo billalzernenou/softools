@@ -1,0 +1,658 @@
+{# extends 'base.html.twig' #}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+
+<title>Softools</title>
+{% block stylesheets %}
+<link rel="shortcut icon" href="assets/images/gt_favicon.png">
+
+<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+<!-- Custom styles for our site -->
+<link rel="stylesheet" href="assets/css/bootsnav.css" media="screen" >
+<link rel="stylesheet" href="assets/css/navbar_style.css" media="screen" >
+
+
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="assets/js/html5shiv.js"></script>
+<script src="assets/js/respond.min.js"></script>
+<![endif]-->
+{% endblock %}
+
+</head>
+
+<body>
+	<!-- Fixed navbar -->
+
+
+	<!-- Top Navigation -->
+	<!-- Start Navigation -->
+	<!-- Start Navigation -->
+<nav class="navbar navbar-default navbar-fixed navbar-transparent white bootsnav">
+
+	 <!-- Start Top Search -->
+	 <div class="top-search">
+			 <div class="container">
+					 <div class="input-group">
+							 <span class="input-group-addon"><i class="fa fa-search"></i></span>
+							 <input type="text" class="form-control" placeholder="Search">
+							 <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+					 </div>
+			 </div>
+	 </div>
+	 <!-- End Top Search -->
+
+	 <div class="container">
+			 <!-- Start Atribute Navigation -->
+			 <div class="attr-nav">
+					 <ul>
+							 <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+							 <li class="side-menu"><a href="#"><i class="fa fa-bars"></i></a></li>
+					 </ul>
+					 <a class="button_lang" href="{{ path('solution') }}">FR</a>
+					 <a class="button_lang" href="{{ path('solution-eng') }}">EN</a>
+			 </div>
+			 <!-- End Atribute Navigation -->
+
+			 <!-- Start Header Navigation -->
+			 <div class="navbar-header">
+					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+							 <i class="fa fa-bars"></i>
+					 </button>
+					 <a class="navbar-brand" href="#brand"><img src="assets/images/logo.png" class="logo" alt=""></a>
+			 </div>
+			 <!-- End Header Navigation -->
+
+			 <!-- Collect the nav links, forms, and other content for toggling -->
+			 <div class="collapse navbar-collapse" id="navbar-menu">
+					 <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+							 <li class="dropdown">
+									 <a href="{{ path('presentation') }}" class="dropdown-toggle" data-toggle="dropdown" >Platforme</a>
+									 <ul class="dropdown-menu">
+											 <li><a href="{{ path('presentation') }}">Présentation</a></li>
+											 <li><a href="#">Zéro-Code</a></li>
+											 <li class="dropdown">
+													 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Personalisable</a>
+													 <ul class="dropdown-menu">
+															 <li><a href="#">Custom Menu</a></li>
+															 <li><a href="#">Custom Menu</a></li>
+															 <li class="dropdown">
+																	 <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Sub Menu</a>
+																	 <ul class="dropdown-menu">
+																			 <li><a href="#">Custom Menu</a></li>
+																			 <li><a href="#">Custom Menu</a></li>
+																			 <li><a href="#">Custom Menu</a></li>
+																			 <li><a href="#">Custom Menu</a></li>
+																	 </ul>
+															 </li>
+															 <li><a href="#">Custom Menu</a></li>
+													 </ul>
+											 </li>
+											 <li><a href="#">Progressive-web-app(PWA)</a></li>
+											 <li><a href="#">Interfaçable</a></li>
+											 <li><a href="#">Environnement Sécurisé</a></li>
+											 <li><a href="#">Tarifs</a></li>
+									 </ul>
+							 </li>
+							 <li class="dropdown megamenu-fw">
+									 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Solutions</a>
+									 <ul class="dropdown-menu megamenu-content" role="menu">
+											 <li>
+													 <div class="row">
+															 <div class="col-menu col-md-3">
+																	 <h6 class="title">Métier</h6>
+																	 <div class="content">
+																			 <ul class="menu-col">
+																					 <li><a href="#">Finance</a></li>
+																					 <li><a href="#">DRH</a></li>
+																					 <li><a href="#">Achats</a></li>
+																					 <li><a href="#">Manufacturing</a></li>
+																					 <li><a href="#">Ventes+CRM</a></li>
+																					 <li><a href="#">I.T</a></li>
+																			 </ul>
+																	 </div>
+															 </div><!-- end col-3 -->
+															 <div class="col-menu col-md-3">
+																	 <h6 class="title">Secteur</h6>
+																	 <div class="content">
+																			 <ul class="menu-col">
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																			 </ul>
+																	 </div>
+															 </div><!-- end col-3 -->
+															 <div class="col-menu col-md-3">
+																	 <h6 class="title">Title Menu Three</h6>
+																	 <div class="content">
+																			 <ul class="menu-col">
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																			 </ul>
+																	 </div>
+															 </div>
+															 <div class="col-menu col-md-3">
+																	 <h6 class="title">Title Menu Four</h6>
+																	 <div class="content">
+																			 <ul class="menu-col">
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																			 </ul>
+																	 </div>
+															 </div><!-- end col-3 -->
+													 </div><!-- end row -->
+											 </li>
+									 </ul>
+							 </li>
+							 <li><a href="#">Events</a></li>
+							 <li><a href="#">App Gallery</a></li>
+							 <li><a href="#">Contact</a></li>
+					 </ul>
+			 </div><!-- /.navbar-collapse -->
+	 </div>
+
+	 <!-- Start Side Menu -->
+	 <div class="side">
+			 <a href="#" class="close-side"><i class="fa fa-times"></i></a>
+			 <div class="widget">
+					 <h6 class="title">Custom Pages</h6>
+					 <ul class="link">
+							 <li><a href="#">About</a></li>
+							 <li><a href="#">Services</a></li>
+							 <li><a href="#">Blog</a></li>
+							 <li><a href="#">Portfolio</a></li>
+							 <li><a href="#">Contact</a></li>
+					 </ul>
+			 </div>
+			 <div class="widget">
+					 <h6 class="title">Additional Links</h6>
+					 <ul class="link">
+							 <li><a href="#">Retina Homepage</a></li>
+							 <li><a href="#">New Page Examples</a></li>
+							 <li><a href="#">Parallax Sections</a></li>
+							 <li><a href="#">Shortcode Central</a></li>
+							 <li><a href="#">Ultimate Font Collection</a></li>
+					 </ul>
+			 </div>
+	 </div>
+	 <!-- End Side Menu -->
+</nav>
+<!-- End Navigation -->
+     <!-- End Navigation -->
+	<header>
+
+	  <div class="overlay"></div>
+	  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+	    <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+	  </video>
+	  <div class="container h-100">
+	    <div class="d-flex text-center h-100">
+	      <div class="my-auto w-100 text-white">
+	        <h1 class="display-3">Operational Excellence</h1>
+	        <h2>DRIVE EXCELLENCE ACROSS YOUR INTERNAL BUSINESS PROCESSES AND EXTENDED SUPPLY CHAIN.</h2>
+	      </div>
+	    </div>
+	  </div>
+	</header>
+	<!-- Header -->
+	<div class="container">
+		<div class="g-max-width-600 text-center mx-auto g-mb-30">
+			<h2 class="g-color-black g-font-weight-600 g-font-size-40 mb-1">OPERATIONAL EXCELLENCE</h2>
+			<p class="g-color-gray-dark-v2 g-font-size-20">Experience Frontend design within Dashboard.</p>
+		</div>
+	<div class="row">
+	  <div class="col-md-8 col-sm-12 co-xs-12">
+											<!-- test 3 -->
+
+												 <ul id="lightSlider">
+														 <li data-thumb="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/t/58a0a220d482e9cad93de910/1487161492818/GRC-portal-768x457.jpg?format=750w">
+																 <img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/t/58a0a220d482e9cad93de910/1487161492818/GRC-portal-768x457.jpg?format=750w" />
+														 </li>
+														 <li data-thumb="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/t/587511c3bf629a375246fc2e/1487161537142/InnovationHomepage.jpg?format=750w">
+																 <img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/t/587511c3bf629a375246fc2e/1487161537142/InnovationHomepage.jpg?format=750w" />
+														 </li>
+														 <li data-thumb="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/t/587511c3bf629a375246fc2e/1487161537142/InnovationHomepage.jpg?format=750w">
+																 <img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/t/587511c3bf629a375246fc2e/1487161537142/InnovationHomepage.jpg?format=750w" />
+														 </li>
+														 <li data-thumb="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/t/5928356db8a79bb04589709e/1496327331225/DigitalTransformationSoftools?format=1000w">
+																 <img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/t/5928356db8a79bb04589709e/1496327331225/DigitalTransformationSoftools?format=1000w" />
+														 </li>
+												 </ul>
+								</div>
+
+			   <div class="col-md-4 col-sm-6 co-xs-12">
+					<div class="card  text-white bg-dark">
+						<img class="card-img-top" src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/t/58a0641fbf629aca1a4223d8/1515758307980/?format=500w" alt="Card image cap">
+						<div class="card-body">
+							 <h5 class="card-title">Operation EXCELLENCE</h5>
+							 <p class="card-text">This suite of apps provides a complete solution to drive ‘excellence’ optimise supply chain activities and sustain improvements across your business.</p>
+							 <a href="http://www.jquery2dotnet.com/" class="btn btn-outline-light btn-sm">Get Demo</a>
+							 <a href="http://www.jquery2dotnet.com/" class="btn btn-outline-light btn-sm">Découvrir</a>
+						</div>
+				 </div>
+
+	</div>
+</div>
+</div>
+
+	<div class="row">
+		<div class="g-max-width-600 text-center mx-auto g-mb-30">
+			<h2 class="g-color-black g-font-weight-600 g-font-size-40 mb-1">Feautures That we can offer you</h2>
+			<p class="g-color-gray-dark-v2 g-font-size-20">Experience Frontend design within Dashboard.</p>
+		</div>
+
+  <div class="col-md-8 col-sm-12 co-xs-12">
+		<div class="row text-center text-lg-left">
+
+			<div class="col-lg-3 col-md-4 col-6">
+				<a href="#" class="d-block mb-4 h-100">
+							<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/pWkk7iiCoDM/400x300" alt="">
+						</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-6">
+				<a href="#" class="d-block mb-4 h-100">
+							<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/aob0ukAYfuI/400x300" alt="">
+						</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-6">
+				<a href="#" class="d-block mb-4 h-100">
+							<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/EUfxH-pze7s/400x300" alt="">
+						</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-6">
+				<a href="#" class="d-block mb-4 h-100">
+							<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/M185_qYH8vg/400x300" alt="">
+						</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-6">
+				<a href="#" class="d-block mb-4 h-100">
+							<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/sesveuG_rNo/400x300" alt="">
+						</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-6">
+				<a href="#" class="d-block mb-4 h-100">
+							<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/AvhMzHwiE_0/400x300" alt="">
+						</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-6">
+				<a href="#" class="d-block mb-4 h-100">
+							<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/2gYsZUmockw/400x300" alt="">
+						</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-6">
+				<a href="#" class="d-block mb-4 h-100">
+							<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/EMSDtjVHdQ8/400x300" alt="">
+						</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-6">
+				<a href="#" class="d-block mb-4 h-100">
+							<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/8mUEy0ABdNE/400x300" alt="">
+						</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-6">
+				<a href="#" class="d-block mb-4 h-100">
+							<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/G9Rfc1qccH4/400x300" alt="">
+						</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-6">
+				<a href="#" class="d-block mb-4 h-100">
+							<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/aJeH0KcFkuc/400x300" alt="">
+						</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-6">
+				<a href="#" class="d-block mb-4 ">
+							<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/p2TQ-3Bh3Oo/400x300" alt="">
+						</a>
+						<a href="#" class="btn btn-block btn-sm btn-warning">Découvrir  <span class="glyphicon glyphicon-plus"></span></a>
+			</div>
+		</div>
+ </div>
+ <div class="col-lg-3 col-md-4 col-6">
+	 <h2 class="g-color-black g-font-weight-200 g-font-size-30">Solution Name</h2>
+ <img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/t/58a0641fbf629aca1a4223d8/1515758307980/?format=500w">
+ <a href="#" class="btn btn-block btn-warning"><span class="glyphicon glyphicon-eye-open"></span> Découvrir </a>
+</div>
+</div>
+
+
+<!--==========================
+	Blog Section
+============================-->
+<section id="blog" class="padd-section wow fadeInUp">
+
+	<div class="container">
+		<div class="section-title text-center">
+
+			<h2>Latest Apps</h2>
+			<p class="separator">Applications That we customised For our clients.</p>
+
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-6 col-lg-4">
+				<div class="block-blog text-left">
+					<a href="#"><img src="https://images.pexels.com/photos/221185/pexels-photo-221185.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="img"></a>
+					<div class="content-blog">
+						<h4><a href="#">whats isthe difference between Softools Pie chart and and Others </a></h4>
+						<span>05, november 2018</span>
+						<a class="pull-right readmore" href="#">read more</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-4">
+				<div class="block-blog text-left">
+					<a href="#"><img src="https://images.pexels.com/photos/877696/pexels-photo-877696.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="img-responsive" alt="img"></a>
+					<div class="content-blog">
+						<h4><a href="#">whats is the Responsive means for Softools </a></h4>
+						<span>05, october 2018</span>
+						<a class="pull-right readmore" href="#">read more</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-4">
+				<div class="block-blog text-left">
+					<a href="#"><img src="https://images.pexels.com/photos/1516704/pexels-photo-1516704.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="img-responsive" alt="img"></a>
+					<div class="content-blog">
+						<h4><a href="#">whats Softools Does when you dont have Internet access</a></h4>
+						<span>17, september 2017</span>
+						<a class="pull-right readmore" href="#">read more</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<!--==========================
+	 Features Section
+ ============================-->
+
+ <section id="features" class="padd-section text-center wow fadeInUp">
+
+	 <div class="container">
+		 <div class="section-title text-center">
+			 <h2>Amazing Features.</h2>
+			 <p class="separator">Integer cursus bibendum augue ac cursus .</p>
+		 </div>
+	 </div>
+
+	 <div class="container">
+		 <div class="row">
+
+			 <div class="col-md-6 col-lg-3">
+				 <div class="feature-block">
+					 <img src="assets/images/svg/paint-palette.svg" alt="img" class="img-fluid">
+					 <h4>creative design</h4>
+					 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+				 </div>
+			 </div>
+
+			 <div class="col-md-6 col-lg-3">
+				 <div class="feature-block">
+					 <img src="assets/images/svg/vector.svg" alt="img" class="img-fluid">
+					 <h4>Retina Ready</h4>
+					 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+				 </div>
+			 </div>
+
+			 <div class="col-md-6 col-lg-3">
+				 <div class="feature-block">
+					 <img src="assets/images/svg/design-tool.svg" alt="img" class="img-fluid">
+					 <h4>easy to use</h4>
+					 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+				 </div>
+			 </div>
+
+			 <div class="col-md-6 col-lg-3">
+				 <div class="feature-block">
+					 <img src="assets/images/svg/asteroid.svg" alt="img" class="img-fluid">
+					 <h4>Free Updates</h4>
+					 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+				 </div>
+			 </div>
+
+			 <div class="col-md-6 col-lg-3">
+				 <div class="feature-block">
+					 <img src="assets/images/svg/asteroid.svg" alt="img" class="img-fluid">
+					 <h4>Free Updates</h4>
+					 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+				 </div>
+			 </div>
+
+			 <div class="col-md-6 col-lg-3">
+				 <div class="feature-block">
+					 <img src="assets/images/svg/cloud-computing.svg" alt="img" class="img-fluid">
+					 <h4>App store support</h4>
+					 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+				 </div>
+			 </div>
+
+			 <div class="col-md-6 col-lg-3">
+				 <div class="feature-block">
+					 <img src="assets/images/svg/pixel.svg" alt="img" class="img-fluid">
+					 <h4>Perfect Pixel</h4>
+					 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+				 </div>
+			 </div>
+
+			 <div class="col-md-6 col-lg-3">
+				 <div class="feature-block">
+					 <img src="assets/images/svg/code.svg" alt="img" class="img-fluid">
+					 <h4>clean codes</h4>
+					 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+				 </div>
+			 </div>
+
+		 </div>
+	 </div>
+ </section>
+
+
+
+<!-- slider -->
+<div class="container">
+					<h1 class="my-4">Other Solutions
+				    <small>Nous somme à votre disposition pour vous customiser l'appli</small>
+				  </h1>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, explicabo dolores ipsam aliquam inventore corrupti eveniet quisquam quod totam laudantium repudiandae obcaecati ea consectetur debitis velit facere nisi expedita vel?</p>
+
+				  <!-- Team Members Row -->
+				  <div class="row">
+				    <div class="col-lg-12">
+				      <h2 class="my-4">Solutions</h2>
+				    </div>
+				    <div class="col-lg-4 col-sm-6 text-center mb-4">
+				      <img class="rounded-circle img-fluid d-block mx-auto" src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/584ef481f7e0ab56e9725ed3/588769faf5e2318d7333ada1/1485269499651/256-Contract-10.png?format=300w" alt="">
+				      <h3>Pie chart solution
+				        <small>Get Close</small>
+				      </h3>
+				      <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+				    </div>
+						<div class="col-lg-4 col-sm-6 text-center mb-4">
+						 <img class="rounded-circle img-fluid d-block mx-auto" src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/584ef481f7e0ab56e9725ed3/58876a7044024399219eb9fe/1504264520237/256-Support-13.png?format=300w" alt="">
+						 <h3>Pie chart solution
+							 <small>Get Close</small>
+						 </h3>
+						 <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+					 </div>
+					 <div class="col-lg-4 col-sm-6 text-center mb-4">
+						<img class="rounded-circle img-fluid d-block mx-auto" src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/584ef481f7e0ab56e9725ed3/588769faf5e2318d7333ada1/1485269499651/256-Contract-10.png?format=300w" alt="">
+						<h3>Pie chart solution
+							<small>Get Close</small>
+						</h3>
+						<p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+					</div>
+					<div class="col-lg-4 col-sm-6 text-center mb-4">
+					 <img class="rounded-circle img-fluid d-block mx-auto" src="https://image.shutterstock.com/image-photo/pen-report-paper-business-conceptual-450w-238039702.jpg" alt="">
+					 <h3>Pie chart solution
+						 <small>Get Close</small>
+					 </h3>
+					 <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+				 </div>
+				 <div class="col-lg-4 col-sm-6 text-center mb-4">
+					<img class="rounded-circle img-fluid d-block mx-auto" src="https://image.shutterstock.com/image-photo/pen-report-paper-business-conceptual-450w-238039702.jpg" alt="">
+					<h3>Pie chart solution
+						<small>Get Close</small>
+					</h3>
+					<p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+				</div>
+				<div class="col-lg-4 col-sm-6 text-center mb-4">
+				 <img class="rounded-circle img-fluid d-block mx-auto" src="https://image.shutterstock.com/image-photo/pen-report-paper-business-conceptual-450w-238039702.jpg" alt="">
+				 <h3>Pie chart solution
+					 <small>Get Close</small>
+				 </h3>
+				 <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+			 </div>
+</div>
+</div>
+
+
+
+<!-- footer -->
+<!-- footer -->
+<footer class="webintern-footer">
+<div class="webintern-footer-inner">
+<div class="container">
+<div class="row">
+<div class="col-sm-6 col-md-3 ">
+<a class="webintern-footer-logo" href="#">
+<img class="img-responsive" src="https://www.freelogodesign.org/img/logo-ex-4.png" style="width:100px;" alt="">
+</a>
+<div class="simple-text dark padding-sm">
+<h4 class="webintern_footer_title h5"><img class="logo_png" src="assets/images/logo.png">SOFT<span>OOLS</span></a></h4>
+<p>Softools est une plate-forme Web avancée sur laquelle les clients créent des applications entièrement digitales sans besoin de coder et sans besoin d'infrastructure. Celles-ci fonctionnent dans n'importe quel environnement (PC, tablette ou smartphone ).</p>
+</div>
+<div class="empty-space xs-25 sm-25"></div>
+</div>
+<div class="col-sm-6 col-md-2 footer-2">
+<!-- webintern_footer_title -->
+<h4 class="webintern_footer_title h5"><small>Quick Links</small></h4>
+<ul class="webintern-footer-list">
+<li><a href="#">Home</a></li>
+<li><a href="#">About Us</a></li>
+<li><a href="#"> Services </a></li>
+<li><a href="#"> Projects </a></li>
+<li><a href="#"> Portfolio </a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+<div class="empty-space xs-25 sm-25"></div>
+</div>
+<div class="col-sm-6 col-md-3 footer-3">
+<!-- webintern_footer_title -->
+<h4 class="webintern_footer_title h5"><small> Solutions </small></h4>
+<ul class="webintern-footer-list">
+<li><a href="#">Reporting </a></li>
+<li><a href="#">Entreprise</a></li>
+<li><a href="#">Reporting2</a></li>
+<li><a href="#">Reporting3</a></li>
+<li><a href="#">Reporting4</a></li>
+<li><a href="#">reporting 5</a></li>
+</ul>
+<div class="empty-space xs-25"></div>
+</div>
+<div class="col-xs-6 col-md-3 col-sm-6">
+	<div class="marg-sm-b30"></div>
+	<!-- webintern_footer_title -->
+	<h4 class="webintern_footer_title h5"><small>contact </small></h4>
+	<div class="empty-space marg-lg-b20"></div>
+	<!--
+	<div class="simple-text last dark ">
+	<p>Get latest updates and offers.</p>
+	</div>
+	-->
+	<form method="post">
+
+								<div class="form-group">
+										<input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+								</div>
+								<div class="form-group">
+										<input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+								</div>
+								<div class="form-group">
+										<input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
+								</div>
+
+
+								<div class="form-group">
+										<textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 80px;"></textarea>
+								</div>
+								<div class="form-group">
+										<input type="submit" name="btnSubmit" class="btn" value="Send Message" />
+								</div>
+
+		</form>
+
+	<div class="empty-space marg-lg-b30"></div>
+	<!-- TT-SOCAIL -->
+	<ul class="tt-socail">
+	<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+	<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+	<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+	<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+	</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="tt-copy">
+<div class="container">
+<div class="row">
+<div class="col-sm-6">
+<div class="tt-copy-left">Copyright © Softools 2018. All rights reserved. </div>
+</div>
+<div class="col-sm-6">
+<div class="tt-copy-right">
+Created by: SOFTOOLS
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+	<!-- call to action parallax-->
+
+	<!-- call to action parallax-->
+
+
+
+
+
+  {% block javascripts %}
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="assets/js/scrollPosStyler.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="assets/js/bootsnav.js"></script>
+<script>
+
+</script>
+{% endblock  %}
+</body>
+</html>

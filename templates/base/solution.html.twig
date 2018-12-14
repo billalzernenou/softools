@@ -13,15 +13,14 @@
 
 <link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
 <!-- Bootstrap CSS -->
-	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.css">
-<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" />
 <!-- Custom styles for our site -->
-<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
-<link rel="stylesheet" href="assets/css/main.css">
-<link rel="stylesheet" href="assets/css/solution.css">
+<link rel="stylesheet" href="assets/css/bootsnav.css" media="screen" >
+<link rel="stylesheet" href="assets/css/navbar_style.css" media="screen" >
+<link rel="stylesheet" href="assets/css/solution_section2.css" media="screen" >
+
+
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -32,75 +31,211 @@
 
 </head>
 
-<body class="home">
+<body>
 	<!-- Fixed navbar -->
 
 
 	<!-- Top Navigation -->
-	    <nav class="navbar navbar-expand-lg  navbar-toggleable-md mb-4 top-bar navbar-expand-lgnavbar-static-top sps sps--abv mainmenu">
-	        <div class="container">
-	      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse1" aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
-	        <span class="navbar-toggler-icon"></span>
-	      </button>
-	      <a class="navbar-brand" href="{{ path('base') }}"><img class="logo_png" src="assets/images/logo.png">SOFT<span>OOLS</span></a>
-	      <div class="collapse navbar-collapse" id="navbarCollapse1">
-	        <ul class="navbar-nav ml-auto">
-						<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions</a>
-								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	<!-- Start Navigation -->
+	<!-- Start Navigation -->
+<nav class="navbar navbar-default navbar-fixed navbar-transparent white bootsnav">
 
-								<li><a href="#">OPERATIONAL EXCELLENCE</a></li>
-								<li><a href="#">OPERATIONAL EXCELLENCE</a></li>
-								<li><a href="#">SOMETHING ELSE HERE</a></li>
-								<li><a href="#">OPERATIONAL EXCELLENCE</a></li>
-								<li><a href="#">OPERATIONAL EXCELLENCE</a></li>
-								<li><a href="#">SOMETHING ELSE HERE</a></li>
+	 <!-- Start Top Search -->
+	 <div class="top-search">
+			 <div class="container">
+					 <div class="input-group">
+							 <span class="input-group-addon"><i class="fa fa-search"></i></span>
+							 <input type="text" class="form-control" placeholder="Search">
+							 <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+					 </div>
+			 </div>
+	 </div>
+	 <!-- End Top Search -->
 
-								<li class="dropdown">
-										<a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown2</a>
-										<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-										<li><a href="#">Action</a></li>
-										<li><a href="#">Another action</a></li>
-										<li><a href="#">Something else here</a></li>
-										<li class="dropdown">
-												<a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown3</a>
-												<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-														<li><a href="#">Action</a></li>
-														<li><a href="#">Another action</a></li>
-														<li><a href="#">Something else here</a></li>
-												</ul>
-										</li>
-										</ul>
-								</li>
-								</ul>
-						</li>
-	         <li class="nav-item active"> <a class="nav-link" href="{{ path('solution') }}">Solutions<span class="sr-only">(current)</span></a> </li>
-	        <li class="nav-item"> <a class="nav-link" href="#benefits">Nos Réalisations</a> </li>
-	        <li class="nav-item"> <a class="nav-link" href="#about">Pricing</a> </li>
-	        <li class="nav-item"> <a class="nav-link" href="#blog">Events</a> </li>
-	        <li class="nav-item"> <a class="nav-link" href="#gallery">Apps</a> </li>
-	        <li class="nav-item"> <a class="nav-link" href="#contact">Contact</a> </li>
-	        </ul>
-	      </div>
-	            </div>
-	    </nav>
-	<!-- /.navbar -->
-	<!-- /.navbar -->
-	<header>
+	 <div class="container">
+			 <!-- Start Atribute Navigation -->
+			 <div class="attr-nav">
+					 <ul>
+							 <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+							 <li class="side-menu"><a href="#"><i class="fa fa-bars"></i></a></li>
+					 </ul>
+					 <a class="button_lang" href="{{ path('solution') }}">FR</a>
+					 <a class="button_lang" href="{{ path('solution-eng') }}">EN</a>
+			 </div>
+			 <!-- End Atribute Navigation -->
 
-	  <div class="overlay"></div>
-	  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-	    <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
-	  </video>
-	  <div class="container h-100">
-	    <div class="d-flex text-center h-100">
-	      <div class="my-auto w-100 text-white">
-	        <h1 class="display-3">Operational Excellence</h1>
-	        <h2>DRIVE EXCELLENCE ACROSS YOUR INTERNAL BUSINESS PROCESSES AND EXTENDED SUPPLY CHAIN.</h2>
-	      </div>
-	    </div>
-	  </div>
-	</header>
+			 <!-- Start Header Navigation -->
+			 <div class="navbar-header">
+					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+							 <i class="fa fa-bars"></i>
+					 </button>
+					 <a class="navbar-brand" href="#brand"><img src="assets/images/logo.png" class="logo" alt=""></a>
+			 </div>
+			 <!-- End Header Navigation -->
+
+			 <!-- Collect the nav links, forms, and other content for toggling -->
+			 <div class="collapse navbar-collapse" id="navbar-menu">
+					 <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+							 <li class="dropdown">
+									 <a href="{{ path('presentation') }}" class="dropdown-toggle" data-toggle="dropdown" >Platforme</a>
+									 <ul class="dropdown-menu">
+											 <li><a href="{{ path('presentation') }}">Présentation</a></li>
+											 <li><a href="#">Zéro-Code</a></li>
+											 <li class="dropdown">
+													 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Personalisable</a>
+													 <ul class="dropdown-menu">
+															 <li><a href="#">Custom Menu</a></li>
+															 <li><a href="#">Custom Menu</a></li>
+															 <li class="dropdown">
+																	 <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Sub Menu</a>
+																	 <ul class="dropdown-menu">
+																			 <li><a href="#">Custom Menu</a></li>
+																			 <li><a href="#">Custom Menu</a></li>
+																			 <li><a href="#">Custom Menu</a></li>
+																			 <li><a href="#">Custom Menu</a></li>
+																	 </ul>
+															 </li>
+															 <li><a href="#">Custom Menu</a></li>
+													 </ul>
+											 </li>
+											 <li><a href="#">Progressive-web-app(PWA)</a></li>
+											 <li><a href="#">Interfaçable</a></li>
+											 <li><a href="#">Environnement Sécurisé</a></li>
+											 <li><a href="#">Tarifs</a></li>
+									 </ul>
+							 </li>
+							 <li class="dropdown megamenu-fw">
+									 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Solutions</a>
+									 <ul class="dropdown-menu megamenu-content" role="menu">
+											 <li>
+													 <div class="row">
+															 <div class="col-menu col-md-3">
+																	 <h6 class="title">Métier</h6>
+																	 <div class="content">
+																			 <ul class="menu-col">
+																					 <li><a href="#">Finance</a></li>
+																					 <li><a href="#">DRH</a></li>
+																					 <li><a href="#">Achats</a></li>
+																					 <li><a href="#">Manufacturing</a></li>
+																					 <li><a href="#">Ventes+CRM</a></li>
+																					 <li><a href="#">I.T</a></li>
+																			 </ul>
+																	 </div>
+															 </div><!-- end col-3 -->
+															 <div class="col-menu col-md-3">
+																	 <h6 class="title">Secteur</h6>
+																	 <div class="content">
+																			 <ul class="menu-col">
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																			 </ul>
+																	 </div>
+															 </div><!-- end col-3 -->
+															 <div class="col-menu col-md-3">
+																	 <h6 class="title">Title Menu Three</h6>
+																	 <div class="content">
+																			 <ul class="menu-col">
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																			 </ul>
+																	 </div>
+															 </div>
+															 <div class="col-menu col-md-3">
+																	 <h6 class="title">Title Menu Four</h6>
+																	 <div class="content">
+																			 <ul class="menu-col">
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																			 </ul>
+																	 </div>
+															 </div><!-- end col-3 -->
+													 </div><!-- end row -->
+											 </li>
+									 </ul>
+							 </li>
+							 <li><a href="#">Events</a></li>
+							 <li><a href="#">App Gallery</a></li>
+							 <li><a href="#">Contact</a></li>
+							 <li><a class="btn btn-primary" href="#">Sign In</a></li>
+					 </ul>
+			 </div><!-- /.navbar-collapse -->
+	 </div>
+
+	 <!-- Start Side Menu -->
+	 <div class="side">
+			 <a href="#" class="close-side"><i class="fa fa-times"></i></a>
+			 <div class="widget">
+					 <h6 class="title">Custom Pages</h6>
+					 <ul class="link">
+							 <li><a href="#">About</a></li>
+							 <li><a href="#">Services</a></li>
+							 <li><a href="#">Blog</a></li>
+							 <li><a href="#">Portfolio</a></li>
+							 <li><a href="#">Contact</a></li>
+					 </ul>
+			 </div>
+			 <div class="widget">
+					 <h6 class="title">Additional Links</h6>
+					 <ul class="link">
+							 <li><a href="#">Retina Homepage</a></li>
+							 <li><a href="#">New Page Examples</a></li>
+							 <li><a href="#">Parallax Sections</a></li>
+							 <li><a href="#">Shortcode Central</a></li>
+							 <li><a href="#">Ultimate Font Collection</a></li>
+					 </ul>
+			 </div>
+	 </div>
+	 <!-- End Side Menu -->
+</nav>
+<!-- End Navigation -->
+     <!-- End Navigation -->
+		 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="assets/images/carousel2.jpeg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+    <div class="item">
+      <img src="assets/images/carousel2.jpeg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+    ...
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 	<!-- Header -->
 	<div class="container">
 		<div class="g-max-width-600 text-center mx-auto g-mb-30">
@@ -533,20 +668,12 @@ Created by: SOFTOOLS
   {% block javascripts %}
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="assets/js/scrollPosStyler.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.js"></script>
+<script src="assets/js/bootsnav.js"></script>
 <script>
-$('#lightSlider').lightSlider({
-    gallery: true,
-    item: 1,
-    loop:true,
-    slideMargin: 0,
-    thumbItem: 4,
-		prevHtml : '<span class="custom-prev-html"><img src="assets/images/back.png" /></span>',
-	 nextHtml : '<span class="custom-next-html"><img src="assets/images/next.png" /></span>'
-});
+
 </script>
 {% endblock  %}
 </body>

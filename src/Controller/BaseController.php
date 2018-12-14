@@ -27,6 +27,15 @@ class BaseController extends Controller
         ]);
     }
     /**
+     * @Route("/solutioneng", name="solution-eng")
+     */
+    public function solution_eng()
+    {
+        return $this->render('base/solution-eng.html.twig', [
+            'controller_name' => 'BaseController',
+        ]);
+    }
+    /**
      * @Route("/presentation", name="presentation")
      */
     public function presentation()

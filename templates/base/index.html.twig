@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
-
+	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
 
 <title>Softools</title>
 {% block stylesheets %}
@@ -13,13 +13,12 @@
 
 <link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
 <!-- Bootstrap CSS -->
-	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.css">
 <!-- Custom styles for our site -->
-<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
-<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/bootsnav.css" media="screen" >
+<link rel="stylesheet" href="assets/css/navbar_style.css" media="screen" >
+<link rel="stylesheet" href="assets/css/index.css" media="screen" >
 
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -33,529 +32,562 @@
 
 <body>
 	<!-- Fixed navbar -->
+
+
 	<!-- Top Navigation -->
-	    <nav class="navbar navbar-expand-lg  navbar-toggleable-md mb-4 top-bar navbar-expand-lgnavbar-static-top sps sps--abv mainmenu">
-	        <div class="container">
-	      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse1" aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
-	        <span class="navbar-toggler-icon"></span>
-	      </button>
-	      <a class="navbar-brand" href="{{ path('base') }}"><img class="logo_png" src="assets/images/logo.png">SOFT<span>OOLS</span></a>
-	      <div class="collapse navbar-collapse" id="navbarCollapse1">
-	        <ul class="navbar-nav ml-auto">
-						<li class="nav-item dropdown">
-							 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								 Platforme
-							 </a>
-							 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								 <table class="table">
-								   <tbody>
-								     <tr>
-												 <td>
-													 <ul>
-												<li>	<a class="dropdown-item" href="{{ path('presentation') }}">Présentation</a> </li>
-												<li>	<a class="dropdown-item" href="#">ZéroCode</a> </li>
-												 <li><a class="dropdown-item" href="#">Personalisable</a> </li>
-													<li> <a class="dropdown-item" href="#">Progressive Web App(PWA)</a> </li>
-													 <li> <a class="dropdown-item" href="#"> Interfaçable</a> </li>
-												 <li> <a class="dropdown-item" href="#"> Environnement sécurisé</a> </li>
-												 <li> <a class="dropdown-item" href="#">Tarifs</a> </li>
-											 </ul>
-												</td>
-											 </td>
-											 <td>
-												  <img class="float"-left src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/t/58a0641fbf629aca1a4223d8/1515758307980/?format=500w">
-												 <a class="dropdown-item" href="#">ANOTHER ACTION</a>
+	<!-- Start Navigation -->
+	<!-- Start Navigation -->
+<nav class="navbar navbar-default navbar-fixed navbar-transparent white bootsnav">
+	 <!-- Start Top Search -->
+	 <div class="top-search">
+			 <div class="container">
+					 <div class="input-group">
+							 <span class="input-group-addon"><i class="fa fa-search"></i></span>
+							 <input type="text" class="form-control" placeholder="Search">
+							 <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+					 </div>
+			 </div>
+	 </div>
+	 <!-- End Top Search -->
 
-											 </td>
+	 <div class="container">
+			 <!-- Start Atribute Navigation -->
+			 <div class="attr-nav">
+					 <ul>
+							 <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+							 <li class="side-menu"><a href="#"><i class="fa fa-bars"></i></a></li>
+					 </ul>
+					 <a class="button_lang" href="{{ path('solution') }}">FR</a>
+					 <a class="button_lang" href="{{ path('solution-eng') }}">EN</a>
+			 </div>
+			 <!-- End Atribute Navigation -->
 
-								     </tr>
+			 <!-- Start Header Navigation -->
+			 <div class="navbar-header">
+					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+							 <i class="fa fa-bars"></i>
+					 </button>
+					 <a class="navbar-brand" href="#brand"><img src="assets/images/logo.png" class="logo" alt=""></a>
+			 </div>
+			 <!-- End Header Navigation -->
 
-								   </tbody>
-								 </table>
-							 </div>
-						 </li>
-						<li class="nav-item dropdown">
-							 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								 Solutions
-							 </a>
-							 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								 <table class="table">
-								   <thead>
-								     <tr>
-								       <th scope="col">MÉTIER</th>
-								       <th scope="col">TECHNOLOGIE</th>
-								     </tr>
-								   </thead>
-								   <tbody>
-								     <tr>
-												 <td>
-													<a class="dropdown-item" href="#">Finance</a>
-													<a class="dropdown-item" href="#"> DRH</a>
-												 <a class="dropdown-item" href="#"> Achat</a>
-													<a class="dropdown-item" href="#"> Monufacturing</a>
-													<a class="dropdown-item" href="#"> Ventes+CRM</a>
-												<a class="dropdown-item" href="#"> Another action</a>
-												 <a class="dropdown-item" href="#"> IT</a>
-												</td>
-											 </td>
+			 <!-- Collect the nav links, forms, and other content for toggling -->
+			 <div class="collapse navbar-collapse" id="navbar-menu">
+					 <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+							 <li class="dropdown">
+									 <a href="{{ path('presentation') }}" class="dropdown-toggle" data-toggle="dropdown" >Platforme</a>
+									 <ul class="dropdown-menu">
+											 <li><a href="{{ path('presentation') }}">Présentation</a></li>
+											 <li><a href="#">Zéro-Code</a></li>
+											 <li class="dropdown">
+													 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Personalisable</a>
+													 <ul class="dropdown-menu">
+															 <li><a href="#">Custom Menu</a></li>
+															 <li><a href="#">Custom Menu</a></li>
+															 <li class="dropdown">
+																	 <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Sub Menu</a>
+																	 <ul class="dropdown-menu">
+																			 <li><a href="#">Custom Menu</a></li>
+																			 <li><a href="#">Custom Menu</a></li>
+																			 <li><a href="#">Custom Menu</a></li>
+																			 <li><a href="#">Custom Menu</a></li>
+																	 </ul>
+															 </li>
+															 <li><a href="#">Custom Menu</a></li>
+													 </ul>
+											 </li>
+											 <li><a href="#">Progressive-web-app(PWA)</a></li>
+											 <li><a href="#">Interfaçable</a></li>
+											 <li><a href="#">Environnement Sécurisé</a></li>
+											 <li><a href="#">Tarifs</a></li>
+									 </ul>
+							 </li>
+							 <li class="dropdown megamenu-fw">
+									 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Solutions</a>
+									 <ul class="dropdown-menu megamenu-content" role="menu">
+											 <li>
+													 <div class="row">
+															 <div class="col-menu col-md-3">
+																	 <h6 class="title">Métier</h6>
+																	 <div class="content">
+																			 <ul class="menu-col">
+																					 <li><a href="#">Finance</a></li>
+																					 <li><a href="#">DRH</a></li>
+																					 <li><a href="#">Achats</a></li>
+																					 <li><a href="#">Manufacturing</a></li>
+																					 <li><a href="#">Ventes+CRM</a></li>
+																					 <li><a href="#">I.T</a></li>
+																			 </ul>
+																	 </div>
+															 </div><!-- end col-3 -->
+															 <div class="col-menu col-md-3">
+																	 <h6 class="title">Secteur</h6>
+																	 <div class="content">
+																			 <ul class="menu-col">
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																			 </ul>
+																	 </div>
+															 </div><!-- end col-3 -->
+															 <div class="col-menu col-md-3">
+																	 <h6 class="title">Title Menu Three</h6>
+																	 <div class="content">
+																			 <ul class="menu-col">
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																			 </ul>
+																	 </div>
+															 </div>
+															 <div class="col-menu col-md-3">
+																	 <h6 class="title">Title Menu Four</h6>
+																	 <div class="content">
+																			 <ul class="menu-col">
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																					 <li><a href="#">Custom Menu</a></li>
+																			 </ul>
+																	 </div>
+															 </div><!-- end col-3 -->
+													 </div><!-- end row -->
+											 </li>
+									 </ul>
+							 </li>
+							 <li><a href="#">Events</a></li>
+							 <li><a href="#">App Gallery</a></li>
+							 <li><a href="#">Contact</a></li>
+							 <li><a class="btn btn-primary" href="#">Sign In</a></li>
+					 </ul>
+			 </div><!-- /.navbar-collapse -->
+	 </div>
 
-											 <td>
-												<a class="dropdown-item" href="#">Finance</a>
-												<a class="dropdown-item" href="#"> DRH</a>
-											 <a class="dropdown-item" href="#"> Achat</a>
-												<a class="dropdown-item" href="#"> Monufacturing</a>
-												<a class="dropdown-item" href="#"> Ventes+CRM</a>
-											<a class="dropdown-item" href="#"> Another action</a>
-											 <a class="dropdown-item" href="#"> IT</a>
-											</td>
-											 <td>
-												  <img class="float"-left src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/t/58a0641fbf629aca1a4223d8/1515758307980/?format=500w">
-												 <a class="dropdown-item" href="#">ANOTHER ACTION</a>
+	 <!-- Start Side Menu -->
+	 <div class="side">
+			 <a href="#" class="close-side"><i class="fa fa-times"></i></a>
+			 <div class="widget">
+					 <h6 class="title">Custom Pages</h6>
+					 <ul class="link">
+							 <li><a href="#">About</a></li>
+							 <li><a href="#">Services</a></li>
+							 <li><a href="#">Blog</a></li>
+							 <li><a href="#">Portfolio</a></li>
+							 <li><a href="#">Contact</a></li>
+					 </ul>
+			 </div>
+			 <div class="widget">
+					 <h6 class="title">Additional Links</h6>
+					 <ul class="link">
+							 <li><a href="#">Retina Homepage</a></li>
+							 <li><a href="#">New Page Examples</a></li>
+							 <li><a href="#">Parallax Sections</a></li>
+							 <li><a href="#">Shortcode Central</a></li>
+							 <li><a href="#">Ultimate Font Collection</a></li>
+					 </ul>
+			 </div>
+	 </div>
+	 <!-- End Side Menu -->
+</nav>
+<!-- End Navigation -->
+<!-- Carousel -->
+<div class="container">
+	<div id="head">
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+		    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+		    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		  </ol>
 
-											 </td>
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner" role="listbox">
+		    <div class="item active">
+		      <img src="assets/images/carousel1.jpeg" alt="...">
+		      <div class="carousel-caption">
+						 <h1 class="lead">Accélerez et Simplifiez Votre Transformation Digitale.</h1>
+						 <p class="tagline">automatisez<!--&apos;-->votre eco-systeme.
+						 </p>
+						 <p>
+							 <a class="btn btn-action btn-lg animated-button thar-three"
+									 role="button">DEMANDER UNE DEMO </a>
+							 <a class="btn btn-secondary btn-lg animated-button thar-four" role="button">INSCRIPTION GRATUITE</a>
+						 </p>
+		      </div>
+		    </div>
+		    <div class="item">
+		      <img src="assets/images/carousel2.jpeg" alt="...">
+					<div class="carousel-caption">
+						 <h1 class="lead">Consulez Une Entreprise Agile.</h1>
+						 <p class="tagline">réduisez vos côuts, vos délais et facilitez l&apos;innovation.
+						 </p>
+						 <p>
+							 <a class="btn btn-action btn-lg animated-button thar-three"
+									 role="button">DEMANDER UNE DEMO </a>
+							 <a class="btn btn-secondary btn-lg animated-button thar-four" role="button">INSCRIPTION GRATUITE</a>
+						 </p>
+		      </div>
+		    </div>
+				<div class="item">
+		      <img src="assets/images/carousel3.jpeg" alt="...">
+					<div class="carousel-caption">
+						 <h1 class="lead">Créez et Deployez vos APP</h1>
+						 <p class="tagline">softools est la platforme la plus puissante dl&apos;app. bussiness en zéro code.
+						 </p>
+						 <p>
+							 <a class="btn btn-action btn-lg animated-button thar-three"
+									 role="button">DEMANDER UNE DEMO </a>
+							 <a class="btn btn-secondary btn-lg animated-button thar-four" role="button">INSCRIPTION GRATUITE</a>
+						 </p>
+		      </div>
+		    </div>
+		  </div>
 
-								     </tr>
-
-								   </tbody>
-								 </table>
-							 </div>
-						 </li>
-	         <li class="nav-item active"> <a class="nav-link" href="{{ path('solution') }}">Solutions<span class="sr-only">(current)</span></a> </li>
-	        <li class="nav-item"> <a class="nav-link" href="#about">Réalisation</a> </li>
-	        <li class="nav-item"> <a class="nav-link" href="#blog">Events</a> </li>
-	        <li class="nav-item"> <a class="nav-link" href="#gallery">App Gallery</a> </li>
-					<li class="nav-item"> <a class="nav-link" href="#contact">Contact</a> </li>
-	        </ul>
-	      </div>
-	            </div>
-	    </nav>
-	<!-- /.navbar -->
-
-	<!-- Header -->
-	<!-- Header -->
-	<header id="head">
-		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-	  <ol class="carousel-indicators">
-	    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-	    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-	    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-	  </ol>
-	  <div class="carousel-inner">
-	    <div class="carousel-item active">
-				<img class="go img-fluid" src="assets/images/carousel1.jpeg" alt="softools">
-				<div class="carousel-caption">
-						 <h1 class="lead">DESIGN, BUILD , WITH NO CODING.</h1>
-						<p class="tagline">The world&apos;s most powerful zero-code cloud enterprise application
-								platform <a href="http://www.gettemplate.com/?utm_source=progressus&amp;utm_medium=template&amp;utm_campaign=progressus">More...</a>
-						</p>
-						<p><a class="btn btn-secondary btn-lg" role="button">MORE INFO</a>  <a class="btn btn-action btn-lg"
-								role="button">DEMO</a>
-						</p>
-				</div>
-	    </div>
-	    <div class="carousel-item">
-				<img class="go img-fluid" src="assets/images/carousel2.jpeg" alt="softools">
-				<div class="carousel-caption">
-						 <h1 class="lead">DESIGN, BUILD , WITH NO CODING.</h1>
-						<p class="tagline">The world&apos;s most powerful zero-code cloud enterprise application
-								platform <a href="http://www.gettemplate.com/?utm_source=progressus&amp;utm_medium=template&amp;utm_campaign=progressus">More...</a>
-						</p>
-						<p><a class="btn btn-secondary btn-lg" role="button">MORE INFO</a>  <a class="btn btn-action btn-lg"
-								role="button">DEMO</a>
-						</p>
-				</div>
-	    </div>
-	    <div class="carousel-item">
-				<img class="go img-fluid" src="assets/images/carousel1.jpeg" alt="softools">
-				<div class="carousel-caption">
-						 <h1 class="lead">DESIGN, BUILD , WITH NO CODING.</h1>
-						<p class="tagline">The world&apos;s most powerful zero-code cloud enterprise application
-								platform <a href="http://www.gettemplate.com/?utm_source=progressus&amp;utm_medium=template&amp;utm_campaign=progressus">More...</a>
-						</p>
-						<p><a class="btn btn-secondary btn-lg" role="button">MORE INFO</a>  <a class="btn btn-action btn-lg"
-								role="button">DEMO</a>
-						</p>
-				</div>
-	    </div>
-	  </div>
-	  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-	    <span class="sr-only">Previous</span>
-	  </a>
-	  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-	    <span class="sr-only">Next</span>
-	  </a>
-	</div>
-	<!--	<div class="container">
-			<div class="row">
-				<h1 class="lead">DESIGN, BUILD AND DEPLOY BUSINESS APPS IN HOURS WITH NO CODING.</h1>
-				<p class="tagline">The world's most powerful zero-code cloud enterprise application platform <a href="http://www.gettemplate.com/?utm_source=progressus&amp;utm_medium=template&amp;utm_campaign=progressus">GetTemplate</a></p>
-				<p><a class="btn btn-default btn-lg" role="button">MORE INFO</a> <a class="btn btn-action btn-lg" role="button">DEMO</a></p>
-			</div>
+		  <!-- Controls -->
+		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
 		</div>
-    -->
-	</header>
-	<!-- /Header -->
-	<section id="demo">
-	    <div class="container text-center wow fadeIn">
-				<div class="g-max-width-600 text-center mx-auto g-mb-30">
-					<h2 class="g-color-black g-font-weight-600 g-font-size-40 mb-1">Admin Dashboard</h2>
-					<p class="g-color-gray-dark-v2 g-font-size-20">Experience Frontend design within Dashboard.</p>
-				</div>
-	        <div class="row">
-	            <div class="col-lg-4">
-	                <h3><i class="icon ion-social-buffer"></i> COVER<span class="thin">Parallax</span></h3>
-	                <p><a href="assets/images/te.png"><img src="assets/images/lmp.jpg" class="img-responsive center-block" alt=""></a></p>
-	                <p>Image Parallax Background Full Screen</p>
-	            </div>
-	            <div class="col-lg-4">
-	                <h3><i class="icon ion-social-youtube"></i> COVER<span class="thin">VIDEO</span></h3>
-	                <p><a href="./cover-theme/videohome.html"><img src="assets/images/lmp.jpg" class="img-responsive center-block" alt=""></a></p>
-	                <p>Video Background Full Screen</p>
-	            </div>
-	            <div class="col-lg-4">
-	                <h3><i class="icon ion-ios-star"></i> COVER<span class="thin">CREATIVE</span></h3>
-	                <p><a href="./cover-theme/creativehome.html"><img src="assets/images/lmp.jpg" class="img-responsive center-block" alt=""></a></p>
-	                <p><span class="label label-danger">New</span> Portfolio Theme for Agencies, Freelancers, Photographers et cetĕra</p>
-	            </div>
-	        </div>
+	</div>
+	<!-- fin carousel-->
 
-	        <div class="row">
-	            <div class="col-lg-4">
-	                <h3><i class="icon ion-social-youtube"></i> COVER<span class="thin">VIDEO</span> 2</h3>
-	                <p><a href="./cover-theme/videohome2.html"><img src="assets/images/lmp.jpg" class="img-responsive center-block" alt=""></a></p>
-	                <p>Video Background Half Screen</p>
-	            </div>
-	            <div class="col-lg-4">
-	                <h3><i class="icon ion-social-buffer"></i> COVER<span class="thin">Parallax</span> 2</h3>
-	                <p><a href="./cover-theme/parallaxhome2.html"><img src="assets/images/lmp.jpg" class="img-responsive center-block" alt=""></a></p>
-	                <p>Image Parallax Background Half Screen</p>
-	            </div>
-	            <div class="col-lg-4">
-	                <h3>&nbsp;</h3>
-	                <p><img src="./cover-theme/img/8.png" class="img-responsive center-block" alt=""></p>
-	                <p></p>
-	            </div>
-	        </div>
 
-	        <div class="row">
-	            <h4 class="page-header text-muted">Coming Soon Pages</h4><hr>
-	            <div class="col-lg-4">
-	                <h3><i class="icon ion-android-time"></i> COVER<span class="thin">Countdown</span></h3>
-	                <p><a href="./cover-theme/countdownhome.html"><img src="assets/images/lmp.jpg" class="img-responsive center-block" alt=""></a></p>
-	                <p>Coming Soon Page, Video Background</p>
-	            </div>
-	            <div class="col-lg-4">
-	                <h3><i class="icon ion-android-time"></i> COVER<span class="thin">Countdown</span> 2</h3>
-	                <p><a href="./cover-theme/countdownhome2.html"><img src="./cover-theme/img/6.png" class="img-responsive center-block" alt=""></a></p>
-	                <p>Coming Soon Page, Image Background</p>
-	            </div>
-	            <div class="col-lg-4">
-	                <h3><i class="icon ion-android-time"></i> COVER<span class="thin">Countdown</span> 3</h3>
-	                <p><a href="./cover-theme/countdownhome3.html"><img src="./cover-theme/img/7.png" class="img-responsive center-block" alt=""></a></p>
-	                <p><span class="label label-danger">New</span> Coming Soon Page, Image Background</p>
-	            </div>
-	        </div>
-	    </div>
-	</section>
-<!-- video -->
-<section class="header">
-  <div class="overlay"></div>
-  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-    <source src="https://www.epixelic.com/uploads/919d5e8e-414f-11e8-a053-fa163e14ea56/92da88ba1571b6b0e31f610f1a672368664f0a40_web.webm" type="video/mp4">
-  </video>
-  <div class="container h-100">
-    <div class="d-flex text-center h-100">
-      <div class="my-auto w-100 text-white">
-        <h1 class="tagline">Softools</h1>
-        <h2 class="lead"> ce que on fait pour vous aporter la solution</h2>
-      </div>
-    </div>
-  </div>
-</section>
-	<!-- port folio -->
-	<div class="container-fluid g-pt-100 g-pb-50">
+
+	<!-- Header -->
+	<div class="container">
+		<div class="text-center">
+			<h2>Pour mieux comprendre :</h2>
+			<p class="g-color-gray-dark-v2 g-font-size-20">Experience Frontend design within Dashboard.</p>
+		</div>
+	<div class="row">
+	  <div class="col-md-8 col-sm-12 co-xs-12">
+											<!-- test 3 -->
+
+												 <ul id="lightSlider">
+														 <li data-thumb="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/t/58a0a220d482e9cad93de910/1487161492818/GRC-portal-768x457.jpg?format=750w">
+																 <img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/t/58a0a220d482e9cad93de910/1487161492818/GRC-portal-768x457.jpg?format=750w" />
+														 </li>
+														 <li data-thumb="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/t/587511c3bf629a375246fc2e/1487161537142/InnovationHomepage.jpg?format=750w">
+																 <img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/t/587511c3bf629a375246fc2e/1487161537142/InnovationHomepage.jpg?format=750w" />
+														 </li>
+														 <li data-thumb="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/t/587511c3bf629a375246fc2e/1487161537142/InnovationHomepage.jpg?format=750w">
+																 <img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/t/587511c3bf629a375246fc2e/1487161537142/InnovationHomepage.jpg?format=750w" />
+														 </li>
+														 <li data-thumb="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/t/5928356db8a79bb04589709e/1496327331225/DigitalTransformationSoftools?format=1000w">
+																 <img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/t/5928356db8a79bb04589709e/1496327331225/DigitalTransformationSoftools?format=1000w" />
+														 </li>
+												 </ul>
+								</div>
+
+			   <div class="col-md-4 col-sm-6 co-xs-12">
+					<div class="card  text-white bg-dark">
+						<img class="card-img-top" src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/t/58a0641fbf629aca1a4223d8/1515758307980/?format=500w" alt="Card image cap">
+						<div class="card-body">
+							 <h5 class="card-title">Operation EXCELLENCE</h5>
+							 <p class="card-text">This suite of apps provides a complete solution to drive ‘excellence’ optimise supply chain activities and sustain improvements across your business.</p>
+							 <a href="http://www.jquery2dotnet.com/" class="btn btn-outline-light btn-sm">Get Demo</a>
+							 <a href="http://www.jquery2dotnet.com/" class="btn btn-outline-light btn-sm">Découvrir</a>
+						</div>
+				 </div>
+
+	</div>
+</div>
+</div>
+
+	<div class="row">
 		<div class="g-max-width-600 text-center mx-auto g-mb-30">
-			<h2 class="g-color-black g-font-weight-600 g-font-size-40 mb-1">Admin Dashboard1</h2>
-			<p class="g-color-gray-dark-v2 g-font-size-20">Experience Frontend design within Dashboard.</p><hr>
+			<h2 class="g-color-black g-font-weight-600 g-font-size-40 mb-1">Feautures That we can offer you</h2>
+			<p class="g-color-gray-dark-v2 g-font-size-20">Experience Frontend design within Dashboard.</p>
 		</div>
-	        <div class="row text-center">
-	          <div class="col-md-4 g-mb-50">
-	            <a class="u-link-v5 g-font-weight-600 g-color-black g-color-primary--hover" href="unify-main/pages/page-jobs-1.html">
-	              <img class="img-fluid d-block w-100 u-shadow-v24 u-shadow-v21--hover g-transition-0_3 rounded g-mb-20" src="https://htmlstream.com/preview/unify-v2.6/assets/img-temp/unify-preview/main/img2.jpg" alt="Unify Jobs Demo">Jobs
-	            </a>
-	          </div>
 
-	          <div class="col-md-4 g-mb-50">
-	            <a class="u-link-v5 g-font-weight-600 g-color-black g-color-primary--hover" href="unify-main/home/home-web-agency.html">
-	              <img class="img-fluid d-block w-100 u-shadow-v24 u-shadow-v21--hover g-transition-0_3 rounded g-mb-20" src="https://htmlstream.com/preview/unify-v2.6/assets/img-temp/unify-preview/main/img2.jpg" alt="Unify Web Agency Demo">Web Agency
-	            </a>
-	          </div>
+  <div class="col-md-8 col-sm-12 co-xs-12">
+		<div class="row text-center text-lg-left">
 
-	          <div class="col-md-4 g-mb-50">
-	            <a class="u-link-v5 g-font-weight-600 g-color-black g-color-primary--hover" href="unify-main/home/home-portfolio.html">
-	              <img class="img-fluid d-block w-100 u-shadow-v24 u-shadow-v21--hover g-transition-0_3 rounded g-mb-20" src="https://htmlstream.com/preview/unify-v2.6/assets/img-temp/unify-preview/main/img2.jpg" alt="Unify Portfolio Demo">Portfolio
-	            </a>
-	          </div>
-
-	          <div class="col-md-4 g-mb-50">
-	            <a class="u-link-v5 g-font-weight-600 g-color-black g-color-primary--hover" href="unify-main/home/home-discover.html">
-	              <img class="img-fluid d-block w-100 u-shadow-v24 u-shadow-v21--hover g-transition-0_3 rounded g-mb-20" src="https://htmlstream.com/preview/unify-v2.6/assets/img-temp/unify-preview/main/img2.jpg" alt="Unify Discover Demo">Discover
-	            </a>
-	          </div>
-
-	          <div class="col-md-4 g-mb-50">
-	            <a class="u-link-v5 g-font-weight-600 g-color-black g-color-primary--hover" href="unify-main/home/home-business.html">
-	              <img class="img-fluid d-block w-100 u-shadow-v24 u-shadow-v21--hover g-transition-0_3 rounded g-mb-20" src="https://htmlstream.com/preview/unify-v2.6/assets/img-temp/unify-preview/main/img2.jpg" alt="Unify Business Demo">Business
-	            </a>
-	          </div>
-
-	          <div class="col-md-4 g-mb-50">
-	            <a class="u-link-v5 g-font-weight-600 g-color-black g-color-primary--hover" href="unify-main/home/home-projects.html">
-	              <img class="img-fluid d-block w-100 u-shadow-v24 u-shadow-v21--hover g-transition-0_3 rounded g-mb-20" src="https://htmlstream.com/preview/unify-v2.6/assets/img-temp/unify-preview/main/img2.jpg" alt="Unify Projects Demo">Projects
-	            </a>
-	          </div>
-
-	          <div class="col-md-4 g-mb-50">
-	            <a class="u-link-v5 g-font-weight-600 g-color-black g-color-primary--hover" href="unify-main/home/home-corporate.html">
-	              <img class="img-fluid d-block w-100 u-shadow-v24 u-shadow-v21--hover g-transition-0_3 rounded g-mb-20" src="https://htmlstream.com/preview/unify-v2.6/assets/img-temp/unify-preview/main/img2.jpg" alt="Unify Corporate Demo">Corporate
-	            </a>
-	          </div>
-
-	          <div class="col-md-4 g-mb-50">
-	            <a class="u-link-v5 g-font-weight-600 g-color-black g-color-primary--hover" href="https://htmlstream.com/preview/unify-v2.6/assets/img-temp/unify-preview/main/img2.jpg">
-	              <img class="img-fluid d-block w-100 u-shadow-v24 u-shadow-v21--hover g-transition-0_3 rounded g-mb-20" src="https://htmlstream.com/preview/unify-v2.6/assets/img-temp/unify-preview/main/img2.jpg" alt="Unify Profile Demo">Profile
-	            </a>
-	          </div>
-	        </div>
-	      </div>
-
-	    <!-- End Unify Main -->
-
-	    <!-- Admin Dashboard -->
-	    <div id="admin-dashboard" class="g-pos-rel g-mb-10">
-	      <div class="container g-pt-50">
-	        <div class="g-max-width-600 text-center mx-auto g-mb-30">
-	          <h2 class="g-color-black g-font-weight-600 g-font-size-40 mb-1">SOFTOOLS CLIENTS</h2>
-	          <p class="g-color-gray-dark-v2 g-font-size-20">More then 30 Big Clients </p><hr>
-	        </div>
-						<div class="row">
-							<div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="assets/images/clients/logo.png" alt="softools clients" /></div>
-							<div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="assets/images/clients/logo.png" /></div>
-							<div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="assets/images/clients/logo.png" /></div>
-							<div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="assets/images/clients/logo.png" /></div>
-
-				    </div>
-						<div class="row">
-							<div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="http://2.bp.blogspot.com/-H6MAoWN-UIE/TuRwLbHRSWI/AAAAAAAABBk/89iiEulVsyg/s400/Free%2BNature%2BPhoto.jpg" /></div>
-					        <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="http://th03.deviantart.net/fs70/200H/f/2010/256/0/9/painting_of_nature_by_dhikagraph-d2ynalq.jpg" /></div>
-					    	 <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="http://th03.deviantart.net/fs70/200H/f/2010/256/0/9/painting_of_nature_by_dhikagraph-d2ynalq.jpg" /></div>
-						     <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="http://2.bp.blogspot.com/-H6MAoWN-UIE/TuRwLbHRSWI/AAAAAAAABBk/89iiEulVsyg/s400/Free%2BNature%2BPhoto.jpg" /></div>
-				    </div>
-						<div class="row">
-							<div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="http://2.bp.blogspot.com/-H6MAoWN-UIE/TuRwLbHRSWI/AAAAAAAABBk/89iiEulVsyg/s400/Free%2BNature%2BPhoto.jpg" /></div>
-					        <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="http://th03.deviantart.net/fs70/200H/f/2010/256/0/9/painting_of_nature_by_dhikagraph-d2ynalq.jpg" /></div>
-					    	 <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="http://th03.deviantart.net/fs70/200H/f/2010/256/0/9/painting_of_nature_by_dhikagraph-d2ynalq.jpg" /></div>
-						     <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="http://2.bp.blogspot.com/-H6MAoWN-UIE/TuRwLbHRSWI/AAAAAAAABBk/89iiEulVsyg/s400/Free%2BNature%2BPhoto.jpg" /></div>
-				    </div>
-						<div class="row">
-							<div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="http://2.bp.blogspot.com/-H6MAoWN-UIE/TuRwLbHRSWI/AAAAAAAABBk/89iiEulVsyg/s400/Free%2BNature%2BPhoto.jpg" /></div>
-					        <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="http://th03.deviantart.net/fs70/200H/f/2010/256/0/9/painting_of_nature_by_dhikagraph-d2ynalq.jpg" /></div>
-					    	 <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="http://th03.deviantart.net/fs70/200H/f/2010/256/0/9/painting_of_nature_by_dhikagraph-d2ynalq.jpg" /></div>
-						     <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="http://2.bp.blogspot.com/-H6MAoWN-UIE/TuRwLbHRSWI/AAAAAAAABBk/89iiEulVsyg/s400/Free%2BNature%2BPhoto.jpg" /></div>
-				    </div>
-	      </div>
-	    </div>
+			<div class="col-lg-3 col-md-4 col-6">
+				<a href="#" class="d-block mb-4 h-100">
+							<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/pWkk7iiCoDM/400x300" alt="">
+						</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-6">
+				<a href="#" class="d-block mb-4 h-100">
+							<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/aob0ukAYfuI/400x300" alt="">
+						</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-6">
+				<a href="#" class="d-block mb-4 h-100">
+							<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/EUfxH-pze7s/400x300" alt="">
+						</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-6">
+				<a href="#" class="d-block mb-4 h-100">
+							<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/M185_qYH8vg/400x300" alt="">
+						</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-6">
+				<a href="#" class="d-block mb-4 h-100">
+							<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/sesveuG_rNo/400x300" alt="">
+						</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-6">
+				<a href="#" class="d-block mb-4 h-100">
+							<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/AvhMzHwiE_0/400x300" alt="">
+						</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-6">
+				<a href="#" class="d-block mb-4 h-100">
+							<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/2gYsZUmockw/400x300" alt="">
+						</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-6">
+				<a href="#" class="d-block mb-4 h-100">
+							<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/EMSDtjVHdQ8/400x300" alt="">
+						</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-6">
+				<a href="#" class="d-block mb-4 h-100">
+							<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/8mUEy0ABdNE/400x300" alt="">
+						</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-6">
+				<a href="#" class="d-block mb-4 h-100">
+							<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/G9Rfc1qccH4/400x300" alt="">
+						</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-6">
+				<a href="#" class="d-block mb-4 h-100">
+							<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/aJeH0KcFkuc/400x300" alt="">
+						</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-6">
+				<a href="#" class="d-block mb-4 ">
+							<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/p2TQ-3Bh3Oo/400x300" alt="">
+						</a>
+						<a href="#" class="btn btn-block btn-sm btn-warning">Découvrir  <span class="glyphicon glyphicon-plus"></span></a>
+			</div>
+		</div>
+ </div>
+ <div class="col-lg-3 col-md-4 col-6">
+	 <h2 class="g-color-black g-font-weight-200 g-font-size-30">Solution Name</h2>
+ <img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/t/58a0641fbf629aca1a4223d8/1515758307980/?format=500w">
+ <a href="#" class="btn btn-block btn-warning"><span class="glyphicon glyphicon-eye-open"></span> Découvrir </a>
+</div>
+</div>
 
 
+<!--==========================
+	Blog Section
+============================-->
+<section id="blog" class="padd-section wow fadeInUp">
 
-<!-- clients -->
-<div id="ThumbnailCarousel" class="carousel slide col-xs-12" data-ride="carousel">
-	<div class="g-max-width-600 text-center mx-auto g-mb-30">
-		<h2 class="g-color-black g-font-weight-600 g-font-size-40 mb-1">Nos CLIENTS</h2>
-		<p class="g-color-gray-dark-v2 g-font-size-20">Note de satisfaction de nos clients </p><hr>
+	<div class="container">
+		<div class="section-title text-center">
+
+			<h2>Latest Apps</h2>
+			<p class="separator">Applications That we customised For our clients.</p>
+
+		</div>
 	</div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-			<div class="row">
-				<div class="col-md-2">
-					<a class="thumbnail" href="#"><img alt="Softools clients" src="assets/images/clients/Accorgrey.png"></a>
-				</div>
-				<div class="col-md-2">
-					<a class="thumbnail" href="#"><img alt="Softools clients" src="assets/images/clients/AdvanceGrey.png"></a>
-				</div>
-				<div class="col-md-2">
-					<a class="thumbnail" href="#"><img alt="Softools clients" src="assets/images/clients/AffiniGrey.png"></a>
-				</div>
-				<div class="col-md-2">
-					<a class="thumbnail" href="#"><img alt="Softools clients" src="assets/images/clients/AftonGrey.png"></a>
-				</div>
-				<div class="col-md-2">
-					<a class="thumbnail" href="#"><img alt="Softools clients" src="assets/images/clients/ArcelorMittalGrey.png"></a>
-				</div>
-				<div class="col-md-2">
-					<a class="thumbnail" href="#"><img alt="Softools clients" src="assets/images/clients/AviacompGrey.png"></a>
+
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-6 col-lg-4">
+				<div class="block-blog text-left">
+					<a href="#"><img src="https://images.pexels.com/photos/221185/pexels-photo-221185.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="img"></a>
+					<div class="content-blog">
+						<h4><a href="#">whats isthe difference between Softools Pie chart and and Others </a></h4>
+						<span>05, november 2018</span>
+						<a class="pull-right readmore" href="#">read more</a>
+					</div>
 				</div>
 			</div>
-    </div>
-    <div class="carousel-item">
-			<div class="row">
-				<div class="col-md-2">
-					<a class="thumbnail" href="#"><img alt="Softools clients" src="assets/images/clients/BayerGrey.png"></a>
-				</div>
-				<div class="col-md-2">
-					<a class="thumbnail" href="#"><img alt="Softools clients" src="assets/images/clients/BurtonsBiscuitsGrey.png"></a>
-				</div>
-				<div class="col-md-2">
-					<a class="thumbnail" href="#"><img alt="Softools clients" src="assets/images/clients/CambridgeUniPressGrey.png"></a>
-				</div>
-				<div class="col-md-2">
-					<a class="thumbnail" href="#"><img alt="Softools clients" src="assets/images/clients/CapitaGrey.png"></a>
-				</div>
-				<div class="col-md-2">
-					<a class="thumbnail" href="#"><img alt="Softools clients" src="assets/images/clients/CipfaGrey.png"></a>
-				</div>
-				<div class="col-md-2">
-					<a class="thumbnail" href="#"><img alt="Softools clients" src="assets/images/clients/CocaColaGrey.png"></a>
+
+			<div class="col-md-6 col-lg-4">
+				<div class="block-blog text-left">
+					<a href="#"><img src="https://images.pexels.com/photos/877696/pexels-photo-877696.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="img-responsive" alt="img"></a>
+					<div class="content-blog">
+						<h4><a href="#">whats is the Responsive means for Softools </a></h4>
+						<span>05, october 2018</span>
+						<a class="pull-right readmore" href="#">read more</a>
+					</div>
 				</div>
 			</div>
-    </div>
-    <div class="carousel-item">
-			<div class="row">
-				<div class="col-md-2">
-					<a class="thumbnail" href="#"><img alt="Softools clients" src="assets/images/clients/DalGroup.png"></a>
-				</div>
-				<div class="col-md-2">
-					<a class="thumbnail" href="#"><img alt="Softools clients" src="assets/images/clients/DanoneGrey.png"></a>
-				</div>
-				<div class="col-md-2">
-					<a class="thumbnail" href="#"><img alt="Softools clients" src="assets/images/clients/DHLGrey.png "></a>
-				</div>
-				<div class="col-md-2">
-					<a class="thumbnail" href="#"><img alt="Softools clients" src="assets/images/clients/ForboGrey.png "></a>
-				</div>
-				<div class="col-md-2">
-					<a class="thumbnail" href="#"><img alt="Softools clients" src="assets/images/clients/ForboGrey.png"></a>
-				</div>
-				<div class="col-md-2">
-					<a class="thumbnail" href="#"><img alt="Softools clients" src="assets/images/clients/HPEGrey.png"></a>
+
+			<div class="col-md-6 col-lg-4">
+				<div class="block-blog text-left">
+					<a href="#"><img src="https://images.pexels.com/photos/1516704/pexels-photo-1516704.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="img-responsive" alt="img"></a>
+					<div class="content-blog">
+						<h4><a href="#">whats Softools Does when you dont have Internet access</a></h4>
+						<span>17, september 2017</span>
+						<a class="pull-right readmore" href="#">read more</a>
+					</div>
 				</div>
 			</div>
-    </div>
-		<div class="carousel-item">
-			<div class="row">
-				<div class="col-md-2">
-					<a class="thumbnail" href="#"><img alt="Softools clients" src="assets/images/clients/DalGroup.png"></a>
-				</div>
-				<div class="col-md-2">
-					<a class="thumbnail" href="#"><img alt="Softools clients" src="assets/images/clients/DanoneGrey.png"></a>
-				</div>
-				<div class="col-md-2">
-					<a class="thumbnail" href="#"><img alt="Softools clients" src="assets/images/clients/DHLGrey.png "></a>
-				</div>
-				<div class="col-md-2">
-					<a class="thumbnail" href="#"><img alt="Softools clients" src="assets/images/clients/ForboGrey.png "></a>
-				</div>
-				<div class="col-md-2">
-					<a class="thumbnail" href="#"><img alt="Softools clients" src="assets/images/clients/ForboGrey.png"></a>
-				</div>
-				<div class="col-md-2">
-					<a class="thumbnail" href="#"><img alt="Softools clients" src="assets/images/clients/HPEGrey.png"></a>
-				</div>
-			</div>
+
 		</div>
-		<div class="carousel-item">
-			<div class="row">
-				<div class="col-md-2">
-					<a class="thumbnail" href="#"><img alt="Softools clients" src="assets/images/clients/QatarRailGrey.png"></a>
+	</div>
+</section>
+
+<!--==========================
+	 Features Section
+ ============================-->
+
+ <section id="features" class="padd-section text-center wow fadeInUp">
+
+	 <div class="container">
+		 <div class="section-title text-center">
+			 <h2>Amazing Features.</h2>
+			 <p class="separator">Integer cursus bibendum augue ac cursus .</p>
+		 </div>
+	 </div>
+
+	 <div class="container">
+		 <div class="row">
+
+			 <div class="col-md-6 col-lg-3">
+				 <div class="feature-block">
+					 <img src="assets/images/svg/paint-palette.svg" alt="img" class="img-fluid">
+					 <h4>creative design</h4>
+					 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+				 </div>
+			 </div>
+
+			 <div class="col-md-6 col-lg-3">
+				 <div class="feature-block">
+					 <img src="assets/images/svg/vector.svg" alt="img" class="img-fluid">
+					 <h4>Retina Ready</h4>
+					 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+				 </div>
+			 </div>
+
+			 <div class="col-md-6 col-lg-3">
+				 <div class="feature-block">
+					 <img src="assets/images/svg/design-tool.svg" alt="img" class="img-fluid">
+					 <h4>easy to use</h4>
+					 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+				 </div>
+			 </div>
+
+			 <div class="col-md-6 col-lg-3">
+				 <div class="feature-block">
+					 <img src="assets/images/svg/asteroid.svg" alt="img" class="img-fluid">
+					 <h4>Free Updates</h4>
+					 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+				 </div>
+			 </div>
+
+			 <div class="col-md-6 col-lg-3">
+				 <div class="feature-block">
+					 <img src="assets/images/svg/asteroid.svg" alt="img" class="img-fluid">
+					 <h4>Free Updates</h4>
+					 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+				 </div>
+			 </div>
+
+			 <div class="col-md-6 col-lg-3">
+				 <div class="feature-block">
+					 <img src="assets/images/svg/cloud-computing.svg" alt="img" class="img-fluid">
+					 <h4>App store support</h4>
+					 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+				 </div>
+			 </div>
+
+			 <div class="col-md-6 col-lg-3">
+				 <div class="feature-block">
+					 <img src="assets/images/svg/pixel.svg" alt="img" class="img-fluid">
+					 <h4>Perfect Pixel</h4>
+					 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+				 </div>
+			 </div>
+
+			 <div class="col-md-6 col-lg-3">
+				 <div class="feature-block">
+					 <img src="assets/images/svg/code.svg" alt="img" class="img-fluid">
+					 <h4>clean codes</h4>
+					 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+				 </div>
+			 </div>
+
+		 </div>
+	 </div>
+ </section>
+
+
+
+<!-- slider -->
+<div class="container">
+					<h1 class="my-4">Other Solutions
+				    <small>Nous somme à votre disposition pour vous customiser l'appli</small>
+				  </h1>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, explicabo dolores ipsam aliquam inventore corrupti eveniet quisquam quod totam laudantium repudiandae obcaecati ea consectetur debitis velit facere nisi expedita vel?</p>
+
+				  <!-- Team Members Row -->
+				  <div class="row">
+				    <div class="col-lg-12">
+				      <h2 class="my-4">Solutions</h2>
+				    </div>
+				    <div class="col-lg-4 col-sm-6 text-center mb-4">
+				      <img class="rounded-circle img-fluid d-block mx-auto" src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/584ef481f7e0ab56e9725ed3/588769faf5e2318d7333ada1/1485269499651/256-Contract-10.png?format=300w" alt="">
+				      <h3>Pie chart solution
+				        <small>Get Close</small>
+				      </h3>
+				      <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+				    </div>
+						<div class="col-lg-4 col-sm-6 text-center mb-4">
+						 <img class="rounded-circle img-fluid d-block mx-auto" src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/584ef481f7e0ab56e9725ed3/58876a7044024399219eb9fe/1504264520237/256-Support-13.png?format=300w" alt="">
+						 <h3>Pie chart solution
+							 <small>Get Close</small>
+						 </h3>
+						 <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+					 </div>
+					 <div class="col-lg-4 col-sm-6 text-center mb-4">
+						<img class="rounded-circle img-fluid d-block mx-auto" src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/584ef481f7e0ab56e9725ed3/588769faf5e2318d7333ada1/1485269499651/256-Contract-10.png?format=300w" alt="">
+						<h3>Pie chart solution
+							<small>Get Close</small>
+						</h3>
+						<p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+					</div>
+					<div class="col-lg-4 col-sm-6 text-center mb-4">
+					 <img class="rounded-circle img-fluid d-block mx-auto" src="https://image.shutterstock.com/image-photo/pen-report-paper-business-conceptual-450w-238039702.jpg" alt="">
+					 <h3>Pie chart solution
+						 <small>Get Close</small>
+					 </h3>
+					 <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+				 </div>
+				 <div class="col-lg-4 col-sm-6 text-center mb-4">
+					<img class="rounded-circle img-fluid d-block mx-auto" src="https://image.shutterstock.com/image-photo/pen-report-paper-business-conceptual-450w-238039702.jpg" alt="">
+					<h3>Pie chart solution
+						<small>Get Close</small>
+					</h3>
+					<p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
 				</div>
-				<div class="col-md-2">
-					<a class="thumbnail" href="#"><img alt="Softools clients" src="assets/images/clients/RoyalMailGrey.png"></a>
-				</div>
-				<div class="col-md-2">
-					<a class="thumbnail" href="#"><img alt="Softools clients" src="assets/images/clients/SellafieldGrey.png"></a>
-				</div>
-				<div class="col-md-2">
-					<a class="thumbnail" href="#"><img alt="Softools clients" src="assets/images/clients/PAGrey.png"></a>
-				</div>
-				<div class="col-md-2">
-					<a class="thumbnail" href="#"><img alt="Softools clients" src="assets/images/clients/SMUGrey.png"></a>
-				</div>
-				<div class="col-md-2">
-					<a class="thumbnail" href="#"><img alt="Softools clients" src="assets/images/clients/SwireGrey.png"></a>
-				</div>
-			</div>
-		</div>
-		<div class="carousel-item">
-			<div class="row">
-				<div class="col-md-2">
-					<a class="thumbnail" href="#"><img alt="Softools clients" src="assets/images/clients/TerexGrey.png"></a>
-				</div>
-				<div class="col-md-2">
-					<a class="thumbnail" href="#"><img alt="Softools clients" src="assets/images/clients/TnTGrey.png"></a>
-				</div>
-				<div class="col-md-2">
-					<a class="thumbnail" href="#"><img alt="Softools clients" src="assets/images/clients/TradeGeckoGrey.png"></a>
-				</div>
-				<div class="col-md-2">
-					<a class="thumbnail" href="#"><img alt="Softools clients" src="assets/images/clients/UnisysGrey.png"></a>
-				</div>
-				<div class="col-md-2">
-					<a class="thumbnail" href="#"><img alt="Softools clients" src="assets/images/clients/VitalSixGrey.png"></a>
-				</div>
-				<div class="col-md-2">
-					<a class="thumbnail" href="#"><img alt="Softools clients" src="assets/images/clients/LeoGrey.png"></a>
-				</div>
-			</div>
-		</div>
-  </div>
-  <a class="carousel-control-prev" href="#ThumbnailCarousel" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#ThumbnailCarousel" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+				<div class="col-lg-4 col-sm-6 text-center mb-4">
+				 <img class="rounded-circle img-fluid d-block mx-auto" src="https://image.shutterstock.com/image-photo/pen-report-paper-business-conceptual-450w-238039702.jpg" alt="">
+				 <h3>Pie chart solution
+					 <small>Get Close</small>
+				 </h3>
+				 <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+			 </div>
 </div>
-<!-- avis client -->
-<div class="container bootstrap snippet">
-    <div class="row">
-			<div class="g-max-width-600 text-center mx-auto g-mb-30">
-				<h2 class="g-color-black g-font-weight-600 g-font-size-40 mb-1">Nos CLIENTS</h2>
-				<p class="g-color-gray-dark-v2 g-font-size-20">Note de satisfaction de nos clients </p><hr>
-			</div>
-    	<div class="col-md-10 col-md-offset-1">
-			<div class="row testimonials">
-				<div class="col-sm-4">
-					<blockquote>
-						<p class="clients-words">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						<span class="clients-name text-primary">— Armand corey</span>
-						<img class="img-circle img-thumbnail" src="https://www.monportraitpro.fr/wp-content/uploads/2016/09/Mon-portrait-pro-portrait-professionnel-corporate-4.jpg">
-					</blockquote>
-				</div>
-				<div class="col-sm-4">
-					<blockquote>
-						<p class="clients-words">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-						<span class="clients-name text-primary">— Factory nn (@facnnteam)</span>
-						<img class="img-circle img-thumbnail" src="https://www.monportraitpro.fr/wp-content/uploads/2016/09/Mon-portrait-pro-portrait-professionnel-corporate-4.jpg">
-					</blockquote>
-				</div>
-				<div class="col-sm-4">
-					<blockquote>
-						<p  class="clients-words">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						<span class="clients-name text-primary">— Big daniel mont</span>
-						<img class="img-circle img-thumbnail" src="https://www.monportraitpro.fr/wp-content/uploads/2016/09/monportraitpro-2.jpg">
-					</blockquote>
-				</div>
-			</div><!--/.row-->
-		</div><!--/.col-->
-	</div><!--/.row-->
 </div>
 
 
 
+<!-- footer -->
 <!-- footer -->
 <footer class="webintern-footer">
 <div class="webintern-footer-inner">
@@ -566,7 +598,7 @@
 <img class="img-responsive" src="https://www.freelogodesign.org/img/logo-ex-4.png" style="width:100px;" alt="">
 </a>
 <div class="simple-text dark padding-sm">
-<h4 class="webintern_footer_title h5"><small>Softools</small></h4>
+<h4 class="webintern_footer_title h5"><img class="logo_png" src="assets/images/logo.png">SOFT<span>OOLS</span></a></h4>
 <p>Softools est une plate-forme Web avancée sur laquelle les clients créent des applications entièrement digitales sans besoin de coder et sans besoin d'infrastructure. Celles-ci fonctionnent dans n'importe quel environnement (PC, tablette ou smartphone ).</p>
 </div>
 <div class="empty-space xs-25 sm-25"></div>
@@ -658,19 +690,22 @@ Created by: SOFTOOLS
 </footer>
 	<!-- call to action parallax-->
 
+	<!-- call to action parallax-->
+
+
 
 
 
   {% block javascripts %}
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="assets/js/scrollPosStyler.js"></script>
-
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="assets/js/bootsnav.js"></script>
 <script>
 
 </script>
-
 {% endblock  %}
 </body>
 </html>
