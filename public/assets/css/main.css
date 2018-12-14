@@ -1266,7 +1266,7 @@ text-align: right;
 
 @media (pointer: coarse) and (hover: none) {
   .header {
-    background: url('http://sandbox.thewikies.com/vfe-generator/images/big-buck-bunny_poster.jpg') black no-repeat center center scroll;
+    background: url('') black no-repeat center center scroll;
   }
   .header video {
     display: none;
