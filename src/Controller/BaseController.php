@@ -16,6 +16,15 @@ class BaseController extends Controller
             'controller_name' => 'BaseController',
         ]);
     }
+    /**
+     * @Route("/en", name="baseen")
+     */
+    public function indexen()
+    {
+        return $this->render('base/index-en.html.twig', [
+            'controller_name' => 'BaseController',
+        ]);
+    }
 
     /**
      * @Route("/solution", name="solution")

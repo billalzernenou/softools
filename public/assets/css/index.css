@@ -1,9 +1,9 @@
 #head .carousel .carousel-inner .item{
-  max-height:600px;
+    max-height:600px;
 }
 #head .carousel .carousel-inner .item .carousel-caption .lead
 {
-  font-family: proxima-nova;
+    font-family: 'Open Sans', sans-serif;
     font-size: 62px;
     font-weight: 300;
     font-style: normal;
@@ -12,17 +12,16 @@
 }
 #head .carousel .carousel-inner .item .carousel-caption .tagline
 {
-    font-family: proxima-nova;
+    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     font-size: 12px;
-    text-transform: uppercase;
     font-style: normal;
     color: #fff;
     line-height: 1.6em;
     letter-spacing: .20em;
 }
 #head .carousel .carousel-inner .item img
-{
+{max-height:600px;
   filter: brightness(50%);
 }
 @media (min-width: 1024px) {
@@ -31,7 +30,7 @@
   }
   #head .carousel .carousel-inner .item .carousel-caption .lead
   {
-    font-family: proxima-nova;
+    font-family: 'Open Sans', sans-serif;
       font-size: 62px;
       font-weight: 300;
       font-style: normal;
@@ -40,10 +39,9 @@
   }
   #head .carousel .carousel-inner .item .carousel-caption .tagline
   {
-      font-family: proxima-nova;
+      font-family: 'Open Sans', sans-serif;
       font-weight: bold;
       font-size: 14px;
-      text-transform: uppercase;
       font-style: normal;
       color: #fff;
       line-height: 1.6em;
@@ -56,7 +54,7 @@
   }
   #head .carousel .carousel-inner .item .carousel-caption .lead
   {
-    font-family: proxima-nova;
+      font-family: 'Open Sans', sans-serif;
       font-size: 50px;
       font-weight: 250;
       font-style: normal;
@@ -65,7 +63,7 @@
   }
   #head .carousel .carousel-inner .item .carousel-caption .tagline
   {
-      font-family: proxima-nova;
+      font-family: 'Open Sans', sans-serif;
       font-weight: bold;
       font-size: 12px;
       text-transform: uppercase;
@@ -81,7 +79,7 @@
   }
   #head .carousel .carousel-inner .item .carousel-caption .lead
   {
-    font-family: proxima-nova;
+    font-family: 'Open Sans', sans-serif;
       font-size: 40px;
       font-weight: 200;
       font-style: normal;
@@ -90,7 +88,7 @@
   }
   #head .carousel .carousel-inner .item .carousel-caption .tagline
   {
-      font-family: proxima-nova;
+      font-family: 'Open Sans', sans-serif;
       font-weight: bold;
       font-size: 10px;
       text-transform: uppercase;
@@ -106,7 +104,7 @@
   }
   #head .carousel .carousel-inner .item .carousel-caption .lead
   {
-    font-family: proxima-nova;
+    font-family:'Open Sans', sans-serif;
       font-size: 30px;
       font-weight: 150;
       font-style: normal;
@@ -115,7 +113,7 @@
   }
   #head .carousel .carousel-inner .item .carousel-caption .tagline
   {
-      font-family: proxima-nova;
+      font-family: 'Open Sans', sans-serif;
       font-weight: bold;
       font-size: 8px;
       text-transform: uppercase;
@@ -315,8 +313,6 @@
   transition:all ease 1s
 }
 
-
-/* footer **/
 /*footer*/
 .col_white_amrc { color:#FFF;}
 footer { width:100%; background:#45555d; min-height:250px; padding:10px 0px 25px 0px ;}
