@@ -73,7 +73,7 @@ var ScrollPosStyler = (function(document, window) {
       elements[i].classList.remove("sps--blw");
     }
 
-    // resume accepting scroll events
+   // resume accepting scroll events
     busy = false;
   }
 

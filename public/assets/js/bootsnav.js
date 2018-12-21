@@ -166,9 +166,11 @@
                 $(window).on("scroll", function(){
                     var scrollTop = $(window).scrollTop();
                     if(scrollTop >34){
-                        $(".navbar-fixed").removeClass("navbar-transparent");
+
+												$(".navbar-fixed").addClass("dark");
                     }else {
                         $(".navbar-fixed").addClass("navbar-transparent");
+												$(".navbar-fixed").removeClass("dark");
                     }
                 });
             }
@@ -507,7 +509,7 @@
         navbarScrollspy : function(){
             var navScrollSpy = $(".navbar-scrollspy"),
                 $body   = $('body'),
-                getNav = $('nav.navbar.bootsnav'),
+                getNav  = $('nav.navbar.bootsnav'),
                 offset  = getNav.outerHeight();
 
             if( navScrollSpy.length ){
