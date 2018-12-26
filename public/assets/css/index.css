@@ -1,5 +1,5 @@
 #head .carousel .carousel-inner .item{
-    max-height:600px;
+
 }
 #head .carousel .carousel-inner .item .carousel-caption .lead
 {
@@ -21,12 +21,12 @@
     letter-spacing: .20em;
 }
 #head .carousel .carousel-inner .item img
-{max-height:600px;
+{
   filter: brightness(50%);
 }
 @media (min-width: 1024px) {
   #head .carousel .carousel-inner .item{
-    max-height:600px;
+
   }
   #head .carousel .carousel-inner .item .carousel-caption .lead
   {
@@ -50,7 +50,7 @@
 }
 @media (max-width: 992px) {
   #head .carousel .carousel-inner .item{
-    max-height:600px;
+
   }
   #head .carousel .carousel-inner .item .carousel-caption .lead
   {
@@ -75,7 +75,7 @@
 }
 @media (max-width: 920px) {
   #head .carousel .carousel-inner .item{
-    max-height:600px;
+
   }
   #head .carousel .carousel-inner .item .carousel-caption .lead
   {
@@ -100,7 +100,7 @@
 }
 @media (max-width: 767px) {
   #head .carousel .carousel-inner .item{
-    max-height:600px;
+
   }
   #head .carousel .carousel-inner .item .carousel-caption .lead
   {
