@@ -44,13 +44,29 @@ class BaseController extends Controller
             'controller_name' => 'BaseController',
         ]);
     }
+
     /**
      * @Route("/presentation", name="presentation")
      */
     public function presentation()
-    {
+    {   $language= 'fr';
         return $this->render('base/presentation.html.twig', [
             'controller_name' => 'BaseController',
+             'language'=> $language,
+
         ]);
     }
+
+    /**
+     * @Route("/presentationen", name="presentation_en")
+     */
+    public function presentation_en()
+    {   $language= 'en';
+        return $this->render('base/presentation.html.twig', [
+            'controller_name' => 'BaseController',
+            'language'=> $language,
+
+        ]);
+    }
+
 }
