@@ -80,4 +80,16 @@ class BaseController extends Controller
         ]);
     }
 
+    /**
+     * @Route("/security", name="security")
+     */
+    public function security()
+    {   $language= 'en';
+        return $this->render('base/security.html.twig', [
+            'controller_name' => 'BaseController',
+            'language'=> $language,
+
+        ]);
+    }
+
 }

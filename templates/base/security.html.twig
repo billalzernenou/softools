@@ -1,0 +1,90 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="assets/css/security.css" media="screen" >
+{% endblock %}
+
+{% block header %}
+{{ parent() }}
+<div class="securityheader">
+
+      </br></br></br></br></br></br></br></br></br>
+      <h5 >Enterprise-ready Security</h5>
+      <h2>Confidently build and deploy apps on a secure, reliable, and highly-available platform.</h2>
+
+
+</div>
+
+{% endblock %}
+
+{% block body %}
+
+  <div class="statContainer container">
+    <div class="row">
+      <div class="service-heading-block">
+          <br/> <br/> <br/> <br/>
+          <h2 class="text-center title">POUR MIEUX COMPRENDRE</h2>
+          <p class="text-center sub-title">Lorem ipsum dolor sit amet,<span class="text-primary">consectetur adipisicing</span> elit.<br/> Dolor alias provident excepturi eligendi, nam numquam iusto eum illum, ea quisquam.</p>
+      </div>
+    </div>
+      <div class="row">
+        <div class="col-md-3">
+            <a class="nounderline" href="javascript:alert('Portfolio Link here!');" title="Web Development Services">
+
+            <div class="statBubbleContainer col-md-3">
+            <div class="statBubble websitesLaunched">
+              <div class="statNum">
+              50+
+              </div>
+            </div>
+              <h3>Projects done</h3>
+              <div class="statRedirect"><span data-title="portfolio →">portfolio →</span> </div>
+            </div>
+            </a>
+        </div>
+
+        <div class="col-md-3">
+            <a class="nounderline" href="javascript:alert('Meet the team Link here!');" title="Meet our developers">
+            <div class="statBubbleContainer col-md-3">
+            <div class="statBubble teamSize">
+              <div class="statNum">
+              3
+              </div>
+            </div>
+              <h3>Team Members</h3>
+              <div class="statRedirect"><span data-title="meet us →">meet us →</span> </div>
+            </div>
+            </a>
+        </div>
+        <div class="col-md-3">
+          <a class="nounderline" href="javascript:alert('Services Page Here');" title="Learn about our services">
+          <div class="statBubbleContainer">
+          <div class="statBubble topSEORank">
+            <div class="statNum">
+             10
+            </div>
+          </div>
+            <h3>Security Rank</h3>
+            <div class="statRedirect"><span data-title="services →">services →</span> </div>
+          </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+              <a class="nounderline" target="_blank" href="https://www.facebook.com/billal.zernenou/" title="Get Connected with us!">
+            <div class="statBubbleContainer col-md-3">
+            <div class="statBubble facebookLikes">
+              <div class="statNum">
+              132
+              </div>
+            </div>
+              <h3>Happy Clients</h3>
+              <div class="statRedirect"><span data-title="social media →">social media →</span> </div>
+            </div>
+            </a>
+      </div>
+    </div>
+</div>
+
+
+
+{% endblock %}
