@@ -68,5 +68,16 @@ class BaseController extends Controller
 
         ]);
     }
+    /**
+     * @Route("/pricing", name="pricing")
+     */
+    public function pricing()
+    {   $language= 'en';
+        return $this->render('base/pricing.html.twig', [
+            'controller_name' => 'BaseController',
+            'language'=> $language,
+
+        ]);
+    }
 
 }
