@@ -91,5 +91,16 @@ class BaseController extends Controller
 
         ]);
     }
+    /**
+     * @Route("/personalisable", name="personalisable")
+     */
+    public function Personalisable()
+    {   $language= 'en';
+        return $this->render('base/personalisable.html.twig', [
+            'controller_name' => 'BaseController',
+            'language'=> $language,
+
+        ]);
+    }
 
 }
