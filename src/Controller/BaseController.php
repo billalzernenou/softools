@@ -103,4 +103,49 @@ class BaseController extends Controller
         ]);
     }
 
+    /**
+     * @Route("/finance", name="finance")
+     */
+    public function finance()
+    {   $language= 'en';
+        return $this->render('base/finance.html.twig', [
+            'controller_name' => 'BaseController',
+            'language'=> $language,
+
+        ]);
+    }
+    /**
+     * @Route("/solution1", name="solution1")
+     */
+    public function solution1()
+    {   $language= 'en';
+        return $this->render('base/solution1.html.twig', [
+            'controller_name' => 'BaseController',
+            'language'=> $language,
+
+        ]);
+    }
+    /**
+     * @Route("/solution2", name="solution2")
+     */
+    public function solution2()
+    {   $language= 'en';
+        return $this->render('base/solution2.html.twig', [
+            'controller_name' => 'BaseController',
+            'language'=> $language,
+
+        ]);
+    }
+    /**
+     * @Route("/solution3", name="solution3")
+     */
+    public function solution3()
+    {   $language= 'en';
+        return $this->render('base/solution3.html.twig', [
+            'controller_name' => 'BaseController',
+            'language'=> $language,
+
+        ]);
+    }
+
 }

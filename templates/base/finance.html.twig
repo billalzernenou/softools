@@ -1,0 +1,96 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="assets/css/finance.css" media="screen" >
+{% endblock %}
+
+{% block header %}
+{{ parent() }}
+
+  <div class="financeheader center">
+        </br></br></br></br></br></br></br>
+        <div class="container-fluid">
+        <h1>Enterprise-ready Security</h1>
+        <h3>Confidently build and deploy apps on a secure, reliable, and highly-available platform.</h2>
+        </div>
+  </div>
+
+
+
+{% endblock %}
+{% block body %}
+</br></br>
+<div container="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Improve your team's productivity.</h2>
+      <p>Empower your customer service reps with fast access to a cloud-based client database.
+       Software solutions from Quick Base offer a simple way to find information and give
+       consistent answers to your customers every time. Enable faster problem resolution with
+       an easy-to-use knowledge base. Optimize customer service management by allowing customers
+        to open and track service requests and reps the opportunity to update customer information.
+        Software like this can contribute to creating a more collaborative environment and make every
+         stakeholder more proactive, solving problems quickly and efficiently.</p>
+
+         <a href="{{ path('solution1') }}" class="btn btn-action btn-lg thar-video"
+             role="button">voir</a>
+    </div>
+    <div class="col-md-6">
+      <img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/t/5880e757e6f2e15d650da0c4/1532356432823/businessrefresh.jpg?format=750w">
+      <a href="{{ path('solution1') }}" class="btn btn-action btn-lg thar-video"
+          role="button">voir</a>
+    </div>
+
+  </div>
+</div>
+<div container="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Improve your team's productivity.</h2>
+      <p>Empower your customer service reps with fast access to a cloud-based client database.
+       Software solutions from Quick Base offer a simple way to find information and give
+       consistent answers to your customers every time. Enable faster problem resolution with
+       an easy-to-use knowledge base. Optimize customer service management by allowing customers
+        to open and track service requests and reps the opportunity to update customer information.
+        Software like this can contribute to creating a more collaborative environment and make every
+         stakeholder more proactive, solving problems quickly and efficiently.</p>
+
+         <a href="{{ path('solution1') }}" class="btn btn-action btn-lg thar-video"
+             role="button">voir</a>
+    </div>
+    <div class="col-md-6">
+      <img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/t/5880e757e6f2e15d650da0c4/1532356432823/businessrefresh.jpg?format=750w">
+    </div>
+
+  </div>
+</div>
+
+
+  {% spaceless %}
+<div  class="section2">
+  <div  class="container">
+    <div class="row">
+      <div class="col-md-3 ">
+      </div>
+      <div class="col-md-6 text-center">
+        <h2>Improve your team's productivity.</h2>
+        <p>Empower your customer service reps with fast access to a cloud-based client database.
+         Software solutions from Quick Base offer a simple way to find information and give
+         consistent answers to your customers every time. Enable faster problem resolution with
+         an easy-to-use knowledge base. Optimize customer service management by allowing customers
+          to open and track service requests and reps the opportunity to update customer information.
+          Software like this can contribute to creating a more collaborative environment and make every
+           stakeholder more proactive, solving problems quickly and efficiently.</p>
+
+           <a href="{{ path('solution1') }}" class="btn btn-action centred  btn-lg thar-section 2"
+               role="button">voir</a>
+      </div>
+      <div class="col-md-3">
+      </div>
+    </div>
+  </div>
+</div>
+    {% endspaceless %}
+{% block javascript %}
+{% endblock %}
+{% endblock %}

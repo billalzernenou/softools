@@ -1,0 +1,57 @@
+.financeheader {
+
+background: url("https://www.quickbase.com/uploads/masthead/masthead-it.jpg");
+text-decoration-color: white;
+}
+.center
+{
+  text-align: center;
+}
+.center h3
+{
+  font-size: 30px;
+  width: 80%;
+  color: #fff;
+  font-family: AvenirNext;
+  text-align: center;
+}
+.center h1
+{
+  font-size: 40px;
+  width: 80%;
+  color: #fff;
+  font-family: AvenirNext;
+  text-align: center;
+
+}
+.thar-video
+{
+  width: auto;
+  margin: 20px auto 0;
+  color: grey;
+border: 1px solid orange;
+background-color: transparent;
+align-items: center;
+border-radius: 8px;
+cursor: pointer;
+font-weight: 500;
+line-height: 1.2;
+overflow: hidden;
+padding: 13px 40px;
+position: relative;
+transition: all .2s ease-in-out;
+white-space: nowrap;
+float: right;
+}
+.thar-video:hover
+{
+background: orange;
+border: 1px solid #fff;
+color:#fff;
+
+}
+.section2 {
+    background: rgba(0, 0, 0, 0) url("https://images.pexels.com/photos/326410/pexels-photo-326410.jpeg?w=940&h=650&auto=compress&cs=tinysrgb") no-repeat scroll left top / cover;
+    padding: 104px 0 113px;
+    position: relative;
+}
