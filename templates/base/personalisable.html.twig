@@ -6,12 +6,78 @@
 
 {% block header %}
 {{ parent() }}
+<!--MDB Video-->
+       <div class="container mt-4">
+           <!-- Grid row -->
+           <div class="row">
 
+               <!-- Grid column -->
+               <div class="col-md-12 mb-4">
+
+                   <div class="card">
+                       <div class="card-block p-3">
+                           <!--Title-->
+                           <h3 class="text-center font-up font-bold indigo-text py-2 mb-3"><strong>Personalisable1</strong></h3>
+
+                           <div class="embed-responsive embed-responsive-16by9">
+                               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vlDzYIIOYmM" allowfullscreen></iframe>
+                           </div>
+                       </div>
+                   </div>
+
+               </div>
+               <!-- Grid column -->
+
+           </div>
+           <!-- Grid row -->
+
+           <!-- Grid row -->
+           <div class="row">
+
+               <!-- Grid column -->
+               <div class="col-md-6 mb-4">
+
+                   <div class="card">
+                       <div class="card-block p-3">
+                           <!--Title-->
+                           <h3 class="text-center font-up font-bold indigo-text py-2 mb-3"><strong>Personalisable 2 </strong></h3>
+
+                           <div class="embed-responsive embed-responsive-16by9">
+                               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg" allowfullscreen></iframe>
+                           </div>
+                       </div>
+                   </div>
+
+               </div>
+               <!-- Grid column -->
+
+               <!-- Grid column -->
+               <div class="col-md-6 mb-4">
+
+                   <div class="card">
+                       <div class="card-block p-3">
+                           <!--Title-->
+                           <h3 class="text-center font-up font-bold indigo-text py-2 mb-3"><strong>Personalisable 3</strong></h3>
+
+                           <div class="embed-responsive embed-responsive-16by9">
+                               <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/137857207" allowfullscreen></iframe>
+                           </div>
+                       </div>
+                   </div>
+
+               </div>
+               <!-- Grid column -->
+
+           </div>
+
+       </div>
+       <!--MDB Video-->
 
 {% endblock %}
 
 {% block body %}
 <div class="aboutus-section">
+  <div>
           <div class="row">
               <div class="col-md-3 col-sm-6 col-xs-12">
                   <div class="aboutus">
@@ -67,7 +133,9 @@
           </div>
       </div>
   </div>
+</div>
   {% spaceless %}
+
   <!-- section 2 with image back ground -->
   <div class="services-section black-trans-bg">
         <div class="services-section-banner"></div>
@@ -138,10 +206,19 @@
                 </div>
             </div>
     </div>
+</div>
 
     {% endspaceless %}
 
   {% block javascripts %}
+  {{ parent() }}
+    <script>
+      $(document).ready(function () {
+
+        $(".player").mb_YTPlayer();
+
+      });
+    </script>
   {% endblock %}
 
 {% endblock %}
