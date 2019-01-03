@@ -1,13 +1,11 @@
-.financeheader {
 
+.financeheader{
+width: 100%;
 background: url("https://www.quickbase.com/uploads/masthead/masthead-it.jpg");
 text-decoration-color: white;
+height: 400px;
 }
-.center
-{
-  text-align: center;
-}
-.center h3
+.financeheader h3
 {
   font-size: 30px;
   width: 80%;
@@ -15,14 +13,13 @@ text-decoration-color: white;
   font-family: AvenirNext;
   text-align: center;
 }
-.center h1
+.financeheader h1
 {
   font-size: 40px;
   width: 80%;
   color: #fff;
   font-family: AvenirNext;
   text-align: center;
-
 }
 .thar-video
 {
@@ -41,7 +38,6 @@ padding: 13px 40px;
 position: relative;
 transition: all .2s ease-in-out;
 white-space: nowrap;
-float: right;
 }
 .thar-video:hover
 {
@@ -50,8 +46,185 @@ border: 1px solid #fff;
 color:#fff;
 
 }
+/* section 2 */
+
 .section2 {
-    background: rgba(0, 0, 0, 0) url("https://images.pexels.com/photos/326410/pexels-photo-326410.jpeg?w=940&h=650&auto=compress&cs=tinysrgb") no-repeat scroll left top / cover;
-    padding: 104px 0 113px;
+    background: rgba(0, 0, 0, 0) url("https://www.quickbase.com/uploads/panel/slutions-content-masthead.jpg");
     position: relative;
+    color: white;
+    box-shadow: 4px 4px 4px 5px; white;
+    margin: auto;
+}
+.btn-twt:before {
+    content: 'View CRM and Sales Apps';
+    display: inline-block;
+    border: 1px solid white;
+    color: white;
+    padding: 15px ;
+    width: 250px;
+    text-align: center;
+    background: linear-gradient(to left, rgba(255,255,255,0) 50%, white 50%);
+    background-size: 200% 100%;
+    background-position:right bottom;
+    vertical-align: middle;
+   transition:all 0.5s ease;
+
+}
+.btn-twt:hover:before {
+    content: '@View CRM and Sales Apps -->';
+    color: orange;
+    text-align: center;
+    background-position:left bottom;
+    transition:all 0.5s ease;
+}
+.section2 h2 {
+  color: white;
+  text-align: center;
+}
+
+
+/* block apps */
+.apps .app {
+
+  border-radius: 3px;
+  border: 1px solid grey;
+  height: 300px;
+  margin: 40px;
+}
+.app:hover
+{
+background: orange;
+}
+
+
+
+/* section 1 */
+.wrapper {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.container-big {
+  display: table-cell;
+
+  text-align: center;
+  vertical-align: middle;
+}
+
+h1.heading {
+  color: #fff;
+  font-size: 1.15em;
+  font-weight: 900;
+
+  color: #505050;
+}
+@media (min-width: 450px) {
+  h1.heading {
+    font-size: 3.55em;
+  }
+}
+@media (min-width: 760px) {
+  h1.heading {
+    font-size: 3.05em;
+  }
+}
+@media (min-width: 900px) {
+  h1.heading {
+    font-size: 3.25em;
+
+  }
+}
+.carbox {
+  display: block;
+    line-height: 1.42857143;
+    background-color: #F0F5F9;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    transition: box-shadow .25s;
+    padding-top: 5px;
+  	transition: all 0.2s ease-in-out 0s;
+
+
+}
+h4
+{
+  color: #52575b;
+    font-size: 24px;
+
+    transition: .3s;
+    font-weight: 500;
+    font-family: AvenirNext;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.2;
+    line-height: 1.2;
+
+}
+.carbox:hover{
+    color: #F0F5F9;
+  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  background: #52575C;
+  border-radius: 5px;
+  border: 1px solid grey;
+
+  	transition: all 0.3s ease-in-out 0s;
+}
+carbox-read-more
+{
+  color:
+}
+.carbox:hover h4
+{
+  color: white;
+}
+
+.carbox:hover .carbox-read-more a
+{
+  color: white;
+  visibility: visible;
+}
+
+
+.img-carbox {
+  width: 100%;
+  border-top-left-radius:2px;
+  border-top-right-radius:2px;
+  display:block;
+    overflow: hidden;
+}
+.img-carbox img{
+  width: 30%;
+  text-align: center;
+  padding-top: 40px;
+  object-fit:cover;
+  transition: all .25s ease;
+}
+.carbox-content {
+
+  text-align:left;
+}
+.carbox-title {
+  font-family: AvenirNext;
+font-weight: 400;
+line-height: 1.6;
+}
+.carbox-title a {
+  color: #000;
+  text-decoration: none !important;
+}
+.carbox-read-more {
+
+}
+.carbox-read-more a {
+  text-decoration: none !important;
+
+  text-transform: uppercase;
+  color: #f0f5f9;
+  visibility: hidden;
+}
+.carbox-read-more a:hover {
+
+
+  text-transform: uppercase;
+  font-size: 15px;
+  color: white;
 }
