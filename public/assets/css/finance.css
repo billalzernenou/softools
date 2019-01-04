@@ -1,3 +1,38 @@
+/* balises titles */
+h1
+{
+  font-size: 3em;
+  font-family: AvenirNext;
+  font-weight: 600;
+  box-sizing: border-box;
+  line-height: 1.8;
+  margin: 0 0 40px;
+  display: block;
+  margin-block-start: 3em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color:white;
+}
+
+
+
+h5
+{
+
+  text-align: center
+  font-family: AvenirNext;
+  font-weight: 400;
+  box-sizing: border-box;
+  line-height: 1.8;
+  margin: 0 0 40px;
+  display: block;
+  margin-block-start: 3em;
+  margin-block-end: 2em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  line-height: 1.8;
+}
+
 
 .financeheader{
 width: 100%;
@@ -5,22 +40,8 @@ background: url("https://www.quickbase.com/uploads/masthead/masthead-it.jpg");
 text-decoration-color: white;
 height: 400px;
 }
-.financeheader h3
-{
-  font-size: 30px;
-  width: 80%;
-  color: #fff;
-  font-family: AvenirNext;
-  text-align: center;
-}
-.financeheader h1
-{
-  font-size: 40px;
-  width: 80%;
-  color: #fff;
-  font-family: AvenirNext;
-  text-align: center;
-}
+
+
 .thar-video
 {
   width: auto;
