@@ -189,10 +189,7 @@ h4
 
   	transition: all 0.3s ease-in-out 0s;
 }
-carbox-read-more
-{
-  color:
-}
+
 .carbox:hover h4
 {
   color: white;
@@ -213,14 +210,40 @@ carbox-read-more
     overflow: hidden;
 }
 .img-carbox img{
-  width: 30%;
+
   text-align: center;
-  padding-top: 40px;
   object-fit:cover;
   transition: all .25s ease;
+  border: 3px solid orange;
+  background: white;
+  box-shadow: 0px 2px 9px rgba(0,0,0,0.3);
+}
+.img-carbox img {
+    margin-top: 60px;
+    width: 80px;
+    border-radius: 50%;
+    border-top: 2px dashed #ffcc00;
+    border-right: 2px dashed #ffcc00;
+    border-left: 2px dashed #000000;
+    border-bottom: 2px dashed #000000;
+    padding: 10px;
+    animation: spin 10s infinite linear;
+}
+.img-carbox img{
+    animation: spin 10s infinite reverse linear;
+    width: 30%;
+    border-radius: 50%;
+}
+
+
+/* ping to return every 1ms*/
+/* put me inside */
+@keyframes spin {
+    100% {
+     ;
+    }
 }
 .carbox-content {
-
   text-align:left;
 }
 .carbox-title {
@@ -248,4 +271,9 @@ line-height: 1.6;
   text-transform: uppercase;
   font-size: 15px;
   color: white;
+}
+
+.img_description
+{
+  width:300px;
 }
