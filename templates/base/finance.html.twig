@@ -26,7 +26,7 @@
 
                           <div class="col-xs-12 col-sm-4">
                               <div class="carbox">
-                                  <a class="img-carbox" href="www.softools.net">
+                                  <a class="img-carbox" href="{{ path('solution1') }}">
                                   <img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/584ef481f7e0ab56e9725ed3/59bd6a9759cc686ce909f342/1505585815768/Management-14.png?format=500w">
                                 </a>
                                   <div class="carbox-content">
@@ -35,7 +35,7 @@
                                         </a>
                                       </h4>
                                       <div class="carbox-read-more">
-                                          <a href="http://www.softools.net/" class="btn btn-link btn-block">
+                                          <a href="{{ path('solution1') }}" class="btn btn-link btn-block">
                                               Read More>>
                                           </a>
                                       </div>
@@ -106,48 +106,6 @@
                           </div>
                       </div>
                       <br><br>
-                      <div class="row">
-                        <div class="col-xs-6 col-sm-2">
-                        </div>
-                          <div class="col-xs-12 col-sm-4">
-                              <div class="carbox">
-                                  <a class="img-carbox" href="www.softools.net">
-                                  <img src="https://iz.zohostatic.com/sites/default/files/business-feature-banner-2x.png">
-                                </a>
-                                  <div class="carbox-content">
-                                      <h4 class="carbox-title text-center">
-                                          Manufacturing Asset<br> Management
-                                        </a>
-                                      </h4>
-                                      <div class="carbox-read-more">
-                                          <a href="http://www.softools.net/" class="btn btn-link btn-block">
-                                              Read More>>
-                                          </a>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="col-xs-12 col-sm-4">
-                              <div class="carbox">
-                                  <a class="img-carbox" href="www.softools.net">
-                                  <img src="https://iz.zohostatic.com/sites/default/files/business-feature-banner-2x.png">
-                                </a>
-                                  <div class="carbox-content">
-                                      <h4 class="carbox-title text-center">
-                                          Facilities Asset </br> Management
-                                        </a>
-                                      </h4>
-                                  </div>
-                                  <div class="carbox-read-more">
-                                      <a href="http://www.softools.net/" class="btn btn-link btn-block">
-                                          Read More >>
-                                      </a>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="col-xs-6 col-sm-2">
-                          </div>
-                        </div>
                   </div>
               </div>
           </div>
@@ -155,7 +113,7 @@
 
 
 </br></br>
-<div class="container">
+<div class="container hidden">
   <div class="col-md-3">
   </div>
   <div class="col-md-3">
@@ -167,7 +125,7 @@
 
 
 <br><br><br>
-<div  class="section2 space--sm">
+<div  class="section2 space--sm hidden">
     <div class="row">
       <div class="col-md-2">
 
@@ -189,8 +147,8 @@
       </div>
     </div>
 </div>
-<br><br><br>
-<div container="container-fluid">
+<!--
+<div container="container-fluid hidden">
   <div class="row">
     <div class="col-md-6">
       <img class=".img_description" src="https://www.quickbase.com/uploads/panel/New-Product-Screens/dashboard_helpdesk_customersuccess.png">
@@ -210,7 +168,7 @@
     </div>
   </div>
 </div>
-<div container="container">
+<div container="container hidden">
   <div class="row">
     <div class="col-md-6">
       <h2>Improve your team's productivity.</h2>
@@ -231,6 +189,7 @@
 
   </div>
 </div>
+-->
 {% endspaceless %}
 {{ parent() }}
 <script>

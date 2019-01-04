@@ -207,10 +207,9 @@ h4
   border-top-left-radius:2px;
   border-top-right-radius:2px;
   display:block;
-    overflow: hidden;
+  overflow: hidden;
 }
 .img-carbox img{
-
   text-align: center;
   object-fit:cover;
   transition: all .25s ease;
@@ -237,7 +236,7 @@ h4
 
 
 /* ping to return every 1ms*/
-/* put me inside */
+/* transform: rotate(1turn); */
 @keyframes spin {
     100% {
      ;
@@ -275,5 +274,6 @@ line-height: 1.6;
 
 .img_description
 {
-  width:300px;
+  max-width: 550px;
+  overflow: hidden;
 }

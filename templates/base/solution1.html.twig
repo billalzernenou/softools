@@ -6,17 +6,74 @@
 
 {% block header %}
 {{ parent() }}
-<div class="securityheader">
-
-      </br></br>
-      <h5 >Finance</h5>
-      <h2>3 exemples de Finance</h2>
+<div class="financeheader">
+      <div class="container-fluid">
+            <h1>Enterprise-ready Security</h1>
+            <h3>Confidently build and deploy apps on a secure, reliable, and highly-available platform.</h3>
+      </div>
 </div>
+
+
 
 {% endblock %}
 {% block body %}
 
-solution1 blala  i am here 
+<br><br>
+<div container="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+      <img class="img_description" src="https://www.quickbase.com/uploads/panel/New-Product-Screens/dashboard_helpdesk_customersuccess.png">
+    </div>
+    <div class="col-md-6">
+      <h2>Improve your team's productivity.</h2>
+      <p>Eliminate the high costs, inefficiencies and risks associated with email and spreadsheet-based asset management.
+         Learn how Quick Base empowers you to view asset status, submit a work order,
+         notify stakeholders, and gain a real-time view of downtime impact from any device..</p>
+
+         <a href="{{ path('solution1') }}" class="btn btn-action btn-lg thar-video"
+             role="button">Je me lance!</a>
+    </div>
+  </div>
+</div>
+
+<br><br> <br><br>
+<div container="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Improve your team's productivity.</h2>
+      <p>Replace error-prone email, phone calls, and spreadsheet-based asset management or improve those clunky, outdated legacy systems with a single source of truth that you can configure in days, update in seconds and access anytime, anywhere, from any device.</p>
+
+<p>Increase operational performance, asset utilization, deliver great customer service, improve safety, and more effectively manage budgets by tracking inventory, contracts, leases, agreements, equipment condition, scheduled maintenance, safety records, training, budgets, and purchase orders in one place. </p>
+
+         <a href="{{ path('solution1') }}" class="btn btn-action btn-lg thar-video"
+             role="button">Je me lance!</a>
+    </div>
+    <div class="col-md-6">
+      <img class="img_description" src="https://www.quickbase.com/uploads/panel/1806_ProductShot_ManufAssetMgmt_1.png">
+    </div>
+  </div>
+</div>
+<br><br> <br><br>
+<div container="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+      <img class="img_description" src="https://www.quickbase.com/uploads/panel/New-Product-Screens/dashboard_helpdesk_customersuccess.png">
+    </div>
+    <div class="col-md-6">
+      <h2>Improve your team's productivity.</h2>
+      <p>Empower your customer service reps with fast access to a cloud-based client database.
+       Software solutions from Quick Base offer a simple way to find information and give
+       consistent answers to your customers every time. Enable faster problem resolution with
+       an easy-to-use knowledge base. Optimize customer service management by allowing customers
+        to open and track service requests and reps the opportunity to update customer information.
+        Software like this can contribute to creating a more collaborative environment and make every
+         stakeholder more proactive, solving problems quickly and efficiently.</p>
+
+         <a href="{{ path('solution1') }}" class="btn btn-action btn-lg thar-video"
+             role="button">Je me lance!</a>
+    </div>
+  </div>
+</div>
 
 
 {% block javascript %}
