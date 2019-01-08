@@ -1,3 +1,5 @@
+
+
 /* balises titles */
 h1
 {
@@ -276,4 +278,25 @@ line-height: 1.6;
 {
   max-width: 550px;
   overflow: hidden;
+}
+
+
+
+/* témoignage */
+*{
+   font-family: 'Poppins', sans-serif;
+}
+.testimonial_subtitle{
+    color: orange;
+    font-size: 12px;
+}
+  .testimonial_btn{
+    background-color: #373d4b !important;
+    color: #fff !important;
+ }
+ .seprator {
+    height: 2px;
+    width: 56px;
+    background-color: orange;
+    margin: 7px 0 10px 0;
 }
