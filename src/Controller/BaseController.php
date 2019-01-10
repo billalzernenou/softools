@@ -147,6 +147,18 @@ class BaseController extends Controller
 
         ]);
     }
-  
+
+    /**
+     * @Route("/store", name="store")
+     */
+    public function store()
+    {   $language= 'en';
+        return $this->render('base/store.html.twig', [
+            'controller_name' => 'BaseController',
+            'language'=> $language,
+
+        ]);
+    }
+
 
 }

@@ -1,0 +1,40 @@
+.filterDiv {
+  float: left;
+
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+
+  background-color: orange;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+.carbox
+{
+
+  margin-left: 15px;
+  margin-bottom: 15px;
+  max-width: 350px;
+  height: 350px;
+}

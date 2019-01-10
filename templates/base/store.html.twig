@@ -1,0 +1,291 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    {{ parent() }}
+   <link rel="stylesheet" href="assets/css/finance.css" media="screen" >
+    <link rel="stylesheet" href="assets/css/store.css" media="screen" >
+
+    <!-- https://codepen.io/rayrutjes/pen/LyKpzq-->
+{% endblock %}
+
+{% block header %}
+{{ parent() }}
+<div class="financeheader">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Enterprise-ready Security</h1>
+            <h3>Confidently build and deploy apps on a secure, reliable, and highly-available platform.</h3>
+          </div>
+        </div>
+      </div>
+</div>
+
+
+{% endblock %}
+{% block body %}
+
+<br> <br>
+<h2>Softools France App Store</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+  <button class="btn" onclick="filterSelection('animals')"> Animals</button>
+  <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
+  <button class="btn" onclick="filterSelection('colors')"> Colors</button>
+</div>
+<br> <br>
+<div class="container-fluid text-center centered">
+  <div class="centered">
+  <div class="carbox filterDiv cars">BMW
+    <a class="img-carbox" href="{{ path('solution1') }}">
+    <img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/584ef481f7e0ab56e9725ed3/59bd6a9759cc686ce909f342/1505585815768/Management-14.png?format=500w">
+    <div class="carbox-content">
+        <h4 class="carbox-title text-center">
+            Manufacturing Asset <br>Management
+          </a>
+        </h4>
+        <div class="carbox-read-more">
+            <a href="{{ path('solution1') }}" class="btn btn-link btn-block">
+                Read More>>
+            </a>
+        </div>
+    </div>
+  </div>
+  <div class=" carbox filterDiv colors fruits">Orange
+    <a class="img-carbox" href="{{ path('solution1') }}">
+    <img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/584ef481f7e0ab56e9725ed3/59bd6a9759cc686ce909f342/1505585815768/Management-14.png?format=500w">
+    <div class="carbox-content">
+        <h4 class="carbox-title text-center">
+            Manufacturing Asset <br>Management
+          </a>
+        </h4>
+        <div class="carbox-read-more">
+            <a href="{{ path('solution1') }}" class="btn btn-link btn-block">
+                Read More>>
+            </a>
+        </div>
+    </div>
+  </div>
+  <div class="carbox filterDiv cars">Volvo
+    <a class="img-carbox" href="{{ path('solution1') }}">
+    <img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/584ef481f7e0ab56e9725ed3/59bd6a9759cc686ce909f342/1505585815768/Management-14.png?format=500w">
+    <div class="carbox-content">
+        <h4 class="carbox-title text-center">
+            Manufacturing Asset <br>Management
+          </a>
+        </h4>
+        <div class="carbox-read-more">
+            <a href="{{ path('solution1') }}" class="btn btn-link btn-block">
+                Read More>>
+            </a>
+        </div>
+    </div>
+  </div>
+
+  <div class="carbox filterDiv colors">Red
+    <a class="img-carbox" href="{{ path('solution1') }}">
+    <img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/584ef481f7e0ab56e9725ed3/59bd6a9759cc686ce909f342/1505585815768/Management-14.png?format=500w">
+    <div class="carbox-content">
+        <h4 class="carbox-title text-center">
+            Manufacturing Asset <br>Management
+          </a>
+        </h4>
+        <div class="carbox-read-more">
+            <a href="{{ path('solution1') }}" class="btn btn-link btn-block">
+                Read More>>
+            </a>
+        </div>
+    </div>
+  </div>
+  <div class="carbox filterDiv cars animals">Mustang
+    <a class="img-carbox" href="{{ path('solution1') }}">
+    <img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/584ef481f7e0ab56e9725ed3/59bd6a9759cc686ce909f342/1505585815768/Management-14.png?format=500w">
+    <div class="carbox-content">
+        <h4 class="carbox-title text-center">
+            Manufacturing Asset <br>Management
+          </a>
+        </h4>
+        <div class="carbox-read-more">
+            <a href="{{ path('solution1') }}" class="btn btn-link btn-block">
+                Read More>>
+            </a>
+        </div>
+    </div>
+  </div>
+  <div class="carbox filterDiv colors">Blue
+    <a class="img-carbox" href="{{ path('solution1') }}">
+    <img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/584ef481f7e0ab56e9725ed3/59bd6a9759cc686ce909f342/1505585815768/Management-14.png?format=500w">
+    <div class="carbox-content">
+        <h4 class="carbox-title text-center">
+            Manufacturing Asset <br>Management
+          </a>
+        </h4>
+        <div class="carbox-read-more">
+            <a href="{{ path('solution1') }}" class="btn btn-link btn-block">
+                Read More>>
+            </a>
+        </div>
+    </div>
+  </div>
+  <div class=" carbox filterDiv animals">Cat
+    <a class="img-carbox" href="{{ path('solution1') }}">
+    <img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/584ef481f7e0ab56e9725ed3/59bd6a9759cc686ce909f342/1505585815768/Management-14.png?format=500w">
+    <div class="carbox-content">
+        <h4 class="carbox-title text-center">
+            Manufacturing Asset <br>Management
+          </a>
+        </h4>
+        <div class="carbox-read-more">
+            <a href="{{ path('solution1') }}" class="btn btn-link btn-block">
+                Read More>>
+            </a>
+        </div>
+    </div>
+  </div>
+
+  <div class="carbox filterDiv animals">Dog
+    <a class="img-carbox" href="{{ path('solution1') }}">
+    <img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/584ef481f7e0ab56e9725ed3/59bd6a9759cc686ce909f342/1505585815768/Management-14.png?format=500w">
+    <div class="carbox-content">
+        <h4 class="carbox-title text-center">
+            Manufacturing Asset <br>Management
+          </a>
+        </h4>
+        <div class="carbox-read-more">
+            <a href="{{ path('solution1') }}" class="btn btn-link btn-block">
+                Read More>>
+            </a>
+        </div>
+    </div>
+  </div>
+  <div class="carbox filterDiv fruits">Melon
+    <a class="img-carbox" href="{{ path('solution1') }}">
+    <img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/584ef481f7e0ab56e9725ed3/59bd6a9759cc686ce909f342/1505585815768/Management-14.png?format=500w">
+    <div class="carbox-content">
+        <h4 class="carbox-title text-center">
+            Manufacturing Asset <br>Management
+          </a>
+        </h4>
+        <div class="carbox-read-more">
+            <a href="{{ path('solution1') }}" class="btn btn-link btn-block">
+                Read More>>
+            </a>
+        </div>
+    </div>
+  </div>
+  <div class="carbox filterDiv fruits animals">Kiwi
+    <a class="img-carbox" href="{{ path('solution1') }}">
+    <img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/584ef481f7e0ab56e9725ed3/59bd6a9759cc686ce909f342/1505585815768/Management-14.png?format=500w">
+    <div class="carbox-content">
+        <h4 class="carbox-title text-center">
+            Manufacturing Asset <br>Management
+          </a>
+        </h4>
+        <div class="carbox-read-more">
+            <a href="{{ path('solution1') }}" class="btn btn-link btn-block">
+                Read More>>
+            </a>
+        </div>
+    </div>
+  </div>
+  <div class="carbox filterDiv fruits">Banana
+    <a class="img-carbox" href="{{ path('solution1') }}">
+    <img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/584ef481f7e0ab56e9725ed3/59bd6a9759cc686ce909f342/1505585815768/Management-14.png?format=500w">
+    <div class="carbox-content">
+        <h4 class="carbox-title text-center">
+            Manufacturing Asset <br>Management
+          </a>
+        </h4>
+        <div class="carbox-read-more">
+            <a href="{{ path('solution1') }}" class="btn btn-link btn-block">
+                Read More>>
+            </a>
+        </div>
+    </div>
+  </div>
+  <div class="carbox filterDiv fruits">Lemon
+    <a class="img-carbox" href="{{ path('solution1') }}">
+    <img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/584ef481f7e0ab56e9725ed3/59bd6a9759cc686ce909f342/1505585815768/Management-14.png?format=500w">
+    <div class="carbox-content">
+        <h4 class="carbox-title text-center">
+            Manufacturing Asset <br>Management
+          </a>
+        </h4>
+        <div class="carbox-read-more">
+            <a href="{{ path('solution1') }}" class="btn btn-link btn-block">
+                Read More>>
+            </a>
+        </div>
+    </div>
+  </div>
+  <div class="carbox filterDiv animals">Cow
+    <a class="img-carbox" href="{{ path('solution1') }}">
+    <img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/584ef481f7e0ab56e9725ed3/59bd6a9759cc686ce909f342/1505585815768/Management-14.png?format=500w">
+    <div class="carbox-content">
+        <h4 class="carbox-title text-center">
+            Manufacturing Asset <br>Management
+          </a>
+        </h4>
+        <div class="carbox-read-more">
+            <a href="{{ path('solution1') }}" class="btn btn-link btn-block">
+                Read More>>
+            </a>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+</br>
+
+
+
+{% block javascripts %}
+{{ parent() }}
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+{% endblock %}
+{% endblock %}
