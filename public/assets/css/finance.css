@@ -302,12 +302,21 @@ line-height: 1.6;
 }
 
 
-/* video */
-.vd
+
+
+
+.wrappe
 {
-background: url('http://cdn.osxdaily.com/wp-content/uploads/2014/08/calibrate-mac-screen.jpg') no-repeat ;
+ padding: 2px; margin: 0 auto; background: #fff; box-shadow: 10px 5px 15px rgba(0,0,0,0.9);
+background: black;
+overflow: auto;
 }
-.videoContainer
-{
+
+video {
+  border: 5px solid rgba(255, 255, 255, 0.8);
+
+    padding: 10px;
+    width: 100%;
+  height: auto;
 
 }

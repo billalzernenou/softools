@@ -33,8 +33,66 @@
 .carbox
 {
 
-  margin-left: 15px;
-  margin-bottom: 15px;
-  max-width: 350px;
+
+  margin-bottom: 10px;
+
   height: 350px;
 }
+/* second one */
+img{width:100%;max-height:560px;}
+a {color:#696969;}
+
+.carbox {
+width:32%;
+margin: 3px;
+}
+/* check box */
+#checkbox5
+{
+  margin-bottom: 5px;
+}
+/* video */
+video {
+    border-radius: 6px;
+}
+/* video container */
+
+
+.green{
+  padding: 5px 10px;
+  color: #ddd;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  border:
+  background: rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
+  border-radius: 6px 6px 0 0;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+;
+
+}
+
+.caption {
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 10px;
+    color: #ddd;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    border:
+    background: rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+    border-radius: 6px 6px 0 0;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    background-image: ("http://cdn.osxdaily.com/wp-content/uploads/2014/09/macbook-pro-black-screen.jpg");
+}
+/*** VIDEO CONTROLS CSS ***/
+/* control holder */
