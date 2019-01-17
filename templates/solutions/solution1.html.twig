@@ -1,0 +1,455 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="assets/css/solutions/finance.css" media="screen" >
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+{% endblock %}
+
+{% block header %}
+{{ parent() }}
+<div class="financeheader">
+      <div class="container-fluid">
+            <h1>Enterprise-ready Security</h1>
+            <h3>Confidently build and deploy apps on a secure, reliable, and highly-available platform.</h3>
+      </div>
+</div>
+
+
+
+{% endblock %}
+{% block body %}
+
+<br><br>
+<div container="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+      <img class="img_description" src="https://www.quickbase.com/uploads/panel/New-Product-Screens/dashboard_helpdesk_customersuccess.png">
+    </div>
+    <div class="col-md-6">
+      <h2>Improve your team's productivity.</h2>
+      <p>Eliminate the high costs, inefficiencies and risks associated with email and spreadsheet-based asset management.
+         Learn how Quick Base empowers you to view asset status, submit a work order,
+         notify stakeholders, and gain a real-time view of downtime impact from any device..</p>
+
+         <a href="{{ path('solution1') }}" class="btn btn-action btn-lg thar-video"
+             role="button">Je me lance!</a>
+    </div>
+  </div>
+</div>
+
+<br><br> <br><br>
+<div container="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Improve your team's productivity.</h2>
+      <p>Replace error-prone email, phone calls, and spreadsheet-based asset management or improve those clunky, outdated legacy systems with a single source of truth that you can configure in days, update in seconds and access anytime, anywhere, from any device.</p>
+
+<p>Increase operational performance, asset utilization, deliver great customer service, improve safety, and more effectively manage budgets by tracking inventory, contracts, leases, agreements, equipment condition, scheduled maintenance, safety records, training, budgets, and purchase orders in one place. </p>
+
+         <a href="{{ path('solution1') }}" class="btn btn-action btn-lg thar-video"
+             role="button">Je me lance!</a>
+    </div>
+    <div class="col-md-6">
+      <img class="img_description" src="https://www.quickbase.com/uploads/panel/1806_ProductShot_ManufAssetMgmt_1.png">
+    </div>
+  </div>
+</div>
+<br><br> <br><br>
+<div container="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+      <img class="img_description" src="https://www.quickbase.com/uploads/panel/New-Product-Screens/dashboard_helpdesk_customersuccess.png">
+    </div>
+    <div class="col-md-6">
+      <h2>Improve your team's productivity.</h2>
+      <p>Empower your customer service reps with fast access to a cloud-based client database.
+       Software solutions from Quick Base offer a simple way to find information and give
+       consistent answers to your customers every time. Enable faster problem resolution with
+       an easy-to-use knowledge base. Optimize customer service management by allowing customers
+        to open and track service requests and reps the opportunity to update customer information.
+        Software like this can contribute to creating a more collaborative environment and make every
+         stakeholder more proactive, solving problems quickly and efficiently.</p>
+
+         <a href="{{ path('solution1') }}" class="btn btn-action btn-lg thar-video"
+             role="button">Je me lance!</a>
+    </div>
+  </div>
+</div>
+<!-- other applications -->
+<br><br><br><br>
+<section class="wrapper">
+    <div class="container-big">
+        <div class="content">
+            <div class="container">
+              <h2 class="text-center sub-title">A single solution that streamlines HR.</p></h2>
+                <div class="row">
+
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="carbox">
+                            <a class="img-carbox" href="{{ path('solution1') }}">
+                            <img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/584ef481f7e0ab56e9725ed3/59bd6a9759cc686ce909f342/1505585815768/Management-14.png?format=500w">
+                          </a>
+                            <div class="carbox-content">
+                                <h4 class="carbox-title text-center">
+                                    Manufacturing Asset <br>Management
+                                  </a>
+                                </h4>
+                                <div class="carbox-read-more">
+                                    <a href="{{ path('solution1') }}" class="btn btn-link btn-block">
+                                        Read More>>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="carbox">
+                            <a class="img-carbox" href="www.softools.net">
+                            <img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/584ef481f7e0ab56e9725ed3/59bd6a9759cc686ce909f342/1505585815768/Management-14.png?format=500w">
+                          </a>
+                            <div class="carbox-content">
+                                <h4 class="carbox-title text-center">
+                                    Facilities Asset </br> Management
+                                  </a>
+                                </h4>
+                            </div>
+                            <div class="carbox-read-more">
+                                <a href="http://www.softools.net/" class="btn btn-link btn-block">
+                                    Read More >>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="carbox">
+                            <a class="img-carbox" href="www.softools.net">
+                            <img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/584ef481f7e0ab56e9725ed3/59bd6a9759cc686ce909f342/1505585815768/Management-14.png?format=500w">
+                          </a>
+                            <div class="carbox-content">
+                                <h4 class="carbox-title text-center">
+                                    Facilities Asset </br> Management
+                                  </a>
+                                </h4>
+                            </div>
+                            <div class="carbox-read-more">
+                                <a href="http://www.softools.net/" class="btn btn-link btn-block">
+                                    Read More >>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                      <br><br>
+                  <div class="row">
+
+                      <div class="col-xs-12 col-sm-4">
+                          <div class="carbox">
+                              <a class="img-carbox" href="{{ path('solution1') }}">
+                              <img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/584ef481f7e0ab56e9725ed3/59bd6a9759cc686ce909f342/1505585815768/Management-14.png?format=500w">
+                            </a>
+                              <div class="carbox-content">
+                                  <h4 class="carbox-title text-center">
+                                      Manufacturing Asset <br>Management
+                                    </a>
+                                  </h4>
+                                  <div class="carbox-read-more">
+                                      <a href="{{ path('solution1') }}" class="btn btn-link btn-block">
+                                          Read More>>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-4">
+                          <div class="carbox">
+                              <a class="img-carbox" href="www.softools.net">
+                              <img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/584ef481f7e0ab56e9725ed3/59bd6a9759cc686ce909f342/1505585815768/Management-14.png?format=500w">
+                            </a>
+                              <div class="carbox-content">
+                                  <h4 class="carbox-title text-center">
+                                      Facilities Asset </br> Management
+                                    </a>
+                                  </h4>
+                              </div>
+                              <div class="carbox-read-more">
+                                  <a href="http://www.softools.net/" class="btn btn-link btn-block">
+                                      Read More >>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-4">
+                          <div class="carbox">
+                              <a class="img-carbox" href="www.softools.net">
+                              <img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/584ef481f7e0ab56e9725ed3/59bd6a9759cc686ce909f342/1505585815768/Management-14.png?format=500w">
+                            </a>
+                              <div class="carbox-content">
+                                  <h4 class="carbox-title text-center">
+                                      Facilities Asset </br> Management
+                                    </a>
+                                  </h4>
+                              </div>
+                              <div class="carbox-read-more">
+                                  <a href="http://www.softools.net/" class="btn btn-link btn-block">
+                                      Read More >>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+
+                    </div>
+
+                  <br><br>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-4">
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="carbox">
+                            <a class="img-carbox" href="https::/www.softools.net">
+                            <img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/584ef481f7e0ab56e9725ed3/59bd6a9759cc686ce909f342/1505585815768/Management-14.png?format=500w">
+                          </a>
+                            <div class="carbox-content">
+                                <h4 class="carbox-title text-center">
+                                    IT Asset<br> Management
+                                  </a>
+                                </h4>
+                            </div>
+                            <div class="carbox-read-more">
+                                <a href="http://www.softools.net/" class="btn btn-link btn-block">
+                                    Read More>>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                    </div>
+                </div>
+                <br><br>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Témoignage -->
+<!--
+	use the left and right arrow keys on your keyboard or just swipe left and right on your smart phone to interact with the slider
+-->
+
+</br></br>
+<hr color="blue">
+</br></br>
+<div class="container">
+    <div class="col-md-3">
+    </div>
+
+		<div class="col-md-6">
+        <h4><strong>See what customers say.</strong></h4>
+        <div class="seprator"></div>
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <div class="row" style="padding: 20px">
+                    <button style="border: none;"><i class="fa fa-quote-left testimonial_fa" aria-hidden="true"></i></button>
+                    <p class="testimonial_para">Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie. Lorem Ipsum ist in der Industrie bereits der Standard Demo-Text "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo en.</p><br>
+                    <div class="row">
+                    <div class="col-sm-2">
+                        <img src="http://demos1.showcasedemos.in/jntuicem2017/html/v1/assets/images/jack.jpg" class="img-responsive" style="width: 80px">
+                        </div>
+                        <div class="col-sm-10">
+                        <h4><strong>Jack Andreson</strong></h4>
+                        <p class="testimonial_subtitle"><span>Chlinical Chemistry Technologist</span><br>
+                        <span>Officeal All Star Cafe</span>
+                        </p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+               <div class="item">
+                   <div class="row" style="padding: 20px">
+                    <button style="border: none;"><i class="fa fa-quote-left testimonial_fa" aria-hidden="true"></i></button>
+                    <p class="testimonial_para">Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie. Lorem Ipsum ist in der Industrie bereits der Standard Demo-Text "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo en.</p><br>
+                    <div class="row">
+                    <div class="col-sm-2">
+                        <img src="http://demos1.showcasedemos.in/jntuicem2017/html/v1/assets/images/kiara.jpg" class="img-responsive" style="width: 80px">
+                        </div>
+                        <div class="col-sm-10">
+                        <h4><strong>Kiara Andreson</strong></h4>
+                        <p class="testimonial_subtitle"><span>Chlinical Chemistry Technologist</span><br>
+                        <span>Officeal All Star Cafe</span>
+                        </p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="controls testimonial_control pull-right">
+                <a class="left fa fa-chevron-left btn btn-default testimonial_btn" href="#carousel-example-generic"
+                  data-slide="prev"> </a>
+
+                <a class="right fa fa-chevron-right btn btn-default testimonial_btn" href="#carousel-example-generic"
+                  data-slide="next"> </a>
+              </div>
+        </div>
+        <div class="col-md-3">
+        </div>
+	</div>
+</div>
+
+<br>
+<br>
+<div class='container vd'>
+
+<div class="row ">
+
+    </div>
+
+  </div>
+</div>
+  </div>
+  <br><br><br><br>>
+<!-- témoignage 2 -->
+<!-- Start Testmonials -->
+<div class="container">
+<div class="row">
+  <div class="col-md-8 col-center m-auto">
+    <h2>Testimonials</h2>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Carousel indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <!-- Wrapper for carousel items -->
+      <div class="carousel-inner">
+        <div class="item carousel-item active">
+          <div class="img-box"><img src="https://www.tutorialrepublic.com/examples/images/clients/1.jpg" alt=""></div>
+          <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+          <p class="overview"><b>Paula Wilson</b>, Media Analyst</p>
+        </div>
+        <div class="item carousel-item">
+          <div class="img-box"><img src="https://www.tutorialrepublic.com/examples/images/clients/2.jpg" alt=""></div>
+          <p class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Utmtc tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
+          <p class="overview"><b>Antonio Moreno</b>, Web Developer</p>
+        </div>
+        <div class="item carousel-item">
+          <div class="img-box"><img src="https://www.tutorialrepublic.com/examples/images/clients/3.jpg" alt=""></div>
+          <p class="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.</p>
+          <p class="overview"><b>Michael Holz</b>, Seo Analyst</p>
+        </div>
+      </div>
+      <!-- Carousel controls -->
+      <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+        <i class="fa fa-angle-left"></i>
+      </a>
+      <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+        <i class="fa fa-angle-right"></i>
+      </a>
+    </div>
+  </div>
+</div>
+</div>
+
+    <!-- End Testmonials -->
+
+    <div class="space-medium">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center ">
+                    <!-- section-title -->
+                    <div class="section-title">
+                        <h2>What our customer says</h2>
+                        <p>Quisque tempus justo molestie lacus blandit, eget molestie eros tristique. Nulla facilisi. Maecenas mollis ultricies faucibus.</p>
+                    </div>
+                </div>
+                <!-- /.section-title -->
+            </div>
+            <div class="row">
+                <!-- video-testimonail -->
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="video-testimonial-block">
+                        <div class="video-thumbnail"><img src="https://easetemplate.com/free-website-templates/finvisor/images/testi_img_1.jpg" alt="" class="img-fluid"></div>
+                        <div class="video">
+                            <iframe src="https://www.youtube.com/embed/KEiAVv1UNac" allowfullscreen>
+                            </iframe>
+                        </div>
+                        <a href="#" class="video-play"></a>
+                    </div>
+                    <div class="video-testimonial-content">
+                        <h4 class="mb10">Harlan M. Williams</h4>
+                        <p>Student Loan</p>
+                    </div>
+                </div>
+                <!-- /.video-testimonail -->
+                <!-- video-testimonail -->
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="video-testimonial-block">
+                        <div class="video-thumbnail"><img src="https://easetemplate.com/free-website-templates/finvisor/images/testi_img_2.jpg" alt="" class="img-fluid"></div>
+                        <div class="video">
+                            <iframe src="https://www.youtube.com/embed/KEiAVv1UNac"
+                             allowfullscreen>
+                            </iframe>
+                        </div>
+                        <a href="#" class="video-play"></a>
+                    </div>
+                    <div class="video-testimonial-content">
+                        <h4 class="mb10">Alisha A. Delapaz</h4>
+                        <p>Retirement Planning</p>
+                    </div>
+                </div>
+                <!-- /.video-testimonail -->
+                <!-- video-testimonail -->
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="video-testimonial-block">
+                        <div class="video-thumbnail"><img src="https://easetemplate.com/free-website-templates/finvisor/images/testi_img_3.jpg" alt="" class="img-fluid"></div>
+                        <div class="video">
+                            <iframe src="https://www.youtube.com/embed/KEiAVv1UNac" allowfullscreen>
+                            </iframe>
+                        </div>
+                        <a href="#" class="video-play"></a>
+                    </div>
+                    <div class="video-testimonial-content">
+                        <h4 class="mb10">Rebecca L. Jenkins</h4>
+                        <p>Term Insurance</p>
+                    </div>
+                </div>
+                <!-- /.video-testimonail -->
+            </div>
+            <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center mt-4">
+              Created for <a href="" target="_blank" class="text-primary">softools</a>
+              </div></div>
+        </div>
+    </div>
+    <!-- /.video-testimonial-section -->
+
+{% block javascripts %}
+{{ parent() }}
+
+
+ <script>
+
+ $(".video-play").on('click', function(e) {
+     e.preventDefault(); 
+     var vidWrap = $(this).parent(),
+         iframe = vidWrap.find('.video iframe'),
+         iframeSrc = iframe.attr('src'),
+         iframePlay = iframeSrc += "?autoplay=1";
+     vidWrap.children('.video-thumbnail').fadeOut();
+     vidWrap.children('.video-play').fadeOut();
+     vidWrap.find('.video iframe').attr('src', iframePlay);
+
+
+ });
+
+ </script>
+{% endblock %}
+{% endblock %}

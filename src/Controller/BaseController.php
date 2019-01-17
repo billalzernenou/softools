@@ -119,7 +119,7 @@ class BaseController extends Controller
      */
     public function solution1()
     {   $language= 'en';
-        return $this->render('base/solution1.html.twig', [
+        return $this->render('solutions/solution1.html.twig', [
             'controller_name' => 'BaseController',
             'language'=> $language,
 
@@ -130,7 +130,7 @@ class BaseController extends Controller
      */
     public function solution2()
     {   $language= 'en';
-        return $this->render('base/solution2.html.twig', [
+        return $this->render('solutions/solution2.html.twig', [
             'controller_name' => 'BaseController',
             'language'=> $language,
 
@@ -141,7 +141,7 @@ class BaseController extends Controller
      */
     public function solution3()
     {   $language= 'en';
-        return $this->render('base/solution3.html.twig', [
+        return $this->render('solutions/solution3.html.twig', [
             'controller_name' => 'BaseController',
             'language'=> $language,
 
