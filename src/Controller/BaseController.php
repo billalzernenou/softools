@@ -160,5 +160,17 @@ class BaseController extends Controller
         ]);
     }
 
+    /**
+     * @Route("/sign", name="sign")
+     */
+    public function sign()
+    {   $language= 'en';
+        return $this->render('sign/sign.html.twig', [
+            'controller_name' => 'BaseController',
+            'language'=> $language,
+
+        ]);
+    }
+
 
 }
