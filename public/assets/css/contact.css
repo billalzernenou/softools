@@ -1,0 +1,39 @@
+
+html,body{
+background-image: url('https://images.pexels.com/photos/224756/pexels-photo-224756.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+background-size: cover;
+background-repeat: no-repeat;
+font-family: 'Numans', sans-serif;
+}
+
+.contact-form
+{
+  background-color: rgba(0,0,0,0.3) !important;
+}
+
+label{
+  color: white;
+}
+.contact-form .btn {
+  background: orange;
+  border: none;
+  line-height: normal;
+  font-size: 16px;
+}
+.contact-form .btn:hover, .login-form .btn:focus {
+  background: grey;
+}
+.contact-form .btn {
+  min-height: 40px;
+  border-radius: 2px;
+      transition: all 0.5s;
+}
+
+.contact img{
+  width: 200px;
+}
+
+.contact h4
+{
+  color: white;
+}

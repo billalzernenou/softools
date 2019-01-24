@@ -1,0 +1,210 @@
+/* Made with love by Mutiullah Samim*/
+
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,body{
+background-image: url('https://png.pngtree.com/thumb_back/fh260/back_pic/04/10/08/795816e15f3f166.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+font-family: 'Numans', sans-serif;
+}
+
+.container{
+align-content: center;
+}
+
+.cont{
+
+background-color: rgba(0,0,0,0.3) !important;
+}
+.contt{
+
+background-color: rgba(0,0,0,0.3) !important;
+}
+.conttt{
+
+/*background-color: rgba(0,0,0,0.4) !important;*/
+}
+
+.modal-header
+img{
+  width: 200px;
+}
+/*login*/
+.form-control {
+  box-shadow: none;
+  border-color: #ddd;
+}
+.form-control:focus {
+  border-color: green;
+}
+.login-form {
+  width: 350px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+  .login-form form {
+    color: #999;
+    border-radius: 3px;
+      margin-bottom: 15px;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+}
+.login-form h4 {
+  text-align: center;
+  font-size: 22px;
+      margin-bottom: 20px;
+      color: white;
+}
+  .login-form .avatar {
+      color: #fff;
+  margin: 0 auto 30px;
+      text-align: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  z-index: 9;
+  background: white;
+  padding: 15px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+  .login-form .avatar i {
+      font-size: 62px;
+  }
+  .login-form .form-group {
+      margin-bottom: 20px;
+  }
+.login-form .form-control, .login-form .btn {
+  min-height: 40px;
+  border-radius: 2px;
+      transition: all 0.5s;
+}
+.login-form .close {
+      position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.login-form .btn {
+  background: orange;
+  border: none;
+  line-height: normal;
+  font-size: 16px;
+}
+.login-form .btn:hover, .login-form .btn:focus {
+  background: grey;
+}
+  .login-form .checkbox-inline {
+      float: left;
+  }
+  .login-form input[type="checkbox"] {
+      margin-top: 2px;
+  }
+  .login-form .forgot-link {
+      float: right;
+      color:white;
+  }
+  .login-form .small {
+      font-size: 13px;
+  }
+  .login-form a {
+      color: orange;
+  }
+
+
+/*signin*/
+
+.signup-form{
+		width: 400px;
+		margin: 0 auto;
+		padding: 30px 0;
+	}
+	.signup-form h2{
+		color: white;
+        margin: 0 0 15px;
+		position: relative;
+		text-align: center;
+    }
+	.signup-form h2:before, .signup-form h2:after{
+		content: "";
+		height: 2px;
+		width: 30%;
+		background: #d4d4d4;
+		position: absolute;
+		top: 50%;
+		z-index: 2;
+	}
+	.signup-form h2:before{
+		left: 0;
+	}
+	.signup-form h2:after{
+		right: 0;
+	}
+    .signup-form .hint-text{
+		color: #999;
+		margin-bottom: 30px;
+		text-align: center;
+	}
+    .signup-form form{
+		color: #999;
+		border-radius: 3px;
+    	margin-bottom: 15px;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+    }
+	.signup-form .form-group{
+		margin-bottom: 20px;
+	}
+	.signup-form input[type="checkbox"]{
+		margin-top: 3px;
+	}
+	.signup-form .btn{
+    background: orange;
+    border: none;
+    line-height: normal;
+    font-size: 16px;
+    }
+    .signup-form .btn:hover, .signup-form .btn:focus{
+      background: grey;
+      }
+	.signup-form .row div:first-child{
+		padding-right: 10px;
+	}
+	.signup-form .row div:last-child{
+		padding-left: 10px;
+	}
+    .signup-form a{
+		color: white;
+		text-decoration: underline;
+	}
+    .signup-form a:hover{
+		text-decoration: none;
+	}
+	.signup-form form a{
+		color: orange;
+		text-decoration: none;
+	}
+	.signup-form form a:hover{
+		text-decoration: underline;
+	}
+
+  .signup-form h4 {
+    text-align: center;
+    font-size: 22px;
+        margin-bottom: 20px;
+        color: white;
+  }
+    .signup-form .avatar {
+        color: #fff;
+    margin: 0 auto 30px;
+        text-align: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    z-index: 9;
+    background: white;
+    padding: 15px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+  }
+    .signup-form.avatar i {
+        font-size: 62px;
+    }

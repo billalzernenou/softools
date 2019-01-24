@@ -1,0 +1,127 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    {{ parent() }}
+<link rel="stylesheet" href="assets/css/signi.css" media="screen" >
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+{% endblock %}
+
+{% block header %}
+{{ parent() }}
+<br/> <br/><br/> <br/><br/>
+<div class="container cont">
+	<div class="row">
+        <div class="span12">
+    		<div class="" id="loginModal">
+              <div class="modal-header text-center">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                  <img src="assets/images/logo.png" class="logo" alt="">
+                  <h4>Customizable business software. </h4>
+              </div>
+              <div class="modal-body contt">
+                <div class="well contt">
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a href="#login" data-toggle="tab">Login</a></li>
+                    <li><a href="#create" data-toggle="tab">Create Account</a></li>
+                    <li><a href="#forgot" data-toggle="tab">Forgot Password</a></li>
+                  </ul>
+                  <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane active in" id="login">
+                      <div class="login-form">
+                          <form action="/examples/actions/confirmation.php" method="post">
+                      		<div class="avatar"><i class="material-icons"><img src="assets/images/login.png"></i></div>
+
+                          	<h4 class="modal-title">Login to Your Account</h4>
+                              <div class="form-group">
+                                  <input type="text" class="form-control" placeholder="Username" required="required">
+                              </div>
+                              <div class="form-group">
+                                  <input type="password" class="form-control" placeholder="Password" required="required">
+                              </div>
+                              <div class="form-group small clearfix">
+                                  <label class="checkbox-inline"><input type="checkbox"> Remember me</label>
+                                  <a href="#forgot" data-toggle="tab" id="forgott" class="forgot-link">Forgot Password?</a>
+                              </div>
+                              <input type="submit" class="btn btn-primary btn-block btn-lg" value="Login">
+                          </form>
+                          <div class="text-center small">Don't have an account? <a href="#create" data-toggle="tab">Sign up</a></div>
+                      </div>
+
+                    </div>
+                    <div class="tab-pane fade card" id="create">
+                      <div class="card-header">
+                      </div>
+                        <div class="card-body">
+                          <div class="signup-form">
+                              <form id="tab" action="/examples/actions/confirmation.php" method="post">
+                                <div class="avatar"><i class="material-icons"><img src="assets/images/register.png"></i></div>
+                                	<h4 class="modal-title">Register to Your Account</h4>
+                          		<p class="hint-text">Create your account. It's free and only takes a minute.</p>
+                                  <div class="form-group">
+                          			<div class="row">
+                          				<div class="col-xs-6"><input type="text" class="form-control" name="first_name" placeholder="First Name" required="required"></div>
+                          				<div class="col-xs-6"><input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required"></div>
+                          			</div>
+                                  </div>
+                                  <div class="form-group">
+                                  	<input type="email" class="form-control" name="email" placeholder="Email" required="required">
+                                  </div>
+                          		<div class="form-group">
+                                      <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+                                  </div>
+                          		<div class="form-group">
+                                      <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
+                                  </div>
+                                  <div class="form-group">
+                          			<label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+                          		</div>
+                          		<div class="form-group">
+                                      <button type="submit" class="btn btn-primary btn-block btn-lg">Register Now</button>
+                                  </div>
+                              </form>
+                          	<div class="text-center">Already have an account? <a href="#login" data-toggle="tab">Sign in</a></div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade card" id="forgot">
+                      <div class="card-header">
+                      </div>
+                        <div class="card-body">
+                          <div class="signup-form">
+                              <form id="tab" action="/examples/actions/confirmation.php" method="post">
+                                <div class="avatar"><i class="material-icons"><img src="assets/images/forgot.png"></i></div>
+
+                                	<h4 class="modal-title">Forgot</h4>
+                              <p class="hint-text">Enter your username or email to reset your password.
+                              You will receive an email with instructions on how to reset your password.
+                              If you are experiencing problems resetting your password <a>contact</a> us or send us an email</p>
+                                  <div class="form-group">
+                                    <input type="email" class="form-control" name="email" placeholder="Email" required="required">
+                                  </div>
+
+                              <div class="form-group">
+                                      <button type="submit" class="btn btn-primary btn-block btn-lg">Reset PassWord </button>
+                                  </div>
+                              </form>
+                            <div class="text-center">Already have an account? <a href="#create" data-toggle="tab">Sign in</a></div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+	</div>
+</div>
+</div>
+<br/> <br/>
+{% endblock %}
+{% block body %}
+
+{% block javascripts %}
+{{ parent() }}
+<script>
+
+</script>
+
+{% endblock %}
+{% endblock %}

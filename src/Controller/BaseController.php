@@ -172,5 +172,40 @@ class BaseController extends Controller
         ]);
     }
 
+    /**
+     * @Route("/signin", name="signin")
+     */
+    public function signin()
+    {   $language= 'en';
+        return $this->render('base/signin.html.twig', [
+            'controller_name' => 'BaseController',
+            'language'=> $language,
+
+        ]);
+    }
+
+    /**
+     * @Route("/contact", name="contact")
+     */
+    public function contact()
+    {   $language= 'en';
+        return $this->render('base/contact.html.twig', [
+            'controller_name' => 'BaseController',
+            'language'=> $language,
+
+        ]);
+    }
+
+    /**
+     * @Route("/blog", name="blog")
+     */
+    public function blog()
+    {   $language= 'en';
+        return $this->render('base/blog.html.twig', [
+            'controller_name' => 'BaseController',
+            'language'=> $language,
+
+        ]);
+    }
 
 }
