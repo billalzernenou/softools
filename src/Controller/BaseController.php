@@ -207,5 +207,16 @@ class BaseController extends Controller
 
         ]);
     }
+    /**
+     * @Route("/testimonial", name="testimonial" )
+     */
+    public function testimonial()
+    {   $language= 'en';
+        return $this->render('base/testimonial.html.twig', [
+            'controller_name' => 'BaseController',
+            'language'=> $language,
+
+        ]);
+    }
 
 }
