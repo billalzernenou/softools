@@ -196,23 +196,25 @@ class BaseController extends Controller
         ]);
     }
 
-    /**
-     * @Route("/blog", name="blog")
-     */
-    public function blog()
-    {   $language= 'en';
-        return $this->render('base/blog.html.twig', [
-            'controller_name' => 'BaseController',
-            'language'=> $language,
 
-        ]);
-    }
     /**
      * @Route("/testimonial", name="testimonial" )
      */
     public function testimonial()
     {   $language= 'en';
         return $this->render('base/testimonial.html.twig', [
+            'controller_name' => 'BaseController',
+            'language'=> $language,
+
+        ]);
+    }
+
+    /**
+     * @Route("/blog", name="blog" )
+     */
+    public function blog()
+    {   $language= 'en';
+        return $this->render('base/blog.html.twig', [
             'controller_name' => 'BaseController',
             'language'=> $language,
 

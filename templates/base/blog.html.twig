@@ -7,60 +7,269 @@
 
 {% block header %}
 {{ parent() }}
-<br/> <br/><br/><br/>
+<div id="myCarousel" class="carousel slide" data-interval="false">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="https://static.pexels.com/photos/21787/pexels-photo.jpg" style="width:100%" class="img-responsive">
+      <div class="container">
+        <div class="caraous-title text-center">
+            <div class="col-md-12">
+                <span>Zéro Code Platforme</span>
+                    <h1><span>RAISE</span> YOUR HELPING HAND</h1>
+                    <h3>We are Softools NGO & Business Platforme</h3>
+                    <a class="btn btn-lg btn-primary site-btn" href="#">Découvrir</a>
+                    <a class="btn btn-lg btn-primary site-btn2" href="#">DEMO</a>
 
-<br/> <br/>
+
+            </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="https://images.pexels.com/photos/458917/pexels-photo-458917.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" class="img-responsive">
+      <div class="container">
+        <div class="caraous-title text-center">
+            <div class="col-md-12">
+                <span>Zéro Code Platforme</span>
+                    <h1><span>RAISE</span> YOUR HELPING HAND</h1>
+                    <h3>We are Softools NGO & Business Platforme </h3>
+                      <a class="btn btn-lg btn-primary site-btn" href="#">Découvrir</a>
+                      <a class="btn btn-lg btn-primary site-btn2" href="#">DEMO</a>
+
+
+            </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="https://images.pexels.com/photos/130879/pexels-photo-130879.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" class="img-responsive">
+      <div class="container">
+        <div class="caraous-title text-center">
+            <div class="col-md-12">
+                <span>Zéro Code Platforme</span>
+                <h1><span>RAISE</span> YOUR HELPING HAND</h1>
+                <h3>We are Softools NGO & Business Platforme </h3>
+                    <a class="btn btn-lg btn-primary site-btn" href="#">Découvrir</a>
+                    <a class="btn btn-lg btn-primary site-btn2" href="#">DEMO</a>
+
+
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="icon-prev"></span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="icon-next"></span>
+  </a>
+</div>
+
 {% endblock %}
 {% block body %}
 <!-- details card section starts from here -->
-<section class="details-card">
-    <div class="container">
+<section id="blog">
+      <div class="container">
+
         <div class="row">
-            <div class="col-md-4">
-                <div class="card-content">
-                    <div class="card-img">
-                        <img src="https://placeimg.com/380/230/nature" alt="">
-                        <span><h4>heading</h4></span>
-                    </div>
-                    <div class="card-desc">
-                        <h3>Heading</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
-                            voluptas totam</p>
-                            <a href="#" class="btn-card">Read</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card-content">
-                    <div class="card-img">
-                        <img src="https://placeimg.com/380/230/animals" alt="">
-                        <span><h4>heading2</h4></span>
-                    </div>
-                    <div class="card-desc">
-                        <h3>Heading2</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
-                            voluptas totam</p>
-                            <a href="#" class="btn-card">Read</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card-content">
-                    <div class="card-img">
-                        <img src="https://placeimg.com/380/230/tech" alt="">
-                        <span><h4>heading3</h4></span>
-                    </div>
-                    <div class="card-desc">
-                        <h3>Heading3</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
-                            voluptas totam</p>
-                            <a href="#" class="btn-card">Read</a>
-                    </div>
-                </div>
+            <div class="col-lg-6 col-lg-offset-3 text-center">
+                <h2><span class="ion-minus"></span>Blog Posts<span class="ion-minus"></span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis  dis parturient montes, nascetur ridiculus </p><br>
             </div>
         </div>
+
+        <div class="row">
+
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" data-aos="fade-right">
+                    <div class="blog column text-center">
+                        <img src="https://images.pexels.com/photos/129441/pexels-photo-129441.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" width="100%">
+                        <h4>Post Title</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" data-aos="fade-up">
+                    <div class="blog column text-center">
+                        <img src="https://images.pexels.com/photos/129105/pexels-photo-129105.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" width="100%">
+                        <h4>Post Title</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" data-aos="fade-left">
+                    <div class="blog column text-center">
+                        <img src="https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" width="100%">
+                        <h4>Post Title</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+
+        </div>  <!-- row -->
+
     </div>
 </section>
+<div class="container">
+	<div class="col-sm-6 col-md-8 col-lg-8">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<img src="https://images.pexels.com/photos/262508/pexels-photo-262508.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" class="img-thumbnail img-responsive">
+						<p class="text-muted">By <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Lorem Ipsum | <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Jan/21/2018</p>
+						<h3>Images by pexels.com</h3>
+						<p>Nulla vehicula semper tellus, eleifend convallis dolor accumsan vitae. Donec diam lorem, vulputate eget pharetra at, laoreet ac augue. Vestibulum tellus justo, faucibus quis hendrerit sit amet, rutrum non nulla[...]</p>
+						<a href="javascript: void(0);" class="btn btn-default">Read more...</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<img src="https://images.pexels.com/photos/34601/pexels-photo.jpg?h=350&auto=compress&cs=tinysrgb" alt="" class="img-thumbnail img-responsive">
+						<p class="text-muted">By <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Lorem Ipsum | <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Jan/21/2018</p>
+						<h3>Images by pexels.com</h3>
+						<p>Nulla vehicula semper tellus, eleifend convallis dolor accumsan vitae. Donec diam lorem, vulputate eget pharetra at, laoreet ac augue. Vestibulum tellus justo, faucibus quis hendrerit sit amet, rutrum non nulla[...]</p>
+						<a href="javascript: void(0);" class="btn btn-default">Read more...</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				<div class="panel panel-default">
+					<article class="panel-body">
+						<img src="https://images.pexels.com/photos/459688/pexels-photo-459688.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" class="img-thumbnail img-responsive">
+						<p class="text-muted">By <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Lorem Ipsum | <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Jan/21/2018</p>
+						<h3>Images by pexels.com</h3>
+						<p>Nulla vehicula semper tellus, eleifend convallis dolor accumsan vitae. Donec diam lorem, vulputate eget pharetra at, laoreet ac augue. Vestibulum tellus justo, faucibus quis hendrerit sit amet, rutrum non nulla[...]</p>
+						<a href="javascript: void(0);" class="btn btn-default">Read more...</a>
+					</article>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				<div class="panel panel-default">
+					<article class="panel-body">
+						<img src="https://images.pexels.com/photos/273222/pexels-photo-273222.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" class="img-thumbnail img-responsive">
+						<p class="text-muted">By <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Lorem Ipsum | <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Jan/21/2018</p>
+						<h3>Images by pexels.com</h3>
+						<p>Nulla vehicula semper tellus, eleifend convallis dolor accumsan vitae. Donec diam lorem, vulputate eget pharetra at, laoreet ac augue. Vestibulum tellus justo, faucibus quis hendrerit sit amet, rutrum non nulla[...]</p>
+						<a href="javascript: void(0);" class="btn btn-default">Read more...</a>
+					</article>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				<div class="panel panel-default">
+					<article class="panel-body">
+						<img src="https://images.pexels.com/photos/392018/pexels-photo-392018.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" class="img-thumbnail img-responsive">
+						<p class="text-muted">By <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Lorem Ipsum | <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Jan/21/2018</p>
+						<h3>Images by pexels.com</h3>
+						<p>Nulla vehicula semper tellus, eleifend convallis dolor accumsan vitae. Donec diam lorem, vulputate eget pharetra at, laoreet ac augue. Vestibulum tellus justo, faucibus quis hendrerit sit amet, rutrum non nulla[...]</p>
+						<a href="javascript: void(0);" class="btn btn-default">Read more...</a>
+					</article>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				<div class="panel panel-default">
+					<article class="panel-body">
+						<img src="https://images.pexels.com/photos/301930/pexels-photo-301930.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" class="img-thumbnail img-responsive">
+						<p class="text-muted">By <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Lorem Ipsum | <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Jan/21/2018</p>
+						<h3>Images by pexels.com</h3>
+						<p>Nulla vehicula semper tellus, eleifend convallis dolor accumsan vitae. Donec diam lorem, vulputate eget pharetra at, laoreet ac augue. Vestibulum tellus justo, faucibus quis hendrerit sit amet, rutrum non nulla[...]</p>
+						<a href="javascript: void(0);" class="btn btn-default">Read more...</a>
+					</article>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div>
+			<nav aria-label="...">
+				<ul class="pager">
+					<li class="previous"><a href="#"><span aria-hidden="true">←</span> Older Posts</a></li>
+					<li class="next disabled"><a href="#">Newer Posts<span aria-hidden="true">→</span></a></li>
+				</ul>
+			</nav>
+		</div>
+
+	</div>
+
+	<div class="col-sm-6 col-md-4 col-lg-4">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<h4 class="text-center">About us!</h4>
+				<img src="http://static1.squarespace.com/static/584ef3529f7456bbff636f52/t/5a27f95371c10bacdee57bd6/1512569172072/b3af7c10-bdac-4683-bbe6-62330b173c16.png?format=1500w" alt="" class="img-thumbnail img-responsive">
+				<h5 class="text-center">softools France</h5>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+				<h4 class="text-center">Popular Posts!</h4>
+				<div class="row">
+					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+						<img src="https://images.pexels.com/photos/301930/pexels-photo-301930.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" class="img-thumbnail img-responsive">
+					</div>
+					<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+						<h5>Images by pexels.com</h5>
+						<p class="text-muted"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Jan/21/2018</p>
+					</div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+						<img src="https://images.pexels.com/photos/34601/pexels-photo.jpg?h=350&auto=compress&cs=tinysrgb" alt="" class="img-thumbnail img-responsive">
+					</div>
+					<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+						<h5>Images by pexels.com</h5>
+						<p class="text-muted"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Jan/21/2018</p>
+					</div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+						<img src="https://images.pexels.com/photos/459688/pexels-photo-459688.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" class="img-thumbnail img-responsive">
+					</div>
+					<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+						<h5>Images by pexels.com</h5>
+						<p class="text-muted"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Jan/21/2018</p>
+					</div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+						<img src="https://images.pexels.com/photos/273222/pexels-photo-273222.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" class="img-thumbnail img-responsive">
+					</div>
+					<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+						<h5>Images by pexels.com</h5>
+						<p class="text-muted"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Jan/21/2018</p>
+					</div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+						<img src="https://images.pexels.com/photos/392018/pexels-photo-392018.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" class="img-thumbnail img-responsive">
+					</div>
+					<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+						<h5>Images by pexels.com</h5>
+						<p class="text-muted"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Jan/21/2018</p>
+					</div>
+				</div>
+				<hr>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
 <!-- details card section starts from here -->
 
 
