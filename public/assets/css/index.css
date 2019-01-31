@@ -134,7 +134,6 @@
   	font-weight: bold;
   	text-align: center;
   	text-decoration: none;
-  	text-transform: uppercase;
   	overflow: hidden;
   	letter-spacing: .08em;
   	border-radius: 0;
@@ -487,4 +486,112 @@ box-shadow: 5px 10px 10px #d2d3d4;
 
 .video-overlay-play-button.is-hidden {
     display: none;
+}
+.s {
+  margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    margin-bottom: 60px;
+display: block;
+}
+.boxx
+{
+  border-radius: 8px;
+border: 1px solid #d9e2f0;
+height: 176px;
+padding: 14px;
+width: 340px;
+box-sizing: content-box;
+transition: all .2s;
+
+text-shadow: none;
+
+}
+.boxx:hover
+{
+  border-radius: 8px;
+border: 1px solid orange;
+height: 176px;
+padding: 14px;
+width: 340px;
+box-sizing: content-box;
+transition: all .2s;
+
+text-shadow: none;
+
+}
+.boxx:hover .btn
+{
+  color: white;
+  background-color: orange;
+  border-color: orange;
+  border-radius: 5px;
+
+}
+.boxxx {
+  background-color: #fef6eb;
+}
+
+ .btn {
+   margin-top: 0px;
+   display: inline-flex;
+   align-items: center;
+     height: 38px;
+     font-size: 14px;
+     font-family: "AvenirNextDemiBold";
+     background: transparent;
+    color: #0081ff;
+    border: 1px solid rgba(0, 129, 255, 0.8);
+    padding: 6px 20px;
+        min-height: 32px;
+            text-align: center;
+            line-height: 1;
+                box-sizing: border-box;
+                text-shadow: none;
+                -webkit-font-smoothing: antialiased;
+
+}
+
+ .btn{
+    color: orange;
+    background-color: transparent;
+    border: 1px solid orange;
+    margin-right: 5px;
+    padding-top: 5px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    color: white;
+    background-color: orange;
+    border-color: orange;
+    border-radius: 5px;
+}
+.text-left {
+        vertical-align: baseline;
+    font-family: "AvenirNextDemiBold";
+    font-size: 18px;
+    color: #293e52;
+    line-height: 1;
+    text-rendering: optimizelegibility;
+    font-weight: normal;
+        box-sizing: border-box;
+        text-shadow: none;
+    color: #2b3e50;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+.f
+{
+      margin: 0;
+      font-family: "AvenirNextRegular";
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: #7f8b97;
+      line-height: 22px;
+      letter-spacing: 0.3px;
+
 }
