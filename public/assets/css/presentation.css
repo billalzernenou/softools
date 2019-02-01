@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
 /*our team */
 .team{
     padding:75px 0;
@@ -93,4 +94,65 @@ a:hover{
 }
 i.red{
     color:#BC0213;
+}
+
+/* section présentation */
+.img_description
+{
+  max-width: 550px;
+  overflow: hidden;
+}
+
+/*header*/
+/* main */
+#header {
+  background: url(https://images.pexels.com/photos/165754/pexels-photo-165754.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat center top;
+  background-size: cover;
+  height: 500px;;
+
+}
+#header .center {
+  text-align: center;
+  position: absolute;
+  color: #FFFFFF;
+  color: #F5F7FA;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 80px;;
+}
+#header .center .middle {
+
+}
+#header .center .middle h1 {
+  font-family: "Lusitana";
+  font-weight: normal;
+  line-height: 1em;
+  font-size: 8em;
+  color: white
+}
+#header .center .middle span {
+  line-height: 5em;
+  font-size: 2em;
+  color:white;
+}
+
+.f li
+{
+  font-family: proxima-nova;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.2em;
+    letter-spacing: 0em;
+    line-height: 1.6em;
+    text-transform: none;
+    color: #211715;
+    text-redering: optimizeLegibillity;
+ -moz-font-feature-settings: "dlig";
+ line-height: 1.4em;
+ padding-bottom: 1em;
+ text-align: justify;
+ -moz-hyphens: auto;
+ -ms-hyphens: auto;
+ hyphens: auto;
 }
