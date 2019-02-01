@@ -420,7 +420,7 @@ footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
   background: #202227;
   border-radius: 18px;
   overflow: hidden;
-box-shadow:  0px -10px 55px rgba(0,0,0,0.7);
+box-shadow:  0px -2px 40px rgba(0,0,0,0.5);
 }
 
 .laptop-base {
@@ -492,7 +492,8 @@ box-shadow: 5px 10px 10px #d2d3d4;
     margin-right: auto;
     margin-top: 80px;
     margin-bottom: 60px;
-display: block;
+    display: block;
+    width:32px;
 }
 .boxx
 {
@@ -532,7 +533,7 @@ text-shadow: none;
   background-color: #fef6eb;
 }
 
- .btn {
+ .c .btn {
    margin-top: 0px;
    display: inline-flex;
    align-items: center;
@@ -552,7 +553,7 @@ text-shadow: none;
 
 }
 
- .btn{
+ .c .btn{
     color: orange;
     background-color: transparent;
     border: 1px solid orange;
@@ -561,7 +562,7 @@ text-shadow: none;
     border-radius: 5px;
 }
 
-.btn:hover {
+.c .btn:hover {
     color: white;
     background-color: orange;
     border-color: orange;

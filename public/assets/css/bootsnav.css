@@ -652,7 +652,7 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
         width: 100%;
         margin-bottom: 0;
         border-bottom: none;
-        color: #6f6f6f;
+        color: grey;
     }
 
     nav.navbar.bootsnav.on ul.dropdown-menu.megamenu-content .content{
@@ -974,7 +974,7 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
         float: none !important;
         padding: 0;
         margin: 0;
-        width: 100%;
+        width: 80%;
     }
 
     nav.bootsnav.navbar-sidebar .dropdown .megamenu-content .col-menu .title{
@@ -1492,4 +1492,8 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
         padding-top: 30px;
         padding-bottom: 30px;
     }
+}
+.megamenu
+{
+  background: grey;
 }

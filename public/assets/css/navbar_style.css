@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6{
     box-sizing: border-box;
         font-family: AvenirNext;
         box-sizing: border-box;
-            text-align: center;
+
 
 }
 
@@ -84,7 +84,6 @@ h5{
 h6{
     font-size: 1.25em;
     line-height: 1.8;
-    margin: 0 0 40px;
     line-height:18px;
 }
 
@@ -109,7 +108,7 @@ Navbar Adjusment
 =========================== */
 /* Navbar Atribute ------*/
 .attr-nav > ul > li > a{
-    padding: 28px 15px;
+
 }
 
 ul.cart-list > li.total > .btn{
