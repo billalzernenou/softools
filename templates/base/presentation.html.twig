@@ -2,7 +2,9 @@
 {% block stylesheets %}
 {{ parent() }}
 <link rel="stylesheet" href="assets/css/presentation.css" media="screen" >
-<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i" rel="stylesheet">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 {% endblock %}
 {% block header %}
 
@@ -36,7 +38,7 @@
       <img class="img_description" src="https://www.quickbase.com/uploads/panel/New-Product-Screens/dashboard_helpdesk_customersuccess.png">
     </div>
     <div class="col-md-6">
-      <h2>What is Softools?</h2>
+      <h3>What is Softools?</h3>
       <ul class="f">
         <li>An award-winning platform for creating custom solutions to everyday business challenges</li>
         <li>A tool that empowers you to quickly build your own applications — no programming experience required</li>
@@ -47,7 +49,7 @@
   </div>
 </div>
 
-<div class="container">
+<div class="container hidden">
 	<div class="row">
 		<div class="service-heading-block">
 				<br/> <br/> <br/> <br/><br/> <br/>
@@ -74,7 +76,7 @@
 	</div>
 </div>
 
-<div class="container">
+<div class="container hidden">
 	<div class="row">
 		<div class="service-heading-block">
 				<br/> <br/> <br/> <br/><br/> <br/>
@@ -101,48 +103,348 @@
 
 	</div>
 </div>
-<!-- section -->
-<div class="container">
-	<div class="service-heading-block">
-			<br/> <br/> <br/>
-			<h2 class="text-center  title">3 BONNES RAISONS DE CHOISIR SOFTOOLS</h2>
-			<p class="text-center sub-title">Lorem ipsum dolor sit amet,<span class="text-primary">consectetur adipisicing</span> elit.<br/> Dolor alias provident excepturi eligendi, nam numquam iusto eum illum, ea quisquam.</p>
-	</div>
-	<div class="row">
-		<div class="col-md-4">
-			<img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/t/58a09925b8a79bca01f78b0d/1486919974550/Screen+Shot+2017-02-12+at+17.18.59.png?format=300w" alt="Image showing unified views">
-			<h5>Lorem ipsum dolor </h5>
-			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit est laborum. </p>
-		</div>
-		<div class="col-md-4">
-			<img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/t/58a09925b8a79bca01f78b0d/1486919974550/Screen+Shot+2017-02-12+at+17.18.59.png?format=300w" alt="Image showing unified views">
-			<h5>Lorem ipsum dolor </h5>
-			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit est laborum. </p>
-		</div>
-		<div class="col-md-4">
-			<img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/t/58a09925b8a79bca01f78b0d/1486919974550/Screen+Shot+2017-02-12+at+17.18.59.png?format=300w" alt="Image showing unified views">
-			<h5>Lorem ipsum dolor </h5>
-			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit est laborum. </p>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-4">
-			<img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/t/58a09925b8a79bca01f78b0d/1486919974550/Screen+Shot+2017-02-12+at+17.18.59.png?format=300w" alt="Image showing unified views">
-			<h5>Lorem ipsum dolor </h5>
-			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit est laborum. </p>
-		</div>
-		<div class="col-md-4">
-			<img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/t/58a09925b8a79bca01f78b0d/1486919974550/Screen+Shot+2017-02-12+at+17.18.59.png?format=300w" alt="Image showing unified views">
-			<h5>Lorem ipsum dolor </h5>
-			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit est laborum. </p>
-		</div>
-		<div class="col-md-4">
-			<img src="https://static1.squarespace.com/static/584ef3529f7456bbff636f52/t/58a09925b8a79bca01f78b0d/1486919974550/Screen+Shot+2017-02-12+at+17.18.59.png?format=300w" alt="Image showing unified views">
-			<h5>Lorem ipsum dolor </h5>
-			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit est laborum. </p>
-		</div>
-	</div>
+<div class="container text-center">
+  <h3> Watch how it works!</h3>
+  <div class="row">
+    <div class="col-xs-12 col-sm-2"></div>
+    <div class="col-xs-12 col-sm-8">
+      <div class="laptop">
+        <div class="laptop-screen"><!--<img class="img-responsive" src="https://picsum.photos/640/360/?random"/>-->
+          <div class="owl-carousel">
+            <div class="video-wrapper">
+                <video src="assets/images/softools.mp4" poster="//s3-us-west-2.amazonaws.com/s.cdpn.io/3174/poster.png"></video>
+            </div>
+          </div>
+        </div>
+        <div class="laptop-base"></div>
+      </div>
+    </div>
+  </div>
 </div>
+
+<div class="container text-center">
+  <h2> Reap the benefits of implementing lean</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <i class="fas fa-print" style="font-size:50px;color:orange;text-shadow:1px 1px 2px grey;"></i>
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <i class='fas fa-mobile-alt' style="font-size:50px;color:orange;text-shadow:1px 1px 2px grey;"></i>
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+    </div>
+      <div class="col-md-4">
+        <div class="card">
+          <i class="fa fa-database" style="font-size:50px;color:orange;text-shadow:1px 1px 2px grey;"></i>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+      </div>
+  </div>
+  <br> <br>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <i class="material-icons" style="font-size:50px;color:orange;text-shadow:1px 1px 2px grey;">attachment</i>
+        <div class="card-body">
+          <h4 class="card-title">Special title treatment</h4>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <i class="material-icons" style="font-size:50px;color:orange;text-shadow:1px 1px 2px grey;">computer</i>
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+    </div>
+      <div class="col-md-4">
+        <div class="card">
+          <i class="fas fa-chart-pie" style="font-size:50px;color:orange;text-shadow:1px 1px 2px grey;"></i>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+      </div>
+  </div>
+
+</div>
+<br> <br>
+
+
+<div class="container-fluid text-center">
+  <h2> features <h2>
+    <br>
+    <h3>what softools can bring to your business! <h3>
+<div class="row">
+<div class="col-md-3 col-sm-4">
+<div class="wrimagecard wrimagecard-topimage">
+        <a href="#">
+        <div class="wrimagecard-topimage_header" style="background-color:rgba(187, 120, 36, 0.1) ">
+          <center><i class = "fa fa-cubes" style="color:#16A085"></i></center>
+        </div>
+        <div class="wrimagecard-topimage_title">
+          <h4>Charts
+          <div class="pull-right badge">18</div></h4>
+        </div>
+      </a>
+    </div>
+    </div>
+  <div class="col-md-3 col-sm-4">
+    <div class="wrimagecard wrimagecard-topimage">
+        <a href="#">
+        <div class="wrimagecard-topimage_header" style="background-color: rgba(22, 160, 133, 0.1)">
+          <center><i class = "fa fa-cubes" style="color:#16A085"></i></center>
+        </div>
+        <div class="wrimagecard-topimage_title">
+          <h4>Controls
+          <div class="pull-right badge" id="WrControls"></div></h4>
+        </div>
+      </a>
+    </div>
+</div>
+<div class="col-md-3 col-sm-4">
+    <div class="wrimagecard wrimagecard-topimage">
+        <a href="#">
+        <div class="wrimagecard-topimage_header" style="background-color:  rgba(213, 15, 37, 0.1)">
+          <center><i class="fa fa-pencil-square-o" style="color:#d50f25"> </i></center>
+        </div>
+        <div class="wrimagecard-topimage_title" >
+          <h4>Forms
+          <div class="pull-right badge" id="WrForms"></div>
+          </h4>
+        </div>
+
+      </a>
+    </div>
+</div>
+<div class="col-md-3 col-sm-4">
+    <div class="wrimagecard wrimagecard-topimage">
+        <a href="#">
+        <div class="wrimagecard-topimage_header" style="background-color:  rgba(51, 105, 232, 0.1)">
+           <center><i class="fa fa-table" style="color:#3369e8"> </i></center>
+        </div>
+        <div class="wrimagecard-topimage_title">
+          <h4>Grid System
+          <div class="pull-right badge" id="WrGridSystem"></div></h4>
+        </div>
+
+      </a>
+    </div>
+</div>
+<div class="col-md-3 col-sm-4">
+    <div class="wrimagecard wrimagecard-topimage">
+        <a href="#">
+        <div class="wrimagecard-topimage_header" style="background-color:  rgba(250, 188, 9, 0.1)">
+           <center><i class="fa fa-info-circle" style="color:#fabc09"> </i></center>
+        </div>
+        <div class="wrimagecard-topimage_title">
+          <h4>Information
+          <div class="pull-right badge" id="WrInformation"></div></h4>
+        </div>
+
+      </a>
+    </div>
+</div>
+<div class="col-md-3 col-sm-4">
+    <div class="wrimagecard wrimagecard-topimage">
+        <a href="#">
+          <div class="wrimagecard-topimage_header" style="background-color: rgba(121, 90, 71, 0.1)">
+         <center><i class="fa fa-bars" style="color:#795a47"> </i></center>
+        </div>
+        <div class="wrimagecard-topimage_title">
+          <h4>Navigation
+          <div class="pull-right badge" id="WrNavigation"></div></h4>
+        </div>
+
+      </a>
+    </div>
+</div>
+<div class="col-md-3 col-sm-4">
+    <div class="wrimagecard wrimagecard-topimage">
+        <a href="#">
+       <div class="wrimagecard-topimage_header" style="background-color: rgba(130, 93, 9, 0.1)">
+          <center><i class="fa fa-magic" style="color:#825d09"></i></center>
+        </div>
+        <div class="wrimagecard-topimage_title">
+          <h4>Themes & Icons
+          <div class="pull-right badge" id="WrThemesIcons"></div></h4>
+        </div>
+      </a>
+    </div>
+</div>
+<div class="col-md-3 col-sm-4">
+    <div class="wrimagecard wrimagecard-topimage">
+        <a href="#">
+       <div class="wrimagecard-topimage_header" style="background-color: rgba(130, 93, 9, 0.1)">
+          <center><i class="fa fa-magic" style="color:#825d09"></i></center>
+        </div>
+        <div class="wrimagecard-topimage_title">
+          <h4>Themes & Icons
+          <div class="pull-right badge" id="WrThemesIcons"></div></h4>
+        </div>
+      </a>
+    </div>
+</div>
+<div class="col-md-3 col-sm-4">
+    <div class="wrimagecard wrimagecard-topimage">
+        <a href="#">
+       <div class="wrimagecard-topimage_header" style="background-color: rgba(130, 93, 9, 0.1)">
+          <center><i class="fa fa-magic" style="color:#825d09"></i></center>
+        </div>
+        <div class="wrimagecard-topimage_title">
+          <h4>Themes & Icons
+          <div class="pull-right badge" id="WrThemesIcons"></div></h4>
+        </div>
+      </a>
+    </div>
+</div>
+<div class="col-md-3 col-sm-4">
+    <div class="wrimagecard wrimagecard-topimage">
+        <a href="#">
+       <div class="wrimagecard-topimage_header" style="background-color: rgba(130, 93, 9, 0.1)">
+          <center><i class="fa fa-magic" style="color:#825d09"></i></center>
+        </div>
+        <div class="wrimagecard-topimage_title">
+          <h4>Themes & Icons
+          <div class="pull-right badge" id="WrThemesIcons"></div></h4>
+        </div>
+      </a>
+    </div>
+</div>
+<div class="col-md-3 col-sm-4">
+    <div class="wrimagecard wrimagecard-topimage">
+        <a href="#">
+       <div class="wrimagecard-topimage_header" style="background-color: rgba(130, 93, 9, 0.1)">
+          <center><i class="fa fa-magic" style="color:#825d09"></i></center>
+        </div>
+        <div class="wrimagecard-topimage_title">
+          <h4>Themes & Icons
+          <div class="pull-right badge" id="WrThemesIcons"></div></h4>
+        </div>
+      </a>
+    </div>
+</div>
+<div class="col-md-3 col-sm-4">
+    <div class="wrimagecard wrimagecard-topimage">
+        <a href="#">
+       <div class="wrimagecard-topimage_header" style="background-color: rgba(130, 93, 9, 0.1)">
+          <center><i class="fa fa-magic" style="color:#825d09"></i></center>
+        </div>
+        <div class="wrimagecard-topimage_title">
+          <h4>Themes & Icons
+          <div class="pull-right badge" id="WrThemesIcons"></div></h4>
+        </div>
+      </a>
+    </div>
+</div>
+<div class="col-md-3 col-sm-4">
+    <div class="wrimagecard wrimagecard-topimage">
+        <a href="#">
+       <div class="wrimagecard-topimage_header" style="background-color: rgba(130, 93, 9, 0.1)">
+          <center><i class="fa fa-magic" style="color:#825d09"></i></center>
+        </div>
+        <div class="wrimagecard-topimage_title">
+          <h4>Themes & Icons
+          <div class="pull-right badge" id="WrThemesIcons"></div></h4>
+        </div>
+      </a>
+    </div>
+</div>
+<div class="col-md-3 col-sm-4">
+    <div class="wrimagecard wrimagecard-topimage">
+        <a href="#">
+       <div class="wrimagecard-topimage_header" style="background-color: rgba(130, 93, 9, 0.1)">
+          <center><i class="fa fa-magic" style="color:#825d09"></i></center>
+        </div>
+        <div class="wrimagecard-topimage_title">
+          <h4>Themes & Icons
+          <div class="pull-right badge" id="WrThemesIcons"></div></h4>
+        </div>
+      </a>
+    </div>
+</div>
+<div class="col-md-3 col-sm-4">
+    <div class="wrimagecard wrimagecard-topimage">
+        <a href="#">
+       <div class="wrimagecard-topimage_header" style="background-color: rgba(130, 93, 9, 0.1)">
+          <center><i class="fa fa-magic" style="color:#825d09"></i></center>
+        </div>
+        <div class="wrimagecard-topimage_title">
+          <h4>Themes & Icons
+          <div class="pull-right badge" id="WrThemesIcons"></div></h4>
+        </div>
+      </a>
+    </div>
+</div>
+
+</div>
+</div>
+
+<br> <br>
+<div class="container text-center">
+  <h2> what you can bring to your business!!</h2>
+  <div class="row">
+    <div class="col-md-6">
+        <h2> vring something new to your business!</h2>
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p >With supporting text below as a natural lead-in to additional content, onloadedmetadata="With supporting text below as a natural lead-in to additional content."</p>
+          <p >With supporting text below as a natural lead-in to additional content, onloadedmetadata="With supporting text below as a natural lead-in to additional content."</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="col-md-6 card how">
+          <i class="fa fa-database" style="font-size:60px;color:orange;text-shadow:1px 1px 2px grey;"></i>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+        <div class="card col-md-6 how">
+          <i class="fas fa-chart-pie" style="font-size:60px;color:orange;text-shadow:1px 1px 2px grey;"></i>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+        <div class="card col-md-6 how">
+          <i class="material-icons" style="font-size:50px;color:orange;text-shadow:1px 1px 2px grey;">computer</i>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+        <div class="card col-md-6 how">
+          <i class="material-icons" style="font-size:60px;color:orange;text-shadow:1px 1px 2px grey;">computer</i>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+      </div>
+
+</div>
+</div>
+
+
+
 <!-- notre équipe -->
 
 <section class="team">
