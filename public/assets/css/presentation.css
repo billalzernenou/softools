@@ -238,12 +238,6 @@ i.red{
   }
 
 
-
-
-
-
-
-
   .wrimagecard{
 	margin-top: 0;
     margin-bottom: 1.5rem;
@@ -280,4 +274,44 @@ a.wrimagecard:hover, .wrimagecard-topimage:hover {
     text-decoration: none;
     color: #525c65;
     transition: color 0.3s ease;
+}
+
+
+
+
+.btn-container {
+    display: inline-block;
+    padding: 16px 0px;
+    margin: 0px 16px;
+    overflow: hidden;
+
+}
+*, *:before, *:after {
+    padding: 0px;
+    margin: 0px;
+    transition: 0.3s;
+}
+.standard-btn {
+     color: #34495e;
+    border: solid 1px orange;
+    font-size: 1rem;
+    position: relative;
+    z-index: 1;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    background: transparent;
+    border-radius: 5px;
+}
+
+.standard-btn:hover {
+      color: #fff;
+      border: solid 1px orange;
+      background: orange;
+}
+
+.btn_cont
+{
+
 }
