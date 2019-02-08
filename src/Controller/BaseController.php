@@ -220,5 +220,14 @@ class BaseController extends Controller
 
         ]);
     }
+    /**
+     * @Route("/zero_code", name="zero_code" )
+     */
+    public function zero_code()
+    {
+      return $this->render('base/zero_code.html.twig', [
+        'controller_name' => 'BaseController'
+      ]);
+    }
 
 }
