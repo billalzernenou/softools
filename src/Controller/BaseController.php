@@ -229,5 +229,14 @@ class BaseController extends Controller
         'controller_name' => 'BaseController'
       ]);
     }
+    /**
+     * @Route("/dashboard", name="dashboard" )
+     */
+    public function dash()
+    {
+      return $this->render('base/dashboard.html.twig', [
+        'controller_name' => 'BaseController'
+      ]);
+    }
 
 }

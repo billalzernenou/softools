@@ -182,7 +182,7 @@ i.red{
 /*header*/
 /* main */
 #header {
-  background: url(https://images.pexels.com/photos/165754/pexels-photo-165754.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat center top;
+  background: url(https://images.pexels.com/photos/919436/pexels-photo-919436.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat center top;
   background-size: cover;
   height: 500px;;
 
@@ -215,8 +215,9 @@ i.red{
 
   h2
   {
-  font-weight: 500;
-  color: #2b3e50;
+
+  font-weight: 600;
+  color: orange;
   }
   li
   {
