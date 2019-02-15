@@ -1,3 +1,36 @@
+#header {
+  background: url(https://images.pexels.com/photos/919436/pexels-photo-919436.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat center top;
+  background-size: cover;
+  height: 500px;
+
+
+}
+#header .center {
+  text-align: center;
+  color: #FFFFFF;
+  color: #F5F7FA;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0px;
+}
+#header .center .middle {
+
+}
+#header .center .middle h1 {
+  font-family: "Lusitana";
+  font-weight: normal;
+  line-height: 1em;
+  font-size: 8em;
+  color: white
+}
+#header .center .middle span {
+  line-height: 5em;
+  font-size: 2em;
+  color:white;
+}
+/* pricing table */
+
 .panel
 {
     text-align: center;
@@ -108,4 +141,86 @@
 }
 .panel:hover {
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* pricing */
+table {
+    table-layout: fixed;
+    word-wrap: break-word;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+.text-sm {
+    font-size: 12px;
+}
+.price {
+    font-size: 3em;
+}
+
+.demo-button {
+    background-color: #333333;
+    color: #ffffff;
+    display: table;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    outline-color: -moz-use-text-color;
+    outline-style: none;
+    outline-width: medium ;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.bottom_btn{
+	background-color: #333333;
+    color: #ffffff;
+    display: table;
+    font-size: 28px;
+    margin: 60px auto 20px;
+    padding: 10px 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.pricing-action {
+  font-weight: bold;
+  margin: auto 3em 2em 3em;
+  padding: 1em 2em;
+  color: #fff;
+  border-radius: 30px;
+  background: grey;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  border-color: grey;
+}
+.pricing-action:hover {
+  background: orange;
+  border-color: orange;
+}
+
+
+.pricing {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto 3em;
+}
+.pricing-item {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+  text-align: center;
+  -webkit-flex: 0 1 330px;
+  flex: 0 1 330px;
 }

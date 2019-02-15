@@ -1,10 +1,269 @@
 {% extends 'base.html.twig' %}
 {% block stylesheets %}
     {{ parent() }}
+
     <link rel="stylesheet" href="assets/css/pricing.css" media="screen" >
 {% endblock %}
+{% block header %}
+
+{{ parent() }}
+<!-- video carousel-->
+<!-- video section
+<div class="container-fluid">
+	<div class="row">
+			<div class="video-wrapper">
+				<video src="https://player.vimeo.com/external/304803118.sd.mp4?s=3d0e26d216473117258b6ded44f044d1726a05e2&profile_id=164&oauth2_token_id=57447761" poster="assets/images/video.jpg"></video>
+			</div>
+	</div>
+</div>
+-->
+<div id="header">
+  <div class="center" id="headerc">
+    <div class="middle">
+      <h1>Pricing</h1>
+      <span>Get the perfect plan for your business.</span>
+    </div>
+  </div>
+</div>
+{% endblock %}
 {% block body %}
-</br></br></br></br></br></br></br></br></br></br>
+</br></br></br></br></br>
+<table class="table table-hover table-bordered" style="text-align:center;padding-left:200px; padding-right:200px;">
+    <thead>
+      <tr class="active">
+          <th style="background:rgb(255, 179, 102)"><center><h1>Offres Softools<h1></center></th>
+          <th><center><h2>Basic</h2><p class="text-muted text-sm">Ideal for small operations.</p></center></th>
+          <th><center><h2>Plus</h2><p class="text-muted text-sm">Perfect for larger operations.</p></center></th>
+          <th><center><h2>Super</h2><p class="text-muted text-sm">Perfect for software operations.</p></center></th>
+          <th><center><h2>Platinum</h2><p class="text-muted text-sm">The best fit for larger operations.</p></center></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><br /><h1>Price<h1></td>
+        <td><div class="the-price">
+            <h1>
+                €50<span class="subscript">/mo</span></h1>
+            <small>1 month FREE trial</small>
+        </div></td>
+        <td><div class="the-price">
+            <h1>
+                €60<span class="subscript">/mo</span></h1>
+            <small>1 month FREE trial</small>
+        </div></td>
+        <td><div class="the-price">
+            <h1>
+                €80<span class="subscript">/mo</span></h1>
+            <small>1 month FREE trial</small>
+        </div></td>
+        <td><div class="the-price">
+            <h1>
+                €100<span class="subscript">/mo</span></h1>
+            <small>1 month FREE trial</small>
+        </div></td>
+      </tr>
+      <tr>
+        <td colspan="5" align="left" style="padding-left:20px;" class="active"><b>Website Features</b></td>
+      </tr>
+      <tr>
+        <td>Responsive design</td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+      </tr>
+      <tr>
+        <td>Scales to mobile</td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+      </tr>
+      <tr>
+        <td>Contact Form</td>
+        <td>-</td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+      </tr>
+            <tr>
+        <td>Social Media Integration</td>
+        <td>-</td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+      </tr>
+      <tr>
+        <td>Custom Pages</td>
+        <td>3</td>
+        <td>10</td>
+        <td>5</td>
+        <td>13</td>
+      </tr>
+      <tr>
+        <td>Storage</td>
+        <td>2GB</td>
+        <td>10GB</td>
+        <td>10GB</td>
+        <td>50GB</td>
+      </tr>
+      <tr>
+        <td colspan="5" align="left" style="padding-left:20px;" class="active"><b>Features</b></td>
+      </tr>
+            <tr>
+        <td>Powerful Analytics</td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+      </tr>
+            <tr>
+        <td>24/7 Support</td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+      </tr>
+      <tr>
+        <td>Free Domain Name</td>
+        <td>-</td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+        <td>-</td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+      </tr>
+      <tr>
+        <td>Free SSL Certificate</td>
+        <td>-</td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+        <td>-</td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+      </tr>
+            <tr>
+        <td>SEO Setup</td>
+        <td>Basic</td>
+        <td>Advanced</td>
+        <td>Basic</td>
+        <td>Advanced</td>
+      </tr>
+      <tr>
+        <td>Free Hosting</td>
+        <td>6 Months</td>
+        <td>1 Year</td>
+        <td>6 Months</td>
+        <td>1 Year</td>
+      </tr>
+      <tr>
+        <td>Social Media Management</td>
+        <td>+$60 p/m</td>
+        <td>+$60 p/m</td>
+        <td>+$60 p/m</td>
+        <td>+$60 p/m</td>
+      </tr>
+              <tr>
+        <td>Free Updates</td>
+        <td>-</td>
+        <td>For 3 Months</td>
+        <td>-</td>
+        <td>For 3 Months</td>
+      </tr>
+      <tr>
+        <td colspan="5" align="left" style="padding-left:20px;" class="active"><b>Integration</b></td>
+      </tr>
+      <tr>
+        <td>Wordpress</td>
+        <td>+$250</td>
+        <td>+$250</td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+      </tr>
+      <tr>
+        <td>Woocommerce</td>
+        <td>+$250</td>
+        <td>+$250</td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+      </tr>
+        <tr>
+        <td>Joomla</td>
+        <td>+$250</td>
+        <td>+$250</td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+      </tr>
+        <tr>
+        <td>Drupal</td>
+        <td>+$250</td>
+        <td>+$250</td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+      </tr>
+        <tr>
+        <td>Ghost</td>
+        <td>+$250</td>
+        <td>+$250</td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+      </tr>
+        <tr>
+        <td>Shopify</td>
+        <td>+$250</td>
+        <td>+$250</td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+      </tr>
+        <tr>
+        <td>Opencart</td>
+        <td>+$350</td>
+        <td>+$350</td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+      </tr>
+        <tr>
+        <td>Magento</td>
+        <td>+$350</td>
+        <td>+$350</td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+      </tr>
+        <tr>
+        <td>Prestashop</td>
+        <td>+$350</td>
+        <td>+$350</td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+      </tr>
+        <tr>
+        <td>phpBB</td>
+        <td>+$250</td>
+        <td>+$250</td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+      </tr>
+        <tr>
+        <td>vBulletin</td>
+        <td>+$250</td>
+        <td>+$250</td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+      </tr>
+        <tr>
+        <td>Invision Power</td>
+        <td>+$250</td>
+        <td>+$250</td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+        <td><i style="color:limegreen" class="fa fa-check fa-lg"></i></td>
+      </tr>
+        <tr><td></td>
+        <td><a class="btn btn-info pricing-action " style="margin-top:10px; margin-bottom:10px">Order Now</a></td>
+        <td><a class="btn btn-info pricing-action " style="margin-top:10px; margin-bottom:10px">Order Now</a></td>
+        <td><a class="btn btn-info pricing-action " style="margin-top:10px; margin-bottom:10px">Order Now</a></td>
+        <td><a class="btn btn-info pricing-action " style="margin-top:10px; margin-bottom:10px">Order Now</a></td></tr>
+    </tbody>
+  </table>
+
+
+
+</br></br></br></br></br>
 <div class="container">
     <div class="row">
         <div class=" col-md-4">
@@ -71,11 +330,14 @@
                         Silver</h3>
                 </div>
                 <div class="panel-body">
-                    <div class="the-price">
-                        <h1>
-                            $20<span class="subscript">/mo</span></h1>
-                        <small>1 month FREE trial</small>
-                    </div>
+                  <div class="generic_price_tag clearfix">
+                            <span class="price">
+                                <span class="sign">$</span>
+                                <span class="currency">299</span>
+                                <span class="cent">.99</span>
+                                <span class="month">/MON</span>
+                            </span>
+                        </div>
                     <table class="table">
                         <tr>
                             <td>
